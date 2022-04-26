@@ -1,0 +1,60 @@
+.zagl {
+    background-image: url("../images/zagl/back.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-color: #b67977;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    max-height: 100%;
+    &-page {
+        overflow: hidden;
+    }
+    &__logo {
+        text-align: center;
+        width: 100%;
+        &-svg {
+            margin-top: 20px;
+        }
+    }
+    &__box {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        &-title {
+            text-align: center;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 30px;
+            line-height: 36px;
+            color: #ffffff;
+        }
+        &-text {
+            text-align: center;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 25px;
+            margin-top: 40px;
+            color: #ffffff;
+        }
+        &-link {
+            color: #ffffff;
+            border-bottom: 1px solid;
+            transition: color 0.3s ease;
+            &:hover {
+                color: #000000;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .zagl {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
