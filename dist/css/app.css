@@ -31,6 +31,124 @@ h6 {
   font-family: "Museo Sans Cyrl 500", sans-serif;
 }
 
+section {
+  margin-top: 120px;
+}
+
+@media screen and (max-width: 1160px) {
+  section {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media screen and (max-width: 700px) {
+  section {
+    margin-top: 60px;
+  }
+}
+.card {
+  width: 100%;
+  max-width: 260px;
+}
+.card__top {
+  height: 293px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  overflow: hidden;
+}
+.card__favorite {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 2;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+.card__pic {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+.card__pic-img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.card__to-cart {
+  background-color: #b17c50;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 36px;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+  -webkit-transform: translateY(50px);
+          transform: translateY(50px);
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+.card__top:hover .card__to-cart {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+.card__name {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  color: #2d2825;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  height: 22px;
+  display: block;
+  overflow: hidden;
+}
+.card__cost {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  color: #2d2825;
+}
+
+@media screen and (max-width: 550px) {
+  .card__top {
+    height: 160px;
+  }
+  .card__name {
+    height: 12px;
+    margin-bottom: 2px;
+  }
+  .card__name, .card__cost {
+    font-size: 10px;
+    line-height: 12px;
+  }
+  .card__to-cart {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
 .header {
   position: absolute;
   top: 0;
@@ -265,6 +383,9 @@ h6 {
     opacity: 0;
   }
 }
+.intro {
+  margin-top: 0;
+}
 .intro__title {
   visibility: hidden;
   pointer-events: none;
@@ -372,6 +493,49 @@ h6 {
   background-color: #b17c50;
 }
 
+.new-products {
+  max-width: 1160px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.new-products__title {
+  margin-bottom: 50px;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+  color: #2d2825;
+}
+.new-products__slider {
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+.new-products__link {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #2d2825;
+}
+.new-products .card {
+  max-width: 100%;
+}
+
+@media screen and (max-width: 1160px) {
+  .intro {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media screen and (max-width: 700px) {
+  .new-products__title {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 20px;
+  }
+  .new-products__link {
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
 .intro__pic {
   width: 100%;
 }
