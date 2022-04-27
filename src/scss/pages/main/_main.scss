@@ -1,4 +1,5 @@
 .intro {
+    margin-top: 0;
     &__title {
         visibility: hidden;
         pointer-events: none;
@@ -37,10 +38,6 @@
         .swiper-pagination-bullet-active {
             background-color: #b17c50;
             height: 2px;
-        }
-        .swiper-button-prev {
-        }
-        .swiper-button-next {
         }
     }
     .swiper-slide {
@@ -101,13 +98,51 @@
         }
     }
 }
-.swiper-wrapper {
+.new-products {
+    max-width: 1160px;
+    margin-left: auto;
+    margin-right: auto;
+    &__title {
+        margin-bottom: 50px;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 36px;
+        color: #2d2825;
+    }
+
+    &__slider {
+        overflow: hidden;
+        margin-bottom: 30px;
+    }
+
+    &__link {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        color: #2d2825;
+    }
+    .card {
+        max-width: 100%;
+    }
 }
-.swiper-slide {
+
+@media screen and (max-width: 1160px) {
+    .intro {
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
-.swiper-pagination {
-}
-.swiper-button-prev {
-}
-.swiper-button-next {
+
+@media screen and (max-width: 700px) {
+    .new-products {
+        &__title {
+            font-size: 20px;
+            line-height: 24px;
+            margin-bottom: 20px;
+        }
+        &__link {
+            font-size: 14px;
+            line-height: 17px;
+        }
+    }
 }
