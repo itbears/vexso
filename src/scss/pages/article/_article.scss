@@ -17,7 +17,6 @@
         font-weight: 400;
         font-size: 30px;
         line-height: 36px;
-        ;
     }
 
     &__container {
@@ -29,16 +28,18 @@
 
             &-item {
                 margin-top: 10px;
-
+                &::marker {
+                    font-size: 12px;
+                }
                 &:first-child {
                     margin-top: 15px;
                 }
             }
         }
-        &-subtitle{
+        &-subtitle {
             font-size: 20px;
             font-weight: 400;
-            color: #B17C50;
+            color: #b17c50;
             margin-top: 30px;
         }
 
@@ -55,10 +56,10 @@
 .date {
     text-align: center;
     margin-top: 20px;
-    color: #B17C50;
+    color: #b17c50;
     font-weight: 300;
     font-size: 12px;
 }
-.date-2{
-    color: #C4C4C4;
+.date-2 {
+    color: #c4c4c4;
 }
