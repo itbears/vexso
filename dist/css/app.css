@@ -44,7 +44,6 @@ h6 {
   height: 100vh;
   overflow-y: scroll;
   background-color: #ffffff;
-  height: -webkit-fill-available;
   padding-left: 220px;
   padding-right: 60px;
   padding-top: 30px;
@@ -201,6 +200,7 @@ h6 {
 .header__favorites {
   margin-right: 20px;
 }
+
 @media screen and (max-width: 1160px) {
   .header__top {
     padding-left: 20px;
