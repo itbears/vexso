@@ -16,3 +16,22 @@ const introSlider = new Swiper(".js-intro-slider", {
         clickable: true,
     },
 });
+
+const newProducts = new Swiper(".js-new-products-slider", {
+    slidesPerView: 2,
+    spaceBetween: 40,
+    breakpoints: {
+        320: {
+            slidesPerView: 2,
+            spaceBetween: 20
+        },
+        770: {
+            slidesPerView: 3,
+            spaceBetween: 30
+        },
+        1160: {
+            slidesPerView: 4,
+            spaceBetween: 40
+        }
+    }
+})
