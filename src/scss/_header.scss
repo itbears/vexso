@@ -1,0 +1,176 @@
+.header {
+    position: absolute;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+
+    &__menu {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100vh;
+        overflow-y: scroll;
+        background-color: #ffffff;
+        height: -webkit-fill-available;
+        padding-left: 220px;
+        padding-right: 60px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        z-index: 11;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.5s ease;
+        &.active {
+            opacity: 1;
+            pointer-events: initial;
+            animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+        }
+        &.exit {
+            animation: slide-out-left 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+        }
+        &-back {
+            background-color: rgba(0, 0, 0, 0.7);
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100vh;
+            z-index: 10;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.5s ease;
+            &.active {
+                opacity: 1;
+                pointer-events: initial;
+            }
+        }
+    }
+
+    &__menu-search {
+        margin-bottom: 30px;
+    }
+
+    &__menu-nav {
+    }
+
+    &__menu-list {
+        list-style-type: none;
+    }
+
+    &__menu-list-item {
+        margin-bottom: 20px;
+        &_border {
+            padding-bottom: 30px;
+            border-bottom: 1px solid #e5e5e5;
+            margin-bottom: 30px;
+        }
+        ul {
+            list-style-type: none;
+            margin-top: 10px;
+            li {
+                margin-bottom: 5px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                a {
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: #2d2825;
+                    display: inline-block;
+                    &::after {
+                        transition: all 0.3s ease;
+                        content: "";
+                        width: 0;
+                        height: 1px;
+                        background-color: #2d2825;
+                        display: block;
+                    }
+                    &:hover::after {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    &__menu-list-item-link {
+        font-family: "Museo Sans Cyrl 500";
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        color: #2d2825;
+        display: inline-block;
+        &::after {
+            transition: all 0.3s ease;
+            content: "";
+            width: 0;
+            height: 1px;
+            background-color: #2d2825;
+            display: block;
+        }
+        &:hover::after {
+            width: 100%;
+        }
+    }
+
+    &__menu-social {
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+    }
+
+    &__menu-social-item {
+        &:first-child {
+            margin-right: 8px;
+        }
+    }
+
+    &__top {
+        display: flex;
+        align-items: center;
+        max-width: 1160px;
+        margin: auto;
+        width: 100%;
+        padding-top: 20px;
+    }
+
+    &__burger {
+        border: none;
+        background: none;
+        cursor: pointer;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        span {
+            width: 20px;
+            height: 1px;
+            background: #ffffff;
+            display: block;
+            margin-bottom: 3px;
+            transition: width 0.3s ease;
+            & + span {
+                width: 30px;
+                margin-bottom: 0;
+            }
+        }
+        &:hover {
+            span {
+                &:first-child {
+                    width: 30px;
+                }
+            }
+        }
+    }
+
+    &__logo {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__favorites {
+        margin-right: 20px;
+    }
+
+    &__cart {
+    }
+}
