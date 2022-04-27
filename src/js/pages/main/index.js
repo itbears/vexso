@@ -8,8 +8,8 @@ const introSlider = new Swiper(".js-intro-slider", {
     spaceBetween: 30,
     effect: "fade",
     navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".js-intro-slider .swiper-button-next",
+        prevEl: ".js-intro-slider .swiper-button-prev",
     },
     pagination: {
         el: ".swiper-pagination",
@@ -20,6 +20,10 @@ const introSlider = new Swiper(".js-intro-slider", {
 const newProducts = new Swiper(".js-new-products-slider", {
     slidesPerView: 2,
     spaceBetween: 40,
+    navigation: {
+        nextEl: '.js-new-products-slider .swiper-button-next',
+        prevEl: '.js-new-products-slider .swiper-button-prev',
+    },
     breakpoints: {
         320: {
             slidesPerView: 2,
