@@ -311,7 +311,6 @@ section {
   max-width: 1160px;
   margin: auto;
   width: 100%;
-  padding-top: 20px;
 }
 .header__burger {
   border: none;
@@ -341,9 +340,31 @@ section {
 .header__logo {
   margin-left: auto;
   margin-right: auto;
+  padding-top: 20px;
+  padding-bottom: 10px;
 }
 .header__favorites {
   margin-right: 20px;
+}
+.header.sticky {
+  position: fixed;
+  top: 0;
+  background: rgba(255, 255, 255, 0.5);
+  -webkit-box-shadow: 0px 2px 4px rgba(94, 94, 94, 0.25);
+          box-shadow: 0px 2px 4px rgba(94, 94, 94, 0.25);
+  -webkit-backdrop-filter: blur(13px);
+          backdrop-filter: blur(13px);
+  -webkit-animation: fade-in-top 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+          animation: fade-in-top 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+.header.sticky .header__burger span {
+  background-color: #2d2825;
+}
+.header.sticky .header__logo svg path, .header.sticky .header__cart svg path {
+  fill: #2d2825;
+}
+.header.sticky .header__favorites svg path {
+  stroke: #2d2825;
 }
 
 @media screen and (max-width: 1160px) {
@@ -410,6 +431,30 @@ section {
     opacity: 0;
   }
 }
+@-webkit-keyframes fade-in-top {
+  0% {
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-in-top {
+  0% {
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
 .intro {
   margin-top: 0;
 }
@@ -446,6 +491,14 @@ section {
 .intro__slider .swiper-button-next::after,
 .intro__slider .swiper-button-prev::after {
   display: none;
+}
+.intro__slider .swiper-button-prev,
+.intro__slider .swiper-rtl .swiper-button-next {
+  left: 0;
+}
+.intro__slider .swiper-button-next,
+.intro__slider .swiper-rtl .swiper-button-prev {
+  right: 0;
 }
 .intro__slider .swiper-pagination-bullet {
   border-radius: 0;
