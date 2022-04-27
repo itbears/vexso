@@ -69,6 +69,10 @@ section {
   border: none;
   background: none;
   cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 .card__favorite svg {
   -webkit-transition: all 0.3s ease;
@@ -132,6 +136,10 @@ section {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
+.card__top:hover .card__favorite {
+  opacity: 1;
+  pointer-events: all;
+}
 .card__name {
   font-weight: 300;
   font-size: 18px;
@@ -152,7 +160,7 @@ section {
 
 @media screen and (max-width: 550px) {
   .card__top {
-    height: 160px;
+    height: 190px;
   }
   .card__name {
     height: 20px;
