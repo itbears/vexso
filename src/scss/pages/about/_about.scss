@@ -1,0 +1,68 @@
+.about-intro {
+    background-image: url("../images/about-banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    // background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    // max-height: 100%;
+    background-size: 100%;
+
+    &__texts-box {
+        max-width: 700px;
+        margin-top: 620px;
+        margin-left: 260px;
+
+        &-text {
+            margin: 0px;
+
+            &:first-child {
+                color: #FFFFFF;
+                font-weight: 300;
+                font-size: 18px;
+            }
+
+            &:last-child {
+                font-weight: 400;
+                font-size: 18px;
+                color: #FFFFFF;
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+.story {
+    &__quot {
+        font-weight: 300;
+        font-size: 20px;
+        color: #2D2825;
+        max-width: 542px;
+        margin-left: 58px;
+        margin-top: 100px;
+    }
+    &__wrappers {
+        display: flex;
+    }
+
+    &__text {
+        max-width: 560px;
+        font-weight: 300;
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+
+    &__box {
+        margin-left: 835px;
+
+        &-img {
+            max-width: 780px;
+
+            &-pic {
+                width: 100%;
+            }
+        }
+    }
+}
