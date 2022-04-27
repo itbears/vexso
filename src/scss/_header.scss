@@ -3,7 +3,6 @@
     top: 0;
     z-index: 100;
     width: 100%;
-
     &__menu {
         position: absolute;
         left: 0;
@@ -127,7 +126,6 @@
         max-width: 1160px;
         margin: auto;
         width: 100%;
-        padding-top: 20px;
     }
 
     &__burger {
@@ -162,10 +160,42 @@
     &__logo {
         margin-left: auto;
         margin-right: auto;
+        padding-top: 20px;
+        padding-bottom: 10px;
     }
 
     &__favorites {
         margin-right: 20px;
+    }
+    &.sticky {
+        position: fixed;
+        top: 0;
+        background: rgba(255, 255, 255, 0.5);
+        box-shadow: 0px 2px 4px rgba(94, 94, 94, 0.25);
+        backdrop-filter: blur(13px);
+        animation: fade-in-top 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+        .header {
+            &__burger {
+                span {
+                    background-color: #2d2825;
+                }
+            }
+            &__logo,
+            &__cart {
+                svg {
+                    path {
+                        fill: #2d2825;
+                    }
+                }
+            }
+            &__favorites {
+                svg {
+                    path {
+                        stroke: #2d2825;
+                    }
+                }
+            }
+        }
     }
 }
 
