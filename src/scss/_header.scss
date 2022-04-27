@@ -49,10 +49,6 @@
     &__menu-search {
         margin-bottom: 30px;
     }
-
-    &__menu-nav {
-    }
-
     &__menu-list {
         list-style-type: none;
     }
@@ -141,6 +137,8 @@
         cursor: pointer;
         padding-top: 10px;
         padding-bottom: 10px;
+        width: 58px;
+        margin-bottom: 10px;
         span {
             width: 20px;
             height: 1px;
@@ -172,5 +170,32 @@
     }
 
     &__cart {
+    }
+}
+
+@media screen and (max-width: 1160px) {
+    .header {
+        &__top {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .header {
+        &__menu {
+            padding-left: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .header {
+        &__logo {
+            svg {
+                max-width: 85px;
+            }
+        }
     }
 }
