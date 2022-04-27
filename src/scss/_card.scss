@@ -17,6 +17,9 @@
         border: none;
         background: none;
         cursor: pointer;
+        opacity: 0;
+        pointer-events: none;
+        transition: all 0.3s ease;
         svg {
             transition: all 0.3s ease;
             path {
@@ -75,6 +78,11 @@
         transform: translateY(0);
     }
 
+    &__top:hover &__favorite {
+        opacity: 1;
+        pointer-events: all;
+    }
+
     &__name {
         font-weight: 300;
         font-size: 18px;
@@ -98,7 +106,7 @@
 @media screen and (max-width: 550px) {
     .card {
         &__top {
-            height: 160px;
+            height: 190px;
         }
         &__name {
             height: 20px;
