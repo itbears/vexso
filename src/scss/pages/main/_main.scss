@@ -196,6 +196,10 @@
         margin-top: 70px;
         color: #2d2825;
         display: inline-block;
+        transition: color 0.3s ease;
+        &:hover {
+            color: #b17c50;
+        }
     }
 }
 
@@ -309,6 +313,12 @@
         overflow: hidden;
         .swiper-button-next,
         .swiper-button-prev {
+            svg path {
+                transition: all 0.3s ease;
+            }
+            &:hover svg path {
+                stroke: #b17c50;
+            }
             &::after {
                 display: none;
             }
@@ -613,6 +623,14 @@
 }
 
 @media screen and (max-width: 550px) {
+    .intro {
+        & .swiper-slide &__slider {
+            &-box {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+        }
+    }
     .about {
         &__box {
             padding: 70px 40px;

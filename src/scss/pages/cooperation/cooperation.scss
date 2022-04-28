@@ -1,4 +1,5 @@
 .cooperation-intro {
+    margin-top: 0;
     &__pic {
         width: 100%;
     }
@@ -8,7 +9,7 @@
     }
 }
 .cooperation {
-    &__container{
+    &__container {
         display: flex;
     }
     &__wrapper {
@@ -47,14 +48,14 @@
             display: flex;
             margin-top: 25px;
         }
-        &-number{
-            &:not(:first-child){
+        &-number {
+            &:not(:first-child) {
                 margin-left: 41px;
             }
             &-subtitle {
-                color: #B17C50;
+                color: #b17c50;
                 font-weight: 300;
-                font-size: 14px
+                font-size: 14px;
             }
 
             &-link {
@@ -79,10 +80,9 @@
         font-size: 18px;
     }
 }
-.qwer{
+.qwer {
     margin-top: 8000px;
-
 }
-.ru{
+.ru {
     min-height: 800px;
 }
