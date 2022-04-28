@@ -1,5 +1,6 @@
 .vacancies-intro {
     margin-top: 0;
+
     &__pic {
         width: 100%;
     }
@@ -12,6 +13,8 @@
 .vacancies {
     &__title {
         margin-bottom: 60px;
+        font-weight: 400;
+        font-size: 30px;
     }
 
     &__cell {
@@ -23,22 +26,24 @@
                 background: none;
                 border: none;
             }
+
+            &-title {
+                font-weight: 400;
+                font-size: 20px;
+            }
         }
     }
 
     &__description {
         &-list {
-            font-weight: 300;
-            font-size: 14px;
             margin-left: 19px;
 
-            &::marker {
-                size: 10px;
-            }
-
             &-item {
+                font-weight: 300;
+                font-size: 14px;
+
                 &::marker {
-                    size: 1px;
+                    font-size: 12px;
                 }
             }
         }
@@ -69,12 +74,14 @@
 
     &__button {
         margin-top: 63px;
+
         &-link {
             font-weight: 400;
             font-size: 12px;
             background-color: #b17c50;
             padding: 13px 90px;
             color: white;
+
             &:hover {
                 background-color: #e0cfbf;
             }

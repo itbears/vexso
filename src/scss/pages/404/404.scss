@@ -26,7 +26,7 @@
             font-weight: 300;
             font-size: 20px;
             color: #ffffff;
-            margin-top: 28px;
+            text-align: center;
         }
         &-link {
             color: #ffffff;
@@ -35,6 +35,10 @@
             margin-top: 44px;
             background-color: #2d2825;
             padding: 14px 64px;
+            text-align: center;
+            &:hover{
+                background-color: #B17C50;
+            }
         }
     }
 }

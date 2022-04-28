@@ -2,6 +2,9 @@
     &__list {
         display: flex;
         list-style: none;
+        @media screen and (max-width: 360px) {
+            flex-direction: column;
+        }
 
         &-item {
             &:not(:first-child) {

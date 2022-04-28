@@ -1,4 +1,7 @@
 .thanks {
+
+    // max-width: 1160px;
+    // margin: 0 auto;
     &__back {
         color: #C4C4C4;
         font-weight: 300;
@@ -8,6 +11,10 @@
     &__navigation {
         display: flex;
         justify-content: space-between;
+
+        @media screen and (max-width: 600px) {
+            flex-direction: column;
+        }
     }
 
     &__order {
@@ -56,14 +63,37 @@
             }
         }
     }
-    &__wrapper-button{
+
+    &__wrapper-button {
         margin-top: 60px;
+        // max-width: 400px;
+        // max-height: 50px;
     }
+
     &__button {
         border: 1px solid #2D2825;
         padding: 14px 108px;
         color: #2D2825;
         font-weight: 400;
         font-size: 18px;
+        // display: flex;
+
+        // width: 100%;
+        // height: 100%;
+        // text-align: center;
+        @media screen and (max-width: 460px) {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            padding-left: 90px;
+            font-size: 14px;
+            
+        }
     }
+}
+
+.container {
+    max-width: 1160px;
+    margin: 0 auto;
 }
