@@ -24,6 +24,12 @@ h6 {
     font-family: "Museo Sans Cyrl 500", sans-serif;
 }
 
+input,
+textarea,
+select {
+    -webkit-appearance: none;
+}
+
 section {
     margin-top: 120px;
 }

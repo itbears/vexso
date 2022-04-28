@@ -118,6 +118,14 @@
         &:first-child {
             margin-right: 8px;
         }
+        a svg path {
+            transition: all 0.3s ease;
+        }
+        a:hover {
+            svg path {
+                stroke: #b17c50;
+            }
+        }
     }
 
     &__top {
@@ -166,6 +174,14 @@
 
     &__favorites {
         margin-right: 20px;
+        svg {
+            path {
+                transition: all 0.3s ease;
+            }
+        }
+        &:hover svg path {
+            stroke: #b17c50;
+        }
     }
     &.sticky {
         position: fixed;
@@ -195,6 +211,40 @@
                     }
                 }
             }
+        }
+    }
+    &.dark {
+        .header {
+            &__burger {
+                span {
+                    background-color: #2d2825;
+                }
+            }
+            &__logo,
+            &__cart {
+                svg {
+                    path {
+                        fill: #2d2825;
+                    }
+                }
+            }
+            &__favorites {
+                svg {
+                    path {
+                        stroke: #2d2825;
+                    }
+                }
+            }
+        }
+    }
+    &__cart {
+        svg {
+            path {
+                transition: all 0.3s ease;
+            }
+        }
+        &:hover svg path {
+            fill: #b17c50;
         }
     }
 }

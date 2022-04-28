@@ -138,7 +138,7 @@
 
     &__text {
         max-width: 260px;
-        font-weight: 300;
+        font-weight: 100;
         font-size: 14px;
         line-height: 17px;
         color: #9d9d9c;
@@ -173,7 +173,7 @@
     }
 
     &__info {
-        font-weight: 400;
+        font-weight: 100;
         font-size: 14px;
         line-height: 150%;
         color: #9d9d9c;
@@ -247,7 +247,7 @@
             max-width: 100%;
         }
         &__col {
-            margin-right: 20px;
+            margin-right: 30px;
             &:first-child {
                 width: 100%;
                 display: flex;
