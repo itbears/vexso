@@ -17,12 +17,12 @@ const introSlider = new Swiper(".js-intro-slider", {
     },
 });
 
-const newProducts = new Swiper(".js-new-products-slider", {
+const newProducts = new Swiper(".js-products-slider", {
     slidesPerView: 2,
     spaceBetween: 40,
     navigation: {
-        nextEl: '.js-new-products-slider .swiper-button-next',
-        prevEl: '.js-new-products-slider .swiper-button-prev',
+        nextEl: '.js-products-slider .swiper-button-next',
+        prevEl: '.js-products-slider .swiper-button-prev',
     },
     breakpoints: {
         320: {
