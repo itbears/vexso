@@ -12,8 +12,8 @@
         display: flex;
     }
     &__wrapper {
-        padding-left: 220px;
-        padding-right: 220px;
+        max-width: 1160px;
+        margin: 0 auto;
     }
     &__opt {
         &-subtitle {
