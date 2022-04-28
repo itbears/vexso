@@ -1,0 +1,94 @@
+.products {
+    max-width: 1160px;
+    margin-left: auto;
+    margin-right: auto;
+    &__title {
+        margin-bottom: 50px;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 36px;
+        color: #2d2825;
+    }
+
+    &__slider {
+        overflow: hidden;
+        margin-bottom: 30px;
+        position: relative;
+        .swiper-button-prev,
+        .swiper-rtl .swiper-button-next {
+            left: 0;
+        }
+        .swiper-button-next,
+        .swiper-rtl .swiper-button-prev {
+            right: 0;
+        }
+        .swiper-button-prev,
+        .swiper-button-next {
+            transition: all 0.3s ease;
+            &::after {
+                display: none;
+            }
+            svg {
+                width: 100%;
+                height: 100%;
+                rect {
+                    transition: all 0.3s ease;
+                }
+            }
+            &:hover {
+                svg {
+                    rect {
+                        fill: #b17c50;
+                    }
+                }
+            }
+        }
+        .swiper-button-next.swiper-button-disabled,
+        .swiper-button-prev.swiper-button-disabled {
+            opacity: 0;
+        }
+    }
+
+    &__link {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        color: #2d2825;
+        transition: color 0.3s ease;
+        svg {
+            path {
+                transition: all 0.3s ease;
+            }
+        }
+        &:hover {
+            color: #b17c50;
+            svg path {
+                fill: #b17c50;
+            }
+        }
+    }
+    .card {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .products {
+        &__title {
+            font-size: 20px;
+            line-height: 24px;
+            margin-bottom: 20px;
+        }
+        &__link {
+            font-size: 14px;
+            line-height: 17px;
+        }
+        &__slider {
+            .swiper-button-next,
+            .swiper-button-prev {
+                width: 18px;
+                height: 21px;
+            }
+        }
+    }
+}
