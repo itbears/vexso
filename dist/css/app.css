@@ -32,6 +32,12 @@ h6 {
   font-family: "Museo Sans Cyrl 500", sans-serif;
 }
 
+input,
+textarea,
+select {
+  -webkit-appearance: none;
+}
+
 section {
   margin-top: 120px;
 }
@@ -261,6 +267,7 @@ section {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   margin-right: 20px;
+  display: inline-block;
 }
 .one__product-to-cart:hover {
   background-color: #e0cfbf;
@@ -548,6 +555,13 @@ section {
 .header__menu-social-item:first-child {
   margin-right: 8px;
 }
+.header__menu-social-item a svg path {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.header__menu-social-item a:hover svg path {
+  stroke: #b17c50;
+}
 .header__top {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -593,6 +607,13 @@ section {
 .header__favorites {
   margin-right: 20px;
 }
+.header__favorites svg path {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.header__favorites:hover svg path {
+  stroke: #b17c50;
+}
 .header.sticky {
   position: fixed;
   top: 0;
@@ -612,6 +633,22 @@ section {
 }
 .header.sticky .header__favorites svg path {
   stroke: #2d2825;
+}
+.header.dark .header__burger span {
+  background-color: #2d2825;
+}
+.header.dark .header__logo svg path, .header.dark .header__cart svg path {
+  fill: #2d2825;
+}
+.header.dark .header__favorites svg path {
+  stroke: #2d2825;
+}
+.header__cart svg path {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.header__cart:hover svg path {
+  fill: #b17c50;
 }
 
 @media screen and (max-width: 1160px) {
@@ -635,7 +672,7 @@ section {
   overflow: hidden;
 }
 .footer__top {
-  background: url(../images/footer-back.cfa19a.jpg) no-repeat;
+  background: url(../images/footer-back.a7cd7a.jpg) no-repeat;
   background-size: cover;
   background-position: center;
 }
@@ -762,7 +799,7 @@ section {
 }
 .footer__text {
   max-width: 260px;
-  font-weight: 300;
+  font-weight: 100;
   font-size: 14px;
   line-height: 17px;
   color: #9d9d9c;
@@ -796,7 +833,7 @@ section {
   width: 100%;
 }
 .footer__info {
-  font-weight: 400;
+  font-weight: 100;
   font-size: 14px;
   line-height: 150%;
   color: #9d9d9c;
@@ -863,7 +900,7 @@ section {
     max-width: 100%;
   }
   .footer__col {
-    margin-right: 20px;
+    margin-right: 30px;
   }
   .footer__col:first-child {
     width: 100%;
@@ -1252,6 +1289,11 @@ section {
   margin-top: 70px;
   color: #2d2825;
   display: inline-block;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+.about__link:hover {
+  color: #b17c50;
 }
 
 .partners {
@@ -1361,6 +1403,15 @@ section {
   max-width: 980px;
   margin: auto;
   overflow: hidden;
+}
+.reviews__slider .swiper-button-next svg path,
+.reviews__slider .swiper-button-prev svg path {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.reviews__slider .swiper-button-next:hover svg path,
+.reviews__slider .swiper-button-prev:hover svg path {
+  stroke: #b17c50;
 }
 .reviews__slider .swiper-button-next::after,
 .reviews__slider .swiper-button-prev::after {
@@ -1662,6 +1713,11 @@ section {
   }
 }
 @media screen and (max-width: 550px) {
+  .intro .swiper-slide .intro__slider-box {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
   .about__box {
     padding: 70px 40px;
   }
@@ -2050,6 +2106,7 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-top: 0;
 }
 .about-intro__texts-box {
   max-width: 1160px;
@@ -2153,6 +2210,7 @@ section {
           flex-direction: column;
   overflow: hidden;
   max-height: 100%;
+  margin-top: 0;
 }
 .error__box {
   display: -webkit-box;
@@ -2173,24 +2231,27 @@ section {
 .error__box-title {
   font-weight: 400;
   font-size: 30px;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-bottom: 10px;
 }
 .error__box-text {
   font-weight: 300;
   font-size: 20px;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-top: 28px;
 }
 .error__box-link {
-  color: #FFFFFF;
+  color: #ffffff;
   font-weight: 400;
   font-size: 18px;
   margin-top: 44px;
-  background-color: #2D2825;
+  background-color: #2d2825;
   padding: 14px 64px;
 }
 
+.cooperation-intro {
+  margin-top: 0;
+}
 .cooperation-intro__pic {
   width: 100%;
 }
@@ -2240,7 +2301,7 @@ section {
   margin-left: 41px;
 }
 .cooperation__contacts-number-subtitle {
-  color: #B17C50;
+  color: #b17c50;
   font-weight: 300;
   font-size: 14px;
 }
@@ -2271,6 +2332,9 @@ section {
   min-height: 800px;
 }
 
+.vacancies-intro {
+  margin-top: 0;
+}
 .vacancies-intro__pic {
   width: 100%;
 }
@@ -2319,7 +2383,7 @@ section {
 .vacancies__subtitle {
   font-weight: 300;
   font-size: 12px;
-  color: #B17C50;
+  color: #b17c50;
   margin-bottom: 5px;
   margin-top: 30px;
 }
@@ -2329,12 +2393,12 @@ section {
 .vacancies__button-link {
   font-weight: 400;
   font-size: 12px;
-  background-color: #B17C50;
+  background-color: #b17c50;
   padding: 13px 90px;
   color: white;
 }
 .vacancies__button-link:hover {
-  background-color: #E0CFBF;
+  background-color: #e0cfbf;
 }
 
 .wrapper {
