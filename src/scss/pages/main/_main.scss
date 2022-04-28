@@ -284,6 +284,80 @@
     }
 }
 
+.reviews {
+    background-color: #2d2825;
+    &__inner {
+        max-width: 1160px;
+        margin: auto;
+        overflow: hidden;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        position: relative;
+    }
+
+    &__title {
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 36px;
+        color: #ffffff;
+        margin-bottom: 50px;
+    }
+
+    &__slider {
+        max-width: 980px;
+        margin: auto;
+        overflow: hidden;
+        .swiper-button-next,
+        .swiper-button-prev {
+            &::after {
+                display: none;
+            }
+        }
+    }
+
+    &__item {
+    }
+
+    &__item-pic {
+        margin-bottom: 5px;
+    }
+
+    &__item-img {
+        width: 100%;
+    }
+
+    &__item-stars {
+        margin-bottom: 10px;
+        svg {
+            margin-right: 5px;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+
+    &__item-text {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        color: #ffffff;
+    }
+
+    &__item-auth {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        color: #ffffff;
+        margin-top: 10px;
+        svg {
+            margin-right: 6px;
+        }
+    }
+}
+
 @media screen and (max-width: 1160px) {
     .intro,
     .plus {
@@ -374,6 +448,23 @@
     }
 }
 
+@media screen and (max-width: 770px) {
+    .reviews,
+    .intro {
+        &__slider {
+            .swiper-button-next,
+            .swiper-button-prev {
+                display: none;
+            }
+        }
+    }
+    // .intro {
+    //     &__slider {
+
+    //     }
+    // }
+}
+
 @media screen and (max-width: 700px) {
     .plus {
         &__pic {
@@ -447,6 +538,17 @@
         &__text {
             font-size: 14px;
             line-height: 17px;
+        }
+    }
+    .reviews {
+        &__inner {
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+        &__title {
+            font-size: 20px;
+            line-height: 24px;
+            margin-bottom: 20px;
         }
     }
 }
