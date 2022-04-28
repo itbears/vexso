@@ -6,10 +6,12 @@
     height: 660px;
     display: flex;
     flex-direction: column;
+
     &__texts-box {
         max-width: 1160px;
         margin: auto;
         margin-bottom: 50px;
+
         &-text {
             &:first-child {
                 color: #ffffff;
@@ -30,23 +32,28 @@
 .story {
     max-width: 1600px;
     margin: auto;
+
     &__box {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         align-items: center;
         margin-top: 120px;
         grid-gap: 40px;
+
         &-text {
             max-width: 545px;
             font-weight: 300;
             font-size: 18px;
             margin-bottom: 30px;
+
             &:last-child {
                 margin-bottom: 0;
             }
+
             &_quote {
                 position: relative;
                 display: flex;
+
                 &::before {
                     content: "\0022";
                     display: block;
@@ -55,6 +62,7 @@
                     margin-right: 5px;
                     font-weight: 500;
                 }
+
                 span {
                     position: absolute;
                     bottom: -15px;
@@ -65,6 +73,7 @@
                     color: #b17c50;
                     display: flex;
                     align-items: center;
+
                     &::before {
                         content: "";
                         display: block;
@@ -76,8 +85,16 @@
                 }
             }
         }
+
         &-img {
             width: 100%;
+        }
+
+        &-subtitle {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            margin-bottom: 50px;
         }
     }
 }
