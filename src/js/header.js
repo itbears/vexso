@@ -22,3 +22,18 @@ menuBack.addEventListener("mouseover", () => {
         }, 500)
     }
 })
+
+// Scroll Header
+const header = document.querySelector(".js-header")
+const page = document.querySelector(".page")
+const pagePadding = header.offsetHeight
+const scrollHeader = () => {
+    if (window.pageYOffset >= header.offsetHeight) {
+        // page.style.paddingTop = `${pagePadding}px`;
+        header.classList.add("sticky")
+    } else {
+        header.classList.remove("sticky")
+        // page.style.paddingTop = `0px`;
+    }
+}
+window.onscroll = function () { scrollHeader() };
