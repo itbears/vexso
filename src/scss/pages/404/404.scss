@@ -1,0 +1,41 @@
+.error {
+    background-image: url("../images/404.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-color: #b67977;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    max-height: 100%;
+
+    &__box {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        &-title {
+            font-weight: 400;
+            font-size: 30px;
+            color: #FFFFFF;
+            margin-bottom: 10px;
+            
+        }
+        &-text {
+            font-weight: 300;
+            font-size: 20px;
+            color: #FFFFFF;
+            margin-top: 28px;
+        }
+        &-link {
+            color: #FFFFFF;
+            font-weight: 400;
+            font-size: 18px;
+            margin-top: 44px;
+            background-color: #2D2825;
+            padding: 14px 64px;
+        }
+    }
+}
