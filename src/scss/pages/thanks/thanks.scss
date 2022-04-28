@@ -6,6 +6,10 @@
         color: #C4C4C4;
         font-weight: 300;
         font-size: 18px;
+
+        &:hover {
+            color: #B17C50;
+        }
     }
 
     &__navigation {
@@ -28,10 +32,17 @@
 
         &-container {
             display: flex;
+            @media screen and (max-width: 600px) {
+                flex-direction: column;
+            }
 
             &-content {
                 &:not(:first-child) {
                     margin-left: 70px;
+                    @media screen and (max-width: 600px) {
+                        margin-left: 0px;
+                        margin-top: 20px;
+                    }
                 }
 
                 &-list {
@@ -43,6 +54,12 @@
                     &-item {
                         &:not(:first-child) {
                             margin-top: 10px;
+        
+                        }
+                        &-characteristic {
+                            font-weight: 300;
+                            font-size: 18px;
+                            color: #2D2825;
                         }
                     }
                 }
@@ -76,6 +93,10 @@
         color: #2D2825;
         font-weight: 400;
         font-size: 18px;
+        &:hover{
+            background-color: #2D2825;
+            color: white;
+        }
         // display: flex;
 
         // width: 100%;
@@ -88,7 +109,7 @@
             text-align: center;
             padding-left: 90px;
             font-size: 14px;
-            
+
         }
     }
 }
