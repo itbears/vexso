@@ -1,5 +1,6 @@
 .cooperation-intro {
     margin-top: 0;
+
     &__pic {
         width: 100%;
     }
@@ -8,14 +9,35 @@
         width: 100%;
     }
 }
+
 .cooperation {
+    &__inner {
+        &:not(:first-child) {
+            @media screen and (max-width:1160px) {
+                margin-left: 10px;
+            }
+
+            @media screen and (max-width:540px) {
+                margin-top: 20px;
+                margin-left: 0px;
+            }
+        }
+    }
+
     &__container {
         display: flex;
+
+        @media screen and (max-width:540px) {
+            flex-direction: column;
+        }
+
     }
+
     &__wrapper {
-        padding-left: 220px;
-        padding-right: 220px;
+        max-width: 1160px;
+        margin: 0 auto;
     }
+
     &__opt {
         &-subtitle {
             margin: 25px 0px;
@@ -39,6 +61,12 @@
         top: 0;
         margin-left: 142px;
         margin-top: 80px;
+
+        @media screen and (max-width:1160px) {
+            margin-left: 0px;
+            margin-top: 0px;
+        }
+
         &-title {
             font-weight: 400;
             font-size: 25px;
@@ -47,15 +75,27 @@
         &-numbers {
             display: flex;
             margin-top: 25px;
+
+            @media screen and (max-width:1030px) {
+                flex-direction: column;
+            }
         }
+
         &-number {
             &:not(:first-child) {
                 margin-left: 41px;
+
+                @media screen and (max-width:1030px) {
+                    margin-left: 0px;
+                    margin-top: 10px;
+                }
             }
+
             &-subtitle {
                 color: #b17c50;
                 font-weight: 300;
                 font-size: 14px;
+                
             }
 
             &-link {
@@ -70,6 +110,7 @@
 
 .form {
     margin-top: 120px;
+
     &__subtitle {
         font-weight: 400;
         font-size: 25px;
@@ -80,9 +121,17 @@
         font-size: 18px;
     }
 }
+
 .qwer {
     margin-top: 8000px;
 }
+
 .ru {
     min-height: 800px;
+}
+
+@media screen and (max-width: 1160px) {
+    .cooperation-intro {
+        padding: 0px;
+    }
 }
