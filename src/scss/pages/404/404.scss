@@ -36,8 +36,9 @@
             background-color: #2d2825;
             padding: 14px 64px;
             text-align: center;
-            &:hover{
-                background-color: #B17C50;
+            transition: all 0.3s ease;
+            &:hover {
+                background-color: #b17c50;
             }
         }
     }

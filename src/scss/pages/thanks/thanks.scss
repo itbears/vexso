@@ -1,14 +1,11 @@
 .thanks {
-
-    // max-width: 1160px;
-    // margin: 0 auto;
     &__back {
-        color: #C4C4C4;
+        color: #c4c4c4;
         font-weight: 300;
         font-size: 18px;
-
+        transition: color 0.3s ease;
         &:hover {
-            color: #B17C50;
+            color: #b17c50;
         }
     }
 
@@ -25,7 +22,7 @@
         &-title {
             font-weight: 400;
             font-size: 30px;
-            color: #B17C50;
+            color: #b17c50;
             margin-bottom: 36px;
             margin-top: 40px;
         }
@@ -49,17 +46,16 @@
                     list-style: none;
                     font-weight: 300;
                     font-size: 18px;
-                    color: #9D9D9C;
+                    color: #9d9d9c;
 
                     &-item {
                         &:not(:first-child) {
                             margin-top: 10px;
-        
                         }
                         &-characteristic {
                             font-weight: 300;
                             font-size: 18px;
-                            color: #2D2825;
+                            color: #2d2825;
                         }
                     }
                 }
@@ -67,12 +63,12 @@
                 &-subtitle {
                     font-weight: 400;
                     font-size: 25px;
-                    color: #2D2825;
+                    color: #2d2825;
                     margin-bottom: 20px;
                 }
 
                 &-title {
-                    color: #B17C50;
+                    color: #b17c50;
                     font-weight: 400;
                     font-size: 18px;
                     margin-top: 10px;
@@ -83,33 +79,26 @@
 
     &__wrapper-button {
         margin-top: 60px;
-        // max-width: 400px;
-        // max-height: 50px;
     }
 
     &__button {
-        border: 1px solid #2D2825;
+        border: 1px solid #2d2825;
         padding: 14px 108px;
-        color: #2D2825;
+        color: #2d2825;
         font-weight: 400;
         font-size: 18px;
-        &:hover{
-            background-color: #2D2825;
+        transition: all 0.3s ease;
+        &:hover {
+            background-color: #2d2825;
             color: white;
         }
-        // display: flex;
-
-        // width: 100%;
-        // height: 100%;
-        // text-align: center;
         @media screen and (max-width: 460px) {
             display: flex;
             width: 100%;
             height: 100%;
-            text-align: center;
-            padding-left: 90px;
             font-size: 14px;
-
+            justify-content: center;
+            padding: 18px 50px;
         }
     }
 }
@@ -117,4 +106,10 @@
 .container {
     max-width: 1160px;
     margin: 0 auto;
+}
+
+@media screen and (max-width: 700px) {
+    .thanks {
+        margin-top: 100px;
+    }
 }

@@ -1,5 +1,6 @@
 import '../scss/app.scss';
-import './pages/main/index';
 import './header';
+import './pages/main/index';
+import "./pages/product-page/index";
 
 

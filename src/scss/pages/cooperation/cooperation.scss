@@ -13,11 +13,11 @@
 .cooperation {
     &__inner {
         &:not(:first-child) {
-            @media screen and (max-width:1160px) {
+            @media screen and (max-width: 1160px) {
                 margin-left: 10px;
             }
 
-            @media screen and (max-width:540px) {
+            @media screen and (max-width: 540px) {
                 margin-top: 20px;
                 margin-left: 0px;
             }
@@ -27,10 +27,9 @@
     &__container {
         display: flex;
 
-        @media screen and (max-width:540px) {
+        @media screen and (max-width: 540px) {
             flex-direction: column;
         }
-
     }
 
     &__wrapper {
@@ -58,11 +57,10 @@
 
     &__contacts {
         position: sticky;
-        top: 0;
+        top: 100px;
         margin-left: 142px;
         margin-top: 80px;
-
-        @media screen and (max-width:1160px) {
+        @media screen and (max-width: 1160px) {
             margin-left: 0px;
             margin-top: 0px;
         }
@@ -76,7 +74,7 @@
             display: flex;
             margin-top: 25px;
 
-            @media screen and (max-width:1030px) {
+            @media screen and (max-width: 1030px) {
                 flex-direction: column;
             }
         }
@@ -85,7 +83,7 @@
             &:not(:first-child) {
                 margin-left: 41px;
 
-                @media screen and (max-width:1030px) {
+                @media screen and (max-width: 1030px) {
                     margin-left: 0px;
                     margin-top: 10px;
                 }
@@ -95,7 +93,6 @@
                 color: #b17c50;
                 font-weight: 300;
                 font-size: 14px;
-                
             }
 
             &-link {

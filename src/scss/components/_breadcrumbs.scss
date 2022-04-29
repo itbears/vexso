@@ -1,0 +1,38 @@
+.breads {
+    &__list {
+        display: flex;
+        list-style: none;
+        @media screen and (max-width: 360px) {
+            flex-direction: column;
+        }
+
+        &-item {
+            &:not(:first-child) {
+                &::before {
+                    content: url("../images/bread.svg");
+                    margin-left: 10px;
+                    margin-right: 8px;
+                    color: #c4c4c4;
+                }
+            }
+
+            &-link {
+                color: #c4c4c4;
+                font-weight: 300;
+                font-size: 14px;
+                display: inline-block;
+                &::after {
+                    transition: all 0.3s ease;
+                    content: "";
+                    width: 0;
+                    height: 1px;
+                    background-color: #c4c4c4;
+                    display: block;
+                }
+                &:hover::after {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
