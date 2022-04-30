@@ -14,7 +14,7 @@
     &__thumbs {
         width: 60px;
         max-height: 430px;
-        margin: 0 !important;
+        margin: 0;
         .swiper-slide {
             cursor: pointer;
         }
@@ -195,5 +195,53 @@
     }
     &__checkbox:checked ~ &__btn svg {
         transform: rotate(45deg);
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .product {
+        &__top {
+            flex-direction: column;
+            margin-top: 20px;
+        }
+        &__body {
+            margin-top: 50px;
+        }
+        &__gallery {
+            flex-direction: column-reverse;
+        }
+        &__info {
+            margin-left: 0;
+            margin-top: 30px;
+        }
+        &__thumbs {
+            width: 90%;
+            margin: 0;
+            margin-top: 30px;
+            margin-left: auto;
+            margin-right: auto;
+            height: auto;
+            .swiper-slide {
+                height: 60px;
+                max-width: 60px;
+                width: 60px !important;
+                min-width: 60px;
+            }
+            &-img {
+                object-fit: cover;
+            }
+        }
+        &__slider {
+            max-width: 90%;
+            margin: auto;
+        }
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .product {
+        &__slider {
+            height: 85vw;
+        }
     }
 }

@@ -2,13 +2,16 @@
     &__list {
         display: flex;
         list-style: none;
+        flex-wrap: wrap;
         @media screen and (max-width: 360px) {
             flex-direction: column;
         }
 
         &-item {
-            &:not(:first-child) {
-                &::before {
+            display: flex;
+            align-items: center;
+            &:not(:last-child) {
+                &::after {
                     content: url("../images/bread.svg");
                     margin-left: 10px;
                     margin-right: 8px;
