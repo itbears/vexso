@@ -1,0 +1,151 @@
+.cart-wrapper {
+    max-width: 1160px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cart {
+    &__title {
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 36px;
+        text-transform: uppercase;
+        color: #2D2825;
+        margin-top: 30px;
+    }
+
+    &__body {
+        margin-top: 55px;
+
+        .cart {
+            &_item {
+                display: flex;
+                border-bottom: 1px solid #2D2825;
+                padding-bottom: 30px;
+                margin-bottom: 30px;
+            }
+        }
+
+        .product-remove {
+            margin-right: 20px;
+
+            a {
+                path {
+                    transition: all .3s ease;
+                }
+
+                &:hover {
+                    path {
+                        stroke: #BB1A1A;
+                    }
+                }
+            }
+        }
+
+        .product-thumbnail {
+            width: 100%;
+            max-width: 130px;
+            height: auto;
+            max-height: 130px;
+            margin-right: 20px;
+
+            a {
+                display: block;
+                height: 100%;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                    object-position: center;
+                }
+            }
+        }
+
+        .product-name {
+            max-width: 270px;
+
+            a {
+                font-family: "Museo Sans Cyrl 500", sans-serif;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 24px;
+                color: #2D2825;
+            }
+        }
+
+        .product-price,
+        .product-subtotal {
+            margin-left: auto;
+
+            .amount {
+                font-weight: 400;
+                font-size: 25px;
+                line-height: 30px;
+                color: #2D2825;
+            }
+        }
+
+        .product-subtotal {
+            margin-left: 0;
+        }
+
+        .product-quantity {
+            margin-left: auto;
+            margin-right: auto;
+
+            .screen-reader-text {
+                width: 0;
+                height: 0;
+                visibility: hidden;
+                display: block;
+            }
+        }
+
+        .product__controls {
+            margin-top: 55px;
+            display: flex;
+            align-items: center;
+
+            &-inner {
+                display: flex;
+                align-items: center;
+                height: 50px;
+                border: 1px solid #2D2825;
+
+                .product__num-btn {
+                    border: none;
+                    background: none;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 40px;
+                    height: 100%;
+                    cursor: pointer;
+
+                    svg {
+                        pointer-events: none;
+                    }
+                }
+
+                .input-text.qty {
+                    font-weight: 300;
+                    font-size: 20px;
+                    line-height: 24px;
+                    color: #2D2825;
+                    text-align: center;
+                    appearance: none;
+                    max-width: 40px;
+                    border: none;
+                    -moz-appearance: textfield;
+
+                    &::-webkit-outer-spin-button,
+                    &::-webkit-inner-spin-button {
+                        -webkit-appearance: none;
+                        appearance: none;
+                    }
+                }
+            }
+        }
+    }
+}

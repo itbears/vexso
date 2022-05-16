@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <div class="page">
+    <div class="page woocommerce-cart">
         <header class="header js-header absolute">
             <div class="header__top">
                 <button class="header__burger js-menu-burger">
@@ -175,1118 +175,464 @@
                 </ul>
             </div>
         </header>
-        <main class="main">
-            <section class="intro">
-                <h1 class="intro__title">
-                    Vexso 18+
+        <div class="woocommerce">
+            <section class="cart-wrapper">
+                <div class="breads">
+                    <ul class="breads__list">
+                        <li class="breads__list-item"><a class="breads__list-item-link"
+                                href="https://vexso.ru">Главная</a></li>
+                        <li class="breads__list-item"><span class="breads__list-item-link">Корзина</span></li>
+                    </ul>
+                </div>
+                <h1 class="cart__title">
+                    Корзина
                 </h1>
-                <div class="intro__slider js-intro-slider">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="intro__slider-pic">
-                                <img src="./images/back.jpg" alt="Фото">
+                <form class="woocommerce-cart-form cart__form" action="https://vexso.ru/cart/" method="post">
+
+                    <div class="shop_table shop_table_responsive cart woocommerce-cart-form__contents" cellspacing="0">
+                        <div class="cart__body">
+
+                            <div class="woocommerce-cart-form__cart-item cart_item">
+
+                                <div class="product-remove">
+                                    <a href="https://vexso.ru/cart/?remove_item=378a063b8fdb1db941e34f4bde584c7d&amp;_wpnonce=733e170a4a"
+                                        class="remove" aria-label="Удалить эту позицию" data-product_id="1955"
+                                        data-product_sku="
+                               740071 (42-44)                        "><svg width="20" height="20" viewBox="0 0 20 20"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M4.94914 14.8487L14.8486 4.94922" stroke="#2D2825"
+                                                stroke-width="1.08333" stroke-miterlimit="10"></path>
+                                            <path d="M14.8497 14.8487L4.9502 4.94922" stroke="#2D2825"
+                                                stroke-width="1.08333" stroke-miterlimit="10"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+
+                                <div class="product-thumbnail">
+                                    <a
+                                        href="https://vexso.ru/product/kombinacija-erolanta-lizaveta-s-breteljami-krest-nakrest-chernyj-42-44/"><img
+                                            src="https://vexso.ru/wp-content/uploads/2022/05/800x1200-769db1fc0227cc6ca44b698a02d7292c-150x150.jpg"
+                                            class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt=""
+                                            loading="lazy"
+                                            srcset="https://vexso.ru/wp-content/uploads/2022/05/800x1200-769db1fc0227cc6ca44b698a02d7292c-150x150.jpg 150w, https://vexso.ru/wp-content/uploads/2022/05/800x1200-769db1fc0227cc6ca44b698a02d7292c-100x100.jpg 100w"
+                                            sizes="(max-width: 150px) 100vw, 150px" width="150" height="150"></a>
+                                </div>
+
+                                <div class="product-name" data-title="Товар">
+                                    <a
+                                        href="https://vexso.ru/product/kombinacija-erolanta-lizaveta-s-breteljami-krest-nakrest-chernyj-42-44/">Комбинация
+                                        Erolanta Lizaveta с бретелями крест-накрест, черный (42-44)</a>
+                                </div>
+
+                                <div class="product-price" data-title="Цена">
+                                    <span class="woocommerce-Price-amount amount"><bdi>1084,50&nbsp;<span
+                                                class="woocommerce-Price-currencySymbol">₽</span></bdi></span>
+                                </div>
+
+                                <div class="product-quantity" data-title="Количество">
+                                    <div class="quantity">
+                                        <label class="screen-reader-text" for="quantity_62815cafb0808">Количество товара
+                                            Комбинация Erolanta Lizaveta с бретелями крест-накрест, черный
+                                            (42-44)</label>
+                                        <input type="number" id="quantity_62815cafb0808" class="input-text qty text"
+                                            step="1" min="0" max="" name="cart[378a063b8fdb1db941e34f4bde584c7d][qty]"
+                                            value="1" title="Кол-во" size="4" placeholder="" inputmode="numeric"
+                                            autocomplete="off">
+                                    </div>
+                                </div>
+
+                                <div class="product-subtotal" data-title="Подытог">
+                                    <span class="woocommerce-Price-amount amount"><bdi>1084,50&nbsp;<span
+                                                class="woocommerce-Price-currencySymbol">₽</span></bdi></span>
+                                </div>
                             </div>
-                            <div class="intro__slider-box">
-                                <h2>
-                                    испытайте Незабываемое <br> удовольствие
-                                </h2>
-                                <p>
-                                    С лубрикантами Vexso
-                                </p>
-                                <a href="#">
-                                    К покупкам
-                                </a>
+
+
+                            <div>
+                                <div class="actions">
+
+                                    <div class="coupon">
+                                        <label for="coupon_code">Купон:</label> <input type="text" name="coupon_code"
+                                            class="input-text" id="coupon_code" value="" placeholder="Код купона">
+                                        <button type="submit" class="button" name="apply_coupon"
+                                            value="Применить купон">Применить купон</button>
+                                    </div>
+
+                                    <button type="submit" class="button" name="update_cart" value="Обновить корзину"
+                                        disabled="" aria-disabled="true">Обновить корзину</button>
+
+
+                                    <input type="hidden" id="woocommerce-cart-nonce" name="woocommerce-cart-nonce"
+                                        value="733e170a4a"><input type="hidden" name="_wp_http_referer" value="/cart/">
+                                </div>
                             </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="intro__slider-pic">
-                                <img src="./images/back2.jpg" alt="Фото">
-                            </div>
-                            <div class="intro__slider-box">
-                                <h2>
-                                    испытайте Незабываемое <br> удовольствие 2
-                                </h2>
-                                <p>
-                                    С лубрикантами Vexso
-                                </p>
-                                <a href="#">
-                                    К покупкам
-                                </a>
-                            </div>
+
                         </div>
                     </div>
-                    <div class="swiper-pagination"></div>
-                    <div class="swiper-buttons">
-                        <div class="swiper-buttons-inner">
-                            <div class="swiper-button-prev">
-                                <svg width="8" height="22" viewBox="0 0 8 22" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M7 1L1 11L7 21" stroke="white" />
-                                </svg>
-                            </div>
-                            <div class="swiper-button-next">
-                                <svg width="8" height="22" viewBox="0 0 8 22" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1 1L7 11L0.999999 21" stroke="white" />
-                                </svg>
-                            </div>
+                </form>
+
+
+                <div class="cart-collaterals">
+                    <div class="cart_totals ">
+
+
+                        <h2>Сумма заказов</h2>
+
+                        <table class="shop_table shop_table_responsive" cellspacing="0">
+
+                            <tbody>
+                                <tr class="cart-subtotal">
+                                    <th>Подытог</th>
+                                    <td data-title="Подытог"><span
+                                            class="woocommerce-Price-amount amount"><bdi>1084,50&nbsp;<span
+                                                    class="woocommerce-Price-currencySymbol">₽</span></bdi></span></td>
+                                </tr>
+
+
+
+
+                                <tr class="woocommerce-shipping-totals shipping">
+                                    <th>Доставка</th>
+                                    <td data-title="Доставка">
+                                        <ul id="shipping_method" class="woocommerce-shipping-methods">
+                                            <li>
+                                                <input type="hidden" name="shipping_method[0]" data-index="0"
+                                                    id="shipping_method_0_free_shipping-1" value="free_shipping:1"
+                                                    class="shipping_method"><label
+                                                    for="shipping_method_0_free_shipping-1">Бесплатная доставка</label>
+                                            </li>
+                                        </ul>
+                                        <p class="woocommerce-shipping-destination">
+                                            Варианты доставки будут обновлены при оформлении заказа. </p>
+
+
+
+                                        <form class="woocommerce-shipping-calculator" action="https://vexso.ru/cart/"
+                                            method="post">
+
+                                            <a href="#" class="shipping-calculator-button">Рассчитать стоимость
+                                                доставки</a>
+                                            <section class="shipping-calculator-form" style="display:none;">
+
+                                                <p class="form-row form-row-wide" id="calc_shipping_country_field">
+                                                    <select name="calc_shipping_country" id="calc_shipping_country"
+                                                        class="country_to_state country_select"
+                                                        rel="calc_shipping_state">
+                                                        <option value="default">Выберите страну/регион…</option>
+                                                        <option value="SZ">Eswatini</option>
+                                                        <option value="AU">Австралия</option>
+                                                        <option value="AT">Австрия</option>
+                                                        <option value="AZ">Азербайджан</option>
+                                                        <option value="AX">Аландские острова</option>
+                                                        <option value="AL">Албания</option>
+                                                        <option value="DZ">Алжир</option>
+                                                        <option value="AS">Американское Самоа</option>
+                                                        <option value="AI">Ангилья</option>
+                                                        <option value="AO">Ангола</option>
+                                                        <option value="AD">Андорра</option>
+                                                        <option value="AQ">Антарктика</option>
+                                                        <option value="AG">Антигуа и Барбуда</option>
+                                                        <option value="AR">Аргентина</option>
+                                                        <option value="AM">Армения</option>
+                                                        <option value="AW">Аруба</option>
+                                                        <option value="AF">Афганистан</option>
+                                                        <option value="BS">Багамы</option>
+                                                        <option value="BD">Бангладеш</option>
+                                                        <option value="BB">Барбадос</option>
+                                                        <option value="BH">Бахрейн</option>
+                                                        <option value="BY">Беларусь</option>
+                                                        <option value="BZ">Белиз</option>
+                                                        <option value="BE">Бельгия</option>
+                                                        <option value="BJ">Бенин</option>
+                                                        <option value="BM">Бермуды</option>
+                                                        <option value="BG">Болгария</option>
+                                                        <option value="BO">Боливия</option>
+                                                        <option value="BQ">Бонайре, Синт-Эстатиус и Саба</option>
+                                                        <option value="BA">Босния и Герцеговина</option>
+                                                        <option value="BW">Ботсвана</option>
+                                                        <option value="BR">Бразилия</option>
+                                                        <option value="IO">Британская Территория в Индийском Океане
+                                                        </option>
+                                                        <option value="VG">Британские Виргинские острова</option>
+                                                        <option value="BN">Бруней</option>
+                                                        <option value="BF">Буркина-Фасо</option>
+                                                        <option value="BI">Бурунди</option>
+                                                        <option value="BT">Бутан</option>
+                                                        <option value="VU">Вануату</option>
+                                                        <option value="VA">Ватикан</option>
+                                                        <option value="GB">Великобритания</option>
+                                                        <option value="HU">Венгрия</option>
+                                                        <option value="VE">Венесуэла</option>
+                                                        <option value="VI">Виргинские острова (США)</option>
+                                                        <option value="UM">Внешние малые острова США</option>
+                                                        <option value="TL">Восточный Тимор</option>
+                                                        <option value="VN">Вьетнам</option>
+                                                        <option value="GA">Габон</option>
+                                                        <option value="HT">Гаити</option>
+                                                        <option value="GY">Гайана</option>
+                                                        <option value="GM">Гамбия</option>
+                                                        <option value="GH">Гана</option>
+                                                        <option value="GP">Гваделупа</option>
+                                                        <option value="GT">Гватемала</option>
+                                                        <option value="GN">Гвинея</option>
+                                                        <option value="GW">Гвинея-Бисау</option>
+                                                        <option value="DE">Германия</option>
+                                                        <option value="GG">Гернси</option>
+                                                        <option value="GI">Гибралтар</option>
+                                                        <option value="HN">Гондурас</option>
+                                                        <option value="HK">Гонконг</option>
+                                                        <option value="GD">Гренада</option>
+                                                        <option value="GL">Гренландия</option>
+                                                        <option value="GR">Греция</option>
+                                                        <option value="GE">Грузия</option>
+                                                        <option value="GU">Гуам</option>
+                                                        <option value="DK">Дания</option>
+                                                        <option value="JE">Джерси</option>
+                                                        <option value="DJ">Джибути</option>
+                                                        <option value="DM">Доминика</option>
+                                                        <option value="DO">Доминиканская Республика</option>
+                                                        <option value="EG">Египет</option>
+                                                        <option value="ZM">Замбия</option>
+                                                        <option value="EH">Западная Сахара</option>
+                                                        <option value="ZW">Зимбабве</option>
+                                                        <option value="IL">Израиль</option>
+                                                        <option value="IN">Индия</option>
+                                                        <option value="ID">Индонезия</option>
+                                                        <option value="JO">Иордания</option>
+                                                        <option value="IQ">Ирак</option>
+                                                        <option value="IR">Иран</option>
+                                                        <option value="IE">Ирландия</option>
+                                                        <option value="IS">Исландия</option>
+                                                        <option value="ES">Испания</option>
+                                                        <option value="IT">Италия</option>
+                                                        <option value="YE">Йемен</option>
+                                                        <option value="CV">Кабо-Верде</option>
+                                                        <option value="KZ">Казахстан</option>
+                                                        <option value="KY">Кайманские острова</option>
+                                                        <option value="KH">Камбоджа</option>
+                                                        <option value="CM">Камерун</option>
+                                                        <option value="CA">Канада</option>
+                                                        <option value="QA">Катар</option>
+                                                        <option value="KE">Кения</option>
+                                                        <option value="CY">Кипр</option>
+                                                        <option value="KI">Кирибати</option>
+                                                        <option value="CN">Китай</option>
+                                                        <option value="CC">Кокосовые (Килинг) острова</option>
+                                                        <option value="CO">Колумбия</option>
+                                                        <option value="KM">Коморы</option>
+                                                        <option value="CG">Конго (Браззавиль)</option>
+                                                        <option value="CD">Конго (Киншаса)</option>
+                                                        <option value="CR">Коста-Рика</option>
+                                                        <option value="CI">Кот-д'Ивуар</option>
+                                                        <option value="CU">Куба</option>
+                                                        <option value="KW">Кувейт</option>
+                                                        <option value="KG">Кыргызстан</option>
+                                                        <option value="CW">Кюрасао</option>
+                                                        <option value="LA">Лаос</option>
+                                                        <option value="LV">Латвия</option>
+                                                        <option value="LS">Лесото</option>
+                                                        <option value="LR">Либерия</option>
+                                                        <option value="LB">Ливан</option>
+                                                        <option value="LY">Ливия</option>
+                                                        <option value="LT">Литва</option>
+                                                        <option value="LI">Лихтенштейн</option>
+                                                        <option value="LU">Люксембург</option>
+                                                        <option value="MU">Маврикий</option>
+                                                        <option value="MR">Мавритания</option>
+                                                        <option value="MG">Мадагаскар</option>
+                                                        <option value="YT">Майотта</option>
+                                                        <option value="MO">Макао</option>
+                                                        <option value="MW">Малави</option>
+                                                        <option value="MY">Малайзия</option>
+                                                        <option value="ML">Мали</option>
+                                                        <option value="MV">Мальдивы</option>
+                                                        <option value="MT">Мальта</option>
+                                                        <option value="MA">Марокко</option>
+                                                        <option value="MQ">Мартиника</option>
+                                                        <option value="MH">Маршалловы острова</option>
+                                                        <option value="MX">Мексика</option>
+                                                        <option value="FM">Микронезия</option>
+                                                        <option value="MZ">Мозамбик</option>
+                                                        <option value="MD">Молдова</option>
+                                                        <option value="MC">Монако</option>
+                                                        <option value="MN">Монголия</option>
+                                                        <option value="MS">Монсеррат</option>
+                                                        <option value="MM">Мьянма</option>
+                                                        <option value="NA">Намибия</option>
+                                                        <option value="NR">Науру</option>
+                                                        <option value="NP">Непал</option>
+                                                        <option value="NE">Нигер</option>
+                                                        <option value="NG">Нигерия</option>
+                                                        <option value="NL">Нидерланды</option>
+                                                        <option value="NI">Никарагуа</option>
+                                                        <option value="NU">Ниуэ</option>
+                                                        <option value="NZ">Новая Зеландия</option>
+                                                        <option value="NC">Новая Каледония</option>
+                                                        <option value="NO">Норвегия</option>
+                                                        <option value="AE">Объединённые Арабские Эмираты</option>
+                                                        <option value="OM">Оман</option>
+                                                        <option value="BV">Остров Буве</option>
+                                                        <option value="IM">Остров Мэн</option>
+                                                        <option value="NF">Остров Норфолк</option>
+                                                        <option value="CX">Остров Рождества</option>
+                                                        <option value="SH">Остров Святой Елены</option>
+                                                        <option value="HM">Остров Херд и острова Макдональд</option>
+                                                        <option value="CK">Острова Кука</option>
+                                                        <option value="PK">Пакистан</option>
+                                                        <option value="PW">Палау</option>
+                                                        <option value="PS">Палестинские территории</option>
+                                                        <option value="PA">Панама</option>
+                                                        <option value="PG">Папуа-Новая Гвинея</option>
+                                                        <option value="PY">Парагвай</option>
+                                                        <option value="PE">Перу</option>
+                                                        <option value="PN">Питкэрн</option>
+                                                        <option value="PL">Польша</option>
+                                                        <option value="PT">Португалия</option>
+                                                        <option value="PR">Пуэрто-Рико</option>
+                                                        <option value="RE">Реюньон</option>
+                                                        <option value="RU" selected="selected">Россия</option>
+                                                        <option value="RW">Руанда</option>
+                                                        <option value="RO">Румыния</option>
+                                                        <option value="SV">Сальвадор</option>
+                                                        <option value="WS">Самоа</option>
+                                                        <option value="SM">Сан-Марино</option>
+                                                        <option value="ST">Сан-Томе и Принсипи</option>
+                                                        <option value="SA">Саудовская Аравия</option>
+                                                        <option value="KP">Северная Корея</option>
+                                                        <option value="MK">Северная Македония</option>
+                                                        <option value="MP">Северные Марианские острова</option>
+                                                        <option value="SC">Сейшельские Острова</option>
+                                                        <option value="BL">Сен-Бартелеми</option>
+                                                        <option value="SX">Сен-Мартен (Нидерл.)</option>
+                                                        <option value="MF">Сен-Мартен (Фр.)</option>
+                                                        <option value="PM">Сен-Пьер и Микелон</option>
+                                                        <option value="SN">Сенегал</option>
+                                                        <option value="VC">Сент-Винсент и Гренадины</option>
+                                                        <option value="KN">Сент-Китс и Невис</option>
+                                                        <option value="LC">Сент-Люсия</option>
+                                                        <option value="RS">Сербия</option>
+                                                        <option value="SG">Сингапур</option>
+                                                        <option value="SY">Сирия</option>
+                                                        <option value="SK">Словакия</option>
+                                                        <option value="SI">Словения</option>
+                                                        <option value="SB">Соломоновы Острова</option>
+                                                        <option value="SO">Сомали</option>
+                                                        <option value="SD">Судан</option>
+                                                        <option value="SR">Суринам</option>
+                                                        <option value="US">США</option>
+                                                        <option value="SL">Сьерра-Леоне</option>
+                                                        <option value="TJ">Таджикистан</option>
+                                                        <option value="TW">Тайвань</option>
+                                                        <option value="TH">Тайланд</option>
+                                                        <option value="TZ">Танзания</option>
+                                                        <option value="TC">Теркс и Кайкос</option>
+                                                        <option value="TG">Того</option>
+                                                        <option value="TK">Токелау</option>
+                                                        <option value="TO">Тонга</option>
+                                                        <option value="TT">Тринидад и Тобаго</option>
+                                                        <option value="TV">Тувалу</option>
+                                                        <option value="TN">Тунис</option>
+                                                        <option value="TM">Туркменистан</option>
+                                                        <option value="TR">Турция</option>
+                                                        <option value="UG">Уганда</option>
+                                                        <option value="UZ">Узбекистан</option>
+                                                        <option value="UA">Украина</option>
+                                                        <option value="WF">Уоллис и Футуна</option>
+                                                        <option value="UY">Уругвай</option>
+                                                        <option value="FO">Фарерские острова</option>
+                                                        <option value="FJ">Фиджи</option>
+                                                        <option value="PH">Филиппины</option>
+                                                        <option value="FI">Финляндия</option>
+                                                        <option value="FK">Фолклендские острова</option>
+                                                        <option value="FR">Франция</option>
+                                                        <option value="GF">Французская Гвиана</option>
+                                                        <option value="PF">Французская Полинезия</option>
+                                                        <option value="TF">Французские южные территории</option>
+                                                        <option value="HR">Хорватия</option>
+                                                        <option value="CF">Центральная Африканская Республика</option>
+                                                        <option value="TD">Чад</option>
+                                                        <option value="ME">Черногория</option>
+                                                        <option value="CZ">Чешская Республика</option>
+                                                        <option value="CL">Чили</option>
+                                                        <option value="CH">Швейцария</option>
+                                                        <option value="SE">Швеция</option>
+                                                        <option value="SJ">Шпицберген и Ян-Майен</option>
+                                                        <option value="LK">Шри-Ланка</option>
+                                                        <option value="EC">Эквадор</option>
+                                                        <option value="GQ">Экваториальная Гвинея</option>
+                                                        <option value="ER">Эритрея</option>
+                                                        <option value="EE">Эстония</option>
+                                                        <option value="ET">Эфиопия</option>
+                                                        <option value="ZA">Южная Африка</option>
+                                                        <option value="GS">Южная Георгия/Сандвичевы острова</option>
+                                                        <option value="KR">Южная Корея</option>
+                                                        <option value="SS">Южный Судан</option>
+                                                        <option value="JM">Ямайка</option>
+                                                        <option value="JP">Япония</option>
+                                                    </select>
+                                                </p>
+
+                                                <p class="form-row validate-required form-row-wide address-field"
+                                                    id="calc_shipping_state_field">
+                                                    <input type="text" class="input-text" value=""
+                                                        placeholder="Область / район" name="calc_shipping_state"
+                                                        id="calc_shipping_state" data-placeholder="Область / район">
+                                                </p>
+
+                                                <p class="form-row validate-required form-row-wide address-field"
+                                                    id="calc_shipping_city_field">
+                                                    <input type="text" class="input-text" value=""
+                                                        placeholder="Населённый пункт" name="calc_shipping_city"
+                                                        id="calc_shipping_city" data-placeholder="Населённый пункт">
+                                                </p>
+
+                                                <p class="form-row validate-required form-row-wide address-field"
+                                                    id="calc_shipping_postcode_field">
+                                                    <input type="text" class="input-text" value=""
+                                                        placeholder="Почтовый индекс" name="calc_shipping_postcode"
+                                                        id="calc_shipping_postcode" data-placeholder="Почтовый индекс">
+                                                </p>
+
+                                                <p><button type="submit" name="calc_shipping" value="1"
+                                                        class="button">Обновить</button></p>
+                                                <input type="hidden" id="woocommerce-shipping-calculator-nonce"
+                                                    name="woocommerce-shipping-calculator-nonce"
+                                                    value="4cbc914055"><input type="hidden" name="_wp_http_referer"
+                                                    value="/cart/">
+                                            </section>
+                                        </form>
+
+                                    </td>
+                                </tr>
+
+
+
+
+
+
+                                <tr class="order-total">
+                                    <th>Итого</th>
+                                    <td data-title="Итого"><strong><span
+                                                class="woocommerce-Price-amount amount"><bdi>1084,50&nbsp;<span
+                                                        class="woocommerce-Price-currencySymbol">₽</span></bdi></span></strong>
+                                    </td>
+                                </tr>
+
+
+                            </tbody>
+                        </table>
+
+                        <div class="wc-proceed-to-checkout">
+
+                            <a href="https://vexso.ru/checkout/" class="checkout-button button alt wc-forward">
+                                Оформить заказ</a>
                         </div>
+
+
                     </div>
                 </div>
             </section>
-            <section class="products">
-                <h2 class="products__title">
-                    Новинки
-                </h2>
-                <div class="products__slider js-products-slider">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="card">
-                                <div class="card__top">
-                                    <button class="card__favorite">
-                                        <svg width="20" height="18" viewBox="0 0 20 18" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M9.60386 2.47964L10 2.99403L10.3961 2.47964C11.3449 1.24768 12.8142 0.5 14.4167 0.5C17.2171 0.5 19.5 2.78728 19.5 5.60289C19.5 7.00692 18.9407 8.313 17.9444 9.27499L17.9443 9.2749L17.9365 9.28271L10.2127 17.0756L10.2126 17.0758L10 17.2901L9.78738 17.0757L9.78725 17.0756L1.9156 9.13505C1.00139 8.17772 0.5 6.92425 0.5 5.60289C0.5 2.78728 2.78292 0.5 5.58333 0.5C7.18577 0.5 8.6551 1.24768 9.60386 2.47964Z"
-                                                stroke="#2D2825" />
-                                        </svg>
-                                    </button>
-                                    <a href="#" class="card__pic">
-                                        <img src="./images/card-pic.jpg" alt="Фото" class="card__pic-img">
-                                    </a>
-                                    <a href="#cart" class="card__to-cart">
-                                        В корзину
-                                    </a>
-                                </div>
-                                <a href="#" class="card__name">
-                                    Лубрикант «Классический»
-                                </a>
-                                <p class="card__cost">
-                                    <span>862</span> ₽
-                                </p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="card">
-                                <div class="card__top">
-                                    <button class="card__favorite">
-                                        <svg width="20" height="18" viewBox="0 0 20 18" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M9.60386 2.47964L10 2.99403L10.3961 2.47964C11.3449 1.24768 12.8142 0.5 14.4167 0.5C17.2171 0.5 19.5 2.78728 19.5 5.60289C19.5 7.00692 18.9407 8.313 17.9444 9.27499L17.9443 9.2749L17.9365 9.28271L10.2127 17.0756L10.2126 17.0758L10 17.2901L9.78738 17.0757L9.78725 17.0756L1.9156 9.13505C1.00139 8.17772 0.5 6.92425 0.5 5.60289C0.5 2.78728 2.78292 0.5 5.58333 0.5C7.18577 0.5 8.6551 1.24768 9.60386 2.47964Z"
-                                                stroke="#2D2825" />
-                                        </svg>
-                                    </button>
-                                    <a href="#" class="card__pic">
-                                        <img src="./images/card-pic.jpg" alt="Фото" class="card__pic-img">
-                                    </a>
-                                    <a href="#" class="card__to-cart">
-                                        В корзину
-                                    </a>
-                                </div>
-                                <a href="#" class="card__name">
-                                    Лубрикант «Классический»
-                                </a>
-                                <p class="card__cost">
-                                    <span>862</span> ₽
-                                </p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="card">
-                                <div class="card__top">
-                                    <button class="card__favorite">
-                                        <svg width="20" height="18" viewBox="0 0 20 18" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M9.60386 2.47964L10 2.99403L10.3961 2.47964C11.3449 1.24768 12.8142 0.5 14.4167 0.5C17.2171 0.5 19.5 2.78728 19.5 5.60289C19.5 7.00692 18.9407 8.313 17.9444 9.27499L17.9443 9.2749L17.9365 9.28271L10.2127 17.0756L10.2126 17.0758L10 17.2901L9.78738 17.0757L9.78725 17.0756L1.9156 9.13505C1.00139 8.17772 0.5 6.92425 0.5 5.60289C0.5 2.78728 2.78292 0.5 5.58333 0.5C7.18577 0.5 8.6551 1.24768 9.60386 2.47964Z"
-                                                stroke="#2D2825" />
-                                        </svg>
-                                    </button>
-                                    <a href="#" class="card__pic">
-                                        <img src="./images/card-pic.jpg" alt="Фото" class="card__pic-img">
-                                    </a>
-                                    <a href="#cart" class="card__to-cart">
-                                        В корзину
-                                    </a>
-                                </div>
-                                <a href="#" class="card__name">
-                                    Лубрикант «Классический»
-                                </a>
-                                <p class="card__cost">
-                                    <span>862</span> ₽
-                                </p>
-                            </div>
-
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="card">
-                                <div class="card__top">
-                                    <button class="card__favorite">
-                                        <svg width="20" height="18" viewBox="0 0 20 18" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M9.60386 2.47964L10 2.99403L10.3961 2.47964C11.3449 1.24768 12.8142 0.5 14.4167 0.5C17.2171 0.5 19.5 2.78728 19.5 5.60289C19.5 7.00692 18.9407 8.313 17.9444 9.27499L17.9443 9.2749L17.9365 9.28271L10.2127 17.0756L10.2126 17.0758L10 17.2901L9.78738 17.0757L9.78725 17.0756L1.9156 9.13505C1.00139 8.17772 0.5 6.92425 0.5 5.60289C0.5 2.78728 2.78292 0.5 5.58333 0.5C7.18577 0.5 8.6551 1.24768 9.60386 2.47964Z"
-                                                stroke="#2D2825" />
-                                        </svg>
-                                    </button>
-                                    <a href="#" class="card__pic">
-                                        <img src="./images/card-pic.jpg" alt="Фото" class="card__pic-img">
-                                    </a>
-                                    <a href="#" class="card__to-cart">
-                                        В корзину
-                                    </a>
-                                </div>
-                                <a href="#" class="card__name">
-                                    Лубрикант «Классический»
-                                </a>
-                                <p class="card__cost">
-                                    <span>862</span> ₽
-                                </p>
-                            </div>
-
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="card">
-                                <div class="card__top">
-                                    <button class="card__favorite">
-                                        <svg width="20" height="18" viewBox="0 0 20 18" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M9.60386 2.47964L10 2.99403L10.3961 2.47964C11.3449 1.24768 12.8142 0.5 14.4167 0.5C17.2171 0.5 19.5 2.78728 19.5 5.60289C19.5 7.00692 18.9407 8.313 17.9444 9.27499L17.9443 9.2749L17.9365 9.28271L10.2127 17.0756L10.2126 17.0758L10 17.2901L9.78738 17.0757L9.78725 17.0756L1.9156 9.13505C1.00139 8.17772 0.5 6.92425 0.5 5.60289C0.5 2.78728 2.78292 0.5 5.58333 0.5C7.18577 0.5 8.6551 1.24768 9.60386 2.47964Z"
-                                                stroke="#2D2825" />
-                                        </svg>
-                                    </button>
-                                    <a href="#" class="card__pic">
-                                        <img src="./images/card-pic.jpg" alt="Фото" class="card__pic-img">
-                                    </a>
-                                    <a href="#" class="card__to-cart">
-                                        В корзину
-                                    </a>
-                                </div>
-                                <a href="#" class="card__name">
-                                    Лубрикант «Классический»
-                                </a>
-                                <p class="card__cost">
-                                    <span>862</span> ₽
-                                </p>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="swiper-button-prev"><svg width="30" height="37" viewBox="0 0 30 37" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <rect width="30" height="37" transform="matrix(-1 0 0 1 30 0)" fill="#2D2825" />
-                            <path d="M17 10L12 19L17 28" stroke="white" stroke-width="2" />
-                        </svg>
-                    </div>
-                    <div class="swiper-button-next"><svg width="14" height="18" viewBox="0 0 14 18" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <rect width="14" height="17.2667" fill="#2D2825" />
-                            <path d="M6.06657 4.6665L8.3999 8.8665L6.06657 13.0665" stroke="white"
-                                stroke-width="0.933333" />
-                        </svg>
-                    </div>
-                </div>
-                <a href="#" class="products__link">
-                    Посмотреть все <svg width="31" height="9" viewBox="0 0 31 9" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M30.3536 4.85355C30.5488 4.65829 30.5488 4.34171 30.3536 4.14645L27.1716 0.964466C26.9763 0.769204 26.6597 0.769204 26.4645 0.964466C26.2692 1.15973 26.2692 1.47631 26.4645 1.67157L29.2929 4.5L26.4645 7.32843C26.2692 7.52369 26.2692 7.84027 26.4645 8.03553C26.6597 8.2308 26.9763 8.2308 27.1716 8.03553L30.3536 4.85355ZM0 5H30V4H0V5Z"
-                            fill="#2D2825" />
-                    </svg>
-                </a>
-            </section>
-            <section class="about">
-                <div class="about__pic">
-                    <img src="./images/about-pic.jpg" alt="Фото" class="about__pic-img">
-                </div>
-                <div class="about__box">
-                    <h2 class="about__title">
-                        O нас
-                    </h2>
-                    <p class="about__text">
-                        Натуральная интимная косметика, игрушки для удовольствия и нижнеее белье созданные для того,
-                        чтобы обычные вещи почувствовать необычно
-                    </p>
-                    <p class="about__quot">
-                        Моя миссия – укреплять гармонию в парах и помогать женщинам и мужчинам искренне проявлять свои
-                        чувства. Поэтому я создала Vexso – проект о крепких и ярких отношениях<span>
-                            Основательница проекта Виктория
-                        </span>
-                    </p>
-                    <a href="#" class="about__link">Узнать больше о проекте ...</a>
-                </div>
-            </section>
-            <section class="partners">
-                <h2 class="partners__title">
-                    Любят и доверяют
-                </h2>
-                <div class="partners__slider">
-                    <div class="partners__slider-item">
-                        <img src="./images/p-glamour.png" alt="Фото" class="partners__slider-item-img">
-                    </div>
-                    <div class="partners__slider-item">
-                        <img src="./images/p-2.png" alt="Фото" class="partners__slider-item-img">
-                    </div>
-                    <div class="partners__slider-item">
-                        <img src="./images/p-3.png" alt="Фото" class="partners__slider-item-img">
-                    </div>
-                    <div class="partners__slider-item">
-                        <img src="./images/p-4.png" alt="Фото" class="partners__slider-item-img">
-                    </div>
-                    <div class="partners__slider-item">
-                        <img src="./images/p-5.png" alt="Фото" class="partners__slider-item-img">
-                    </div>
-                    <div class="partners__slider-item">
-                        <img src="./images/p-6.png" alt="Фото" class="partners__slider-item-img">
-                    </div>
-                    <div class="partners__slider-item">
-                        <img src="./images/p-7.png" alt="Фото" class="partners__slider-item-img">
-                    </div>
-                    <div class="partners__slider-item">
-                        <img src="./images/p-8.png" alt="Фото" class="partners__slider-item-img">
-                    </div>
-                    <div class="partners__slider-item">
-                        <img src="./images/p-9.png" alt="Фото" class="partners__slider-item-img">
-                    </div>
-                    <div class="partners__slider-item">
-                        <img src="./images/p-glamour.png" alt="Фото" class="partners__slider-item-img">
-                    </div>
-                    <div class="partners__slider-item">
-                        <img src="./images/p-2.png" alt="Фото" class="partners__slider-item-img">
-                    </div>
-                    <div class="partners__slider-item">
-                        <img src="./images/p-3.png" alt="Фото" class="partners__slider-item-img">
-                    </div>
-                    <div class="partners__slider-item">
-                        <img src="./images/p-4.png" alt="Фото" class="partners__slider-item-img">
-                    </div>
-                    <div class="partners__slider-item">
-                        <img src="./images/p-5.png" alt="Фото" class="partners__slider-item-img">
-                    </div>
-                    <div class="partners__slider-item">
-                        <img src="./images/p-6.png" alt="Фото" class="partners__slider-item-img">
-                    </div>
-                    <div class="partners__slider-item">
-                        <img src="./images/p-7.png" alt="Фото" class="partners__slider-item-img">
-                    </div>
-                    <div class="partners__slider-item">
-                        <img src="./images/p-8.png" alt="Фото" class="partners__slider-item-img">
-                    </div>
-                    <div class="partners__slider-item">
-                        <img src="./images/p-9.png" alt="Фото" class="partners__slider-item-img">
-                    </div>
-                </div>
-                <div class="partners__slider partners__slider_reverse">
-                    <div class="partners__slider-item">
-                        <img src="./images/p-glamour.png" alt="Фото" class="partners__slider-item-img">
-                    </div>
-                    <div class="partners__slider-item">
-                        <img src="./images/p-2.png" alt="Фото" class="partners__slider-item-img">
-                    </div>
-                    <div class="partners__slider-item">
-                        <img src="./images/p-3.png" alt="Фото" class="partners__slider-item-img">
-                    </div>
-                    <div class="partners__slider-item">
-                        <img src="./images/p-4.png" alt="Фото" class="partners__slider-item-img">
-                    </div>
-                    <div class="partners__slider-item">
-                        <img src="./images/p-5.png" alt="Фото" class="partners__slider-item-img">
-                    </div>
-                    <div class="partners__slider-item">
-                        <img src="./images/p-6.png" alt="Фото" class="partners__slider-item-img">
-                    </div>
-                    <div class="partners__slider-item">
-                        <img src="./images/p-7.png" alt="Фото" class="partners__slider-item-img">
-                    </div>
-                    <div class="partners__slider-item">
-                        <img src="./images/p-8.png" alt="Фото" class="partners__slider-item-img">
-                    </div>
-                    <div class="partners__slider-item">
-                        <img src="./images/p-9.png" alt="Фото" class="partners__slider-item-img">
-                    </div>
-                    <div class="partners__slider-item">
-                        <img src="./images/p-glamour.png" alt="Фото" class="partners__slider-item-img">
-                    </div>
-                    <div class="partners__slider-item">
-                        <img src="./images/p-2.png" alt="Фото" class="partners__slider-item-img">
-                    </div>
-                    <div class="partners__slider-item">
-                        <img src="./images/p-3.png" alt="Фото" class="partners__slider-item-img">
-                    </div>
-                    <div class="partners__slider-item">
-                        <img src="./images/p-4.png" alt="Фото" class="partners__slider-item-img">
-                    </div>
-                    <div class="partners__slider-item">
-                        <img src="./images/p-5.png" alt="Фото" class="partners__slider-item-img">
-                    </div>
-                    <div class="partners__slider-item">
-                        <img src="./images/p-6.png" alt="Фото" class="partners__slider-item-img">
-                    </div>
-                    <div class="partners__slider-item">
-                        <img src="./images/p-7.png" alt="Фото" class="partners__slider-item-img">
-                    </div>
-                    <div class="partners__slider-item">
-                        <img src="./images/p-8.png" alt="Фото" class="partners__slider-item-img">
-                    </div>
-                    <div class="partners__slider-item">
-                        <img src="./images/p-9.png" alt="Фото" class="partners__slider-item-img">
-                    </div>
-                </div>
-            </section>
-            <section class="products">
-                <h2 class="products__title">
-                    Откройте для себя новые ощущения
-                </h2>
-                <div class="products__slider js-products-slider">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="card">
-                                <div class="card__top">
-                                    <button class="card__favorite">
-                                        <svg width="20" height="18" viewBox="0 0 20 18" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M9.60386 2.47964L10 2.99403L10.3961 2.47964C11.3449 1.24768 12.8142 0.5 14.4167 0.5C17.2171 0.5 19.5 2.78728 19.5 5.60289C19.5 7.00692 18.9407 8.313 17.9444 9.27499L17.9443 9.2749L17.9365 9.28271L10.2127 17.0756L10.2126 17.0758L10 17.2901L9.78738 17.0757L9.78725 17.0756L1.9156 9.13505C1.00139 8.17772 0.5 6.92425 0.5 5.60289C0.5 2.78728 2.78292 0.5 5.58333 0.5C7.18577 0.5 8.6551 1.24768 9.60386 2.47964Z"
-                                                stroke="#2D2825" />
-                                        </svg>
-                                    </button>
-                                    <a href="#" class="card__pic">
-                                        <img src="./images/card-pic.jpg" alt="Фото" class="card__pic-img">
-                                    </a>
-                                    <a href="#cart" class="card__to-cart">
-                                        В корзину
-                                    </a>
-                                </div>
-                                <a href="#" class="card__name">
-                                    Лубрикант «Классический»
-                                </a>
-                                <p class="card__cost">
-                                    <span>862</span> ₽
-                                </p>
-                            </div>
-
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="card">
-                                <div class="card__top">
-                                    <button class="card__favorite">
-                                        <svg width="20" height="18" viewBox="0 0 20 18" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M9.60386 2.47964L10 2.99403L10.3961 2.47964C11.3449 1.24768 12.8142 0.5 14.4167 0.5C17.2171 0.5 19.5 2.78728 19.5 5.60289C19.5 7.00692 18.9407 8.313 17.9444 9.27499L17.9443 9.2749L17.9365 9.28271L10.2127 17.0756L10.2126 17.0758L10 17.2901L9.78738 17.0757L9.78725 17.0756L1.9156 9.13505C1.00139 8.17772 0.5 6.92425 0.5 5.60289C0.5 2.78728 2.78292 0.5 5.58333 0.5C7.18577 0.5 8.6551 1.24768 9.60386 2.47964Z"
-                                                stroke="#2D2825" />
-                                        </svg>
-                                    </button>
-                                    <a href="#" class="card__pic">
-                                        <img src="./images/card-pic.jpg" alt="Фото" class="card__pic-img">
-                                    </a>
-                                    <a href="#" class="card__to-cart">
-                                        В корзину
-                                    </a>
-                                </div>
-                                <a href="#" class="card__name">
-                                    Лубрикант «Классический»
-                                </a>
-                                <p class="card__cost">
-                                    <span>862</span> ₽
-                                </p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="card">
-                                <div class="card__top">
-                                    <button class="card__favorite">
-                                        <svg width="20" height="18" viewBox="0 0 20 18" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M9.60386 2.47964L10 2.99403L10.3961 2.47964C11.3449 1.24768 12.8142 0.5 14.4167 0.5C17.2171 0.5 19.5 2.78728 19.5 5.60289C19.5 7.00692 18.9407 8.313 17.9444 9.27499L17.9443 9.2749L17.9365 9.28271L10.2127 17.0756L10.2126 17.0758L10 17.2901L9.78738 17.0757L9.78725 17.0756L1.9156 9.13505C1.00139 8.17772 0.5 6.92425 0.5 5.60289C0.5 2.78728 2.78292 0.5 5.58333 0.5C7.18577 0.5 8.6551 1.24768 9.60386 2.47964Z"
-                                                stroke="#2D2825" />
-                                        </svg>
-                                    </button>
-                                    <a href="#" class="card__pic">
-                                        <img src="./images/card-pic.jpg" alt="Фото" class="card__pic-img">
-                                    </a>
-                                    <a href="#cart" class="card__to-cart">
-                                        В корзину
-                                    </a>
-                                </div>
-                                <a href="#" class="card__name">
-                                    Лубрикант «Классический»
-                                </a>
-                                <p class="card__cost">
-                                    <span>862</span> ₽
-                                </p>
-                            </div>
-
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="card">
-                                <div class="card__top">
-                                    <button class="card__favorite">
-                                        <svg width="20" height="18" viewBox="0 0 20 18" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M9.60386 2.47964L10 2.99403L10.3961 2.47964C11.3449 1.24768 12.8142 0.5 14.4167 0.5C17.2171 0.5 19.5 2.78728 19.5 5.60289C19.5 7.00692 18.9407 8.313 17.9444 9.27499L17.9443 9.2749L17.9365 9.28271L10.2127 17.0756L10.2126 17.0758L10 17.2901L9.78738 17.0757L9.78725 17.0756L1.9156 9.13505C1.00139 8.17772 0.5 6.92425 0.5 5.60289C0.5 2.78728 2.78292 0.5 5.58333 0.5C7.18577 0.5 8.6551 1.24768 9.60386 2.47964Z"
-                                                stroke="#2D2825" />
-                                        </svg>
-                                    </button>
-                                    <a href="#" class="card__pic">
-                                        <img src="./images/card-pic.jpg" alt="Фото" class="card__pic-img">
-                                    </a>
-                                    <a href="#" class="card__to-cart">
-                                        В корзину
-                                    </a>
-                                </div>
-                                <a href="#" class="card__name">
-                                    Лубрикант «Классический»
-                                </a>
-                                <p class="card__cost">
-                                    <span>862</span> ₽
-                                </p>
-                            </div>
-
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="card">
-                                <div class="card__top">
-                                    <button class="card__favorite">
-                                        <svg width="20" height="18" viewBox="0 0 20 18" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M9.60386 2.47964L10 2.99403L10.3961 2.47964C11.3449 1.24768 12.8142 0.5 14.4167 0.5C17.2171 0.5 19.5 2.78728 19.5 5.60289C19.5 7.00692 18.9407 8.313 17.9444 9.27499L17.9443 9.2749L17.9365 9.28271L10.2127 17.0756L10.2126 17.0758L10 17.2901L9.78738 17.0757L9.78725 17.0756L1.9156 9.13505C1.00139 8.17772 0.5 6.92425 0.5 5.60289C0.5 2.78728 2.78292 0.5 5.58333 0.5C7.18577 0.5 8.6551 1.24768 9.60386 2.47964Z"
-                                                stroke="#2D2825" />
-                                        </svg>
-                                    </button>
-                                    <a href="#" class="card__pic">
-                                        <img src="./images/card-pic.jpg" alt="Фото" class="card__pic-img">
-                                    </a>
-                                    <a href="#" class="card__to-cart">
-                                        В корзину
-                                    </a>
-                                </div>
-                                <a href="#" class="card__name">
-                                    Лубрикант «Классический»
-                                </a>
-                                <p class="card__cost">
-                                    <span>862</span> ₽
-                                </p>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="swiper-button-prev"><svg width="30" height="37" viewBox="0 0 30 37" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <rect width="30" height="37" transform="matrix(-1 0 0 1 30 0)" fill="#2D2825" />
-                            <path d="M17 10L12 19L17 28" stroke="white" stroke-width="2" />
-                        </svg>
-                    </div>
-                    <div class="swiper-button-next"><svg width="14" height="18" viewBox="0 0 14 18" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <rect width="14" height="17.2667" fill="#2D2825" />
-                            <path d="M6.06657 4.6665L8.3999 8.8665L6.06657 13.0665" stroke="white"
-                                stroke-width="0.933333" />
-                        </svg>
-                    </div>
-                </div>
-                <a href="#" class="products__link">
-                    Посмотреть все <svg width="31" height="9" viewBox="0 0 31 9" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M30.3536 4.85355C30.5488 4.65829 30.5488 4.34171 30.3536 4.14645L27.1716 0.964466C26.9763 0.769204 26.6597 0.769204 26.4645 0.964466C26.2692 1.15973 26.2692 1.47631 26.4645 1.67157L29.2929 4.5L26.4645 7.32843C26.2692 7.52369 26.2692 7.84027 26.4645 8.03553C26.6597 8.2308 26.9763 8.2308 27.1716 8.03553L30.3536 4.85355ZM0 5H30V4H0V5Z"
-                            fill="#2D2825" />
-                    </svg>
-                </a>
-            </section>
-            <section class="plus">
-                <div class="plus__row">
-                    <div class="plus__pic">
-                        <img src="./images/plus-1.jpg" alt="" class="plus__pic-img">
-                    </div>
-                    <div class="plus__inner">
-                        <h3 class="plus__title">
-                            Органические материалы
-                        </h3>
-                        <p class="plus__text">
-                            Чтобы вы чувствовали только комфорт и наслаждение
-                        </p>
-                    </div>
-                </div>
-                <div class="plus__row">
-                    <div class="plus__inner">
-                        <h3 class="plus__title">
-                            Бесплатная доставка
-                        </h3>
-                        <p class="plus__text">
-                            Удобная и быстрая доставка заказа прямо к вашей двери
-                        </p>
-                    </div>
-                    <div class="plus__pic">
-                        <img src="./images/plus-2.jpg" alt="" class="plus__pic-img">
-                    </div>
-                </div>
-                <div class="plus__row">
-                    <div class="plus__pic">
-                        <img src="./images/plus-3.jpg" alt="" class="plus__pic-img">
-                    </div>
-                    <div class="plus__inner">
-                        <h3 class="plus__title">
-                            Подарок внутри каждого заказа
-                        </h3>
-                        <p class="plus__text">
-                            Заботимся о ваших впечатлениях и радуем каждым заказом
-                        </p>
-                    </div>
-                </div>
-            </section>
-            <section class="one">
-                <h2 class="one__title">
-                    Если приходится выбирать только один...
-                </h2>
-                <div class="one__product">
-                    <div class="one__product-pic">
-                        <img src="./images/one-product.jpg" alt="Фото" class="one__product-img">
-                    </div>
-                    <div class="one__product-info">
-                        <h3 class="one__product-title">
-                            Лубрикант «Классический»
-                        </h3>
-                        <p class="one__product-cost">
-                            862₽
-                        </p>
-                        <p class="one__product-text">
-                            Смазка одинаково подходит для вдумчивого соло-секса с игрушками, мануальных ласк и
-                            партнёрских нежных игр. Она идеальна для тех, кто любит экспериментировать во время секса.
-                            Обеспечивая скольжение, смазка гарантирует удовольствие с первых минут прелюдии и до
-                            кульминации.
-                        </p>
-                        <div class="one__product-inner">
-                            <a href="#" class="one__product-to-cart">
-                                В корзину
-                            </a>
-                            <a href="#" class="one__product-more">
-                                Узнать больше
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="reviews">
-                <div class="reviews__inner">
-                    <h2 class="reviews__title">
-                        Отзывы
-                    </h2>
-                    <div class="reviews__slider js-reviews-slider">
-                        <div class='swiper-wrapper'>
-                            <div class='swiper-slide'>
-                                <div class="reviews__item">
-                                    <div class="reviews__item-pic">
-                                        <img src="./images/rev-1.jpg" alt="Фото" class="reviews__item-img">
-                                    </div>
-                                    <div class="reviews__item-stars">
-                                        <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M8.7907 0L10.7643 6.21885H17.1511L11.9841 10.0623L13.9577 16.2812L8.7907 12.4377L3.62366 16.2812L5.59729 10.0623L0.430247 6.21885H6.81706L8.7907 0Z"
-                                                fill="#B17C50" />
-                                        </svg>
-                                        <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M8.7907 0L10.7643 6.21885H17.1511L11.9841 10.0623L13.9577 16.2812L8.7907 12.4377L3.62366 16.2812L5.59729 10.0623L0.430247 6.21885H6.81706L8.7907 0Z"
-                                                fill="#B17C50" />
-                                        </svg>
-                                        <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M8.7907 0L10.7643 6.21885H17.1511L11.9841 10.0623L13.9577 16.2812L8.7907 12.4377L3.62366 16.2812L5.59729 10.0623L0.430247 6.21885H6.81706L8.7907 0Z"
-                                                fill="#B17C50" />
-                                        </svg>
-                                        <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M8.7907 0L10.7643 6.21885H17.1511L11.9841 10.0623L13.9577 16.2812L8.7907 12.4377L3.62366 16.2812L5.59729 10.0623L0.430247 6.21885H6.81706L8.7907 0Z"
-                                                fill="#B17C50" />
-                                        </svg>
-                                        <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M8.7907 0L10.7643 6.21885H17.1511L11.9841 10.0623L13.9577 16.2812L8.7907 12.4377L3.62366 16.2812L5.59729 10.0623L0.430247 6.21885H6.81706L8.7907 0Z"
-                                                fill="#B17C50" />
-                                        </svg>
-                                    </div>
-                                    <p class="reviews__item-text">
-                                        Я протестировала эту смазку и она великолепна! Кожа мягкая, ощущения приятные
-                                    </p>
-                                    <p class="reviews__item-auth">
-                                        <svg width="31" height="2" viewBox="0 0 31 2" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <line x1="31" y1="0.625" x2="-5.46392e-08" y2="0.624997" stroke="white"
-                                                stroke-width="1.25" />
-                                        </svg>
-                                        Анна С.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class='swiper-slide'>
-                                <div class="reviews__item">
-                                    <div class="reviews__item-pic">
-                                        <img src="./images/rev-2.jpg" alt="Фото" class="reviews__item-img">
-                                    </div>
-                                    <div class="reviews__item-stars">
-                                        <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M8.7907 0L10.7643 6.21885H17.1511L11.9841 10.0623L13.9577 16.2812L8.7907 12.4377L3.62366 16.2812L5.59729 10.0623L0.430247 6.21885H6.81706L8.7907 0Z"
-                                                fill="#B17C50" />
-                                        </svg>
-                                        <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M8.7907 0L10.7643 6.21885H17.1511L11.9841 10.0623L13.9577 16.2812L8.7907 12.4377L3.62366 16.2812L5.59729 10.0623L0.430247 6.21885H6.81706L8.7907 0Z"
-                                                fill="#B17C50" />
-                                        </svg>
-                                        <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M8.7907 0L10.7643 6.21885H17.1511L11.9841 10.0623L13.9577 16.2812L8.7907 12.4377L3.62366 16.2812L5.59729 10.0623L0.430247 6.21885H6.81706L8.7907 0Z"
-                                                fill="#B17C50" />
-                                        </svg>
-                                        <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M8.7907 0L10.7643 6.21885H17.1511L11.9841 10.0623L13.9577 16.2812L8.7907 12.4377L3.62366 16.2812L5.59729 10.0623L0.430247 6.21885H6.81706L8.7907 0Z"
-                                                fill="#B17C50" />
-                                        </svg>
-                                        <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M8.7907 0L10.7643 6.21885H17.1511L11.9841 10.0623L13.9577 16.2812L8.7907 12.4377L3.62366 16.2812L5.59729 10.0623L0.430247 6.21885H6.81706L8.7907 0Z"
-                                                fill="#B17C50" />
-                                        </svg>
-                                    </div>
-                                    <p class="reviews__item-text">
-                                        Превосходное чувство и огромное удовольствие
-                                    </p>
-                                    <p class="reviews__item-auth">
-                                        <svg width="31" height="2" viewBox="0 0 31 2" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <line x1="31" y1="0.625" x2="-5.46392e-08" y2="0.624997" stroke="white"
-                                                stroke-width="1.25" />
-                                        </svg>
-                                        Анна С.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class='swiper-slide'>
-                                <div class="reviews__item">
-                                    <div class="reviews__item-pic">
-                                        <img src="./images/rev-3.jpg" alt="Фото" class="reviews__item-img">
-                                    </div>
-                                    <div class="reviews__item-stars">
-                                        <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M8.7907 0L10.7643 6.21885H17.1511L11.9841 10.0623L13.9577 16.2812L8.7907 12.4377L3.62366 16.2812L5.59729 10.0623L0.430247 6.21885H6.81706L8.7907 0Z"
-                                                fill="#B17C50" />
-                                        </svg>
-                                        <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M8.7907 0L10.7643 6.21885H17.1511L11.9841 10.0623L13.9577 16.2812L8.7907 12.4377L3.62366 16.2812L5.59729 10.0623L0.430247 6.21885H6.81706L8.7907 0Z"
-                                                fill="#B17C50" />
-                                        </svg>
-                                        <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M8.7907 0L10.7643 6.21885H17.1511L11.9841 10.0623L13.9577 16.2812L8.7907 12.4377L3.62366 16.2812L5.59729 10.0623L0.430247 6.21885H6.81706L8.7907 0Z"
-                                                fill="#B17C50" />
-                                        </svg>
-                                        <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M8.7907 0L10.7643 6.21885H17.1511L11.9841 10.0623L13.9577 16.2812L8.7907 12.4377L3.62366 16.2812L5.59729 10.0623L0.430247 6.21885H6.81706L8.7907 0Z"
-                                                fill="#B17C50" />
-                                        </svg>
-                                        <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M8.7907 0L10.7643 6.21885H17.1511L11.9841 10.0623L13.9577 16.2812L8.7907 12.4377L3.62366 16.2812L5.59729 10.0623L0.430247 6.21885H6.81706L8.7907 0Z"
-                                                fill="#B17C50" />
-                                        </svg>
-                                    </div>
-                                    <p class="reviews__item-text">
-                                        Я протестировала эту смазку и она великолепна! Кожа мягкая, ощущения приятные
-                                    </p>
-                                    <p class="reviews__item-auth">
-                                        <svg width="31" height="2" viewBox="0 0 31 2" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <line x1="31" y1="0.625" x2="-5.46392e-08" y2="0.624997" stroke="white"
-                                                stroke-width="1.25" />
-                                        </svg>
-                                        Анна С.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class='swiper-slide'>
-                                <div class="reviews__item">
-                                    <div class="reviews__item-pic">
-                                        <img src="./images/rev-4.jpg" alt="Фото" class="reviews__item-img">
-                                    </div>
-                                    <div class="reviews__item-stars">
-                                        <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M8.7907 0L10.7643 6.21885H17.1511L11.9841 10.0623L13.9577 16.2812L8.7907 12.4377L3.62366 16.2812L5.59729 10.0623L0.430247 6.21885H6.81706L8.7907 0Z"
-                                                fill="#B17C50" />
-                                        </svg>
-                                        <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M8.7907 0L10.7643 6.21885H17.1511L11.9841 10.0623L13.9577 16.2812L8.7907 12.4377L3.62366 16.2812L5.59729 10.0623L0.430247 6.21885H6.81706L8.7907 0Z"
-                                                fill="#B17C50" />
-                                        </svg>
-                                        <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M8.7907 0L10.7643 6.21885H17.1511L11.9841 10.0623L13.9577 16.2812L8.7907 12.4377L3.62366 16.2812L5.59729 10.0623L0.430247 6.21885H6.81706L8.7907 0Z"
-                                                fill="#B17C50" />
-                                        </svg>
-                                        <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M8.7907 0L10.7643 6.21885H17.1511L11.9841 10.0623L13.9577 16.2812L8.7907 12.4377L3.62366 16.2812L5.59729 10.0623L0.430247 6.21885H6.81706L8.7907 0Z"
-                                                fill="#B17C50" />
-                                        </svg>
-                                        <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M8.7907 0L10.7643 6.21885H17.1511L11.9841 10.0623L13.9577 16.2812L8.7907 12.4377L3.62366 16.2812L5.59729 10.0623L0.430247 6.21885H6.81706L8.7907 0Z"
-                                                fill="#B17C50" />
-                                        </svg>
-                                    </div>
-                                    <p class="reviews__item-text">
-                                        Я влюблена в этот лубрикант. Нет липкости, нет запаха и нет плохих реакций.
-                                        Очень рекомендую
-                                    </p>
-                                    <p class="reviews__item-auth">
-                                        <svg width="31" height="2" viewBox="0 0 31 2" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <line x1="31" y1="0.625" x2="-5.46392e-08" y2="0.624997" stroke="white"
-                                                stroke-width="1.25" />
-                                        </svg>
-                                        Анна С.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class='swiper-slide'>
-                                <div class="reviews__item">
-                                    <div class="reviews__item-pic">
-                                        <img src="./images/rev-4.jpg" alt="Фото" class="reviews__item-img">
-                                    </div>
-                                    <div class="reviews__item-stars">
-                                        <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M8.7907 0L10.7643 6.21885H17.1511L11.9841 10.0623L13.9577 16.2812L8.7907 12.4377L3.62366 16.2812L5.59729 10.0623L0.430247 6.21885H6.81706L8.7907 0Z"
-                                                fill="#B17C50" />
-                                        </svg>
-                                        <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M8.7907 0L10.7643 6.21885H17.1511L11.9841 10.0623L13.9577 16.2812L8.7907 12.4377L3.62366 16.2812L5.59729 10.0623L0.430247 6.21885H6.81706L8.7907 0Z"
-                                                fill="#B17C50" />
-                                        </svg>
-                                        <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M8.7907 0L10.7643 6.21885H17.1511L11.9841 10.0623L13.9577 16.2812L8.7907 12.4377L3.62366 16.2812L5.59729 10.0623L0.430247 6.21885H6.81706L8.7907 0Z"
-                                                fill="#B17C50" />
-                                        </svg>
-                                        <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M8.7907 0L10.7643 6.21885H17.1511L11.9841 10.0623L13.9577 16.2812L8.7907 12.4377L3.62366 16.2812L5.59729 10.0623L0.430247 6.21885H6.81706L8.7907 0Z"
-                                                fill="#B17C50" />
-                                        </svg>
-                                        <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M8.7907 0L10.7643 6.21885H17.1511L11.9841 10.0623L13.9577 16.2812L8.7907 12.4377L3.62366 16.2812L5.59729 10.0623L0.430247 6.21885H6.81706L8.7907 0Z"
-                                                fill="#B17C50" />
-                                        </svg>
-                                    </div>
-                                    <p class="reviews__item-text">
-                                        Я влюблена в этот лубрикант. Нет липкости, нет запаха и нет плохих реакций.
-                                        Очень рекомендую
-                                    </p>
-                                    <p class="reviews__item-auth">
-                                        <svg width="31" height="2" viewBox="0 0 31 2" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <line x1="31" y1="0.625" x2="-5.46392e-08" y2="0.624997" stroke="white"
-                                                stroke-width="1.25" />
-                                        </svg>
-                                        Анна С.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-buttons">
-                            <div class="swiper-buttons-inner">
-                                <div class="swiper-button-prev">
-                                    <svg width="8" height="22" viewBox="0 0 8 22" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M7 1L1 11L7 21" stroke="white" />
-                                    </svg>
-                                </div>
-                                <div class="swiper-button-next">
-                                    <svg width="8" height="22" viewBox="0 0 8 22" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M1 1L7 11L0.999999 21" stroke="white" />
-                                    </svg>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="blog">
-                <div class="blog__box">
-                    <div class="blog__main">
-                        <div class="blog__main-inner">
-                            <h2 class="blog__title">
-                                Интимный блог
-                            </h2>
-                            <p class="blog__subtitle">
-                                Все, что вы хотели знать и даже больше...
-                            </p>
-                            <a href="article.html" class="blog__main-item">
-                                <span class="blog__main-item-pic">
-                                    <img src="./images/bl-4.jpg" alt="Фото" class="blog__main-item-img">
-                                </span>
-                                <span class="blog__main-item-date">
-                                    7 Апреля
-                                </span>
-                                <span class="blog__main-item-name">
-                                    А вы уже пробовали? Рассказываем о нашем лубрикане VEXSO CLASSIC
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="blog__all">
-                        <a href="article.html" class="blog__all-item">
-                            <span class="blog__all-item-pic">
-                                <img src="./images/bl-1.jpg" alt="Фото" class="blog__all-item-img">
-                            </span>
-                            <span class="blog__all-item-date">
-                                7 Апреля
-                            </span>
-                            <span class="blog__all-item-name">
-                                А вы уже пробовали? Рассказываем о нашем лубрикане VEXSO CLASSIC
-                            </span>
-                        </a>
-                        <a href="article.html" class="blog__all-item">
-                            <span class="blog__all-item-pic">
-                                <img src="./images/bl-2.jpg" alt="Фото" class="blog__all-item-img">
-                            </span>
-                            <span class="blog__all-item-date">
-                                7 Апреля
-                            </span>
-                            <span class="blog__all-item-name">
-                                А вы уже пробовали? Рассказываем о нашем лубрикане VEXSO CLASSIC
-                            </span>
-                        </a>
-                        <a href="article.html" class="blog__all-item">
-                            <span class="blog__all-item-pic">
-                                <img src="./images/bl-1.jpg" alt="Фото" class="blog__all-item-img">
-                            </span>
-                            <span class="blog__all-item-date">
-                                7 Апреля
-                            </span>
-                            <span class="blog__all-item-name">
-                                А вы уже пробовали? Рассказываем о нашем лубрикане VEXSO CLASSIC
-                            </span>
-                        </a>
-                        <a href="article.html" class="blog__all-item">
-                            <span class="blog__all-item-pic">
-                                <img src="./images/bl-2.jpg" alt="Фото" class="blog__all-item-img">
-                            </span>
-                            <span class="blog__all-item-date">
-                                7 Апреля
-                            </span>
-                            <span class="blog__all-item-name">
-                                А вы уже пробовали? Рассказываем о нашем лубрикане VEXSO CLASSIC
-                            </span>
-                        </a>
-                    </div>
-                </div>
-            </section>
-            <section class="products">
-                <h2 class="products__title">
-                    Вам может понравиться
-                </h2>
-                <div class="products__slider js-products-slider">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="card">
-                                <div class="card__top">
-                                    <button class="card__favorite">
-                                        <svg width="20" height="18" viewBox="0 0 20 18" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M9.60386 2.47964L10 2.99403L10.3961 2.47964C11.3449 1.24768 12.8142 0.5 14.4167 0.5C17.2171 0.5 19.5 2.78728 19.5 5.60289C19.5 7.00692 18.9407 8.313 17.9444 9.27499L17.9443 9.2749L17.9365 9.28271L10.2127 17.0756L10.2126 17.0758L10 17.2901L9.78738 17.0757L9.78725 17.0756L1.9156 9.13505C1.00139 8.17772 0.5 6.92425 0.5 5.60289C0.5 2.78728 2.78292 0.5 5.58333 0.5C7.18577 0.5 8.6551 1.24768 9.60386 2.47964Z"
-                                                stroke="#2D2825" />
-                                        </svg>
-                                    </button>
-                                    <a href="#" class="card__pic">
-                                        <img src="./images/card-pic.jpg" alt="Фото" class="card__pic-img">
-                                    </a>
-                                    <a href="#cart" class="card__to-cart">
-                                        В корзину
-                                    </a>
-                                </div>
-                                <a href="#" class="card__name">
-                                    Лубрикант «Классический»
-                                </a>
-                                <p class="card__cost">
-                                    <span>862</span> ₽
-                                </p>
-                            </div>
-
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="card">
-                                <div class="card__top">
-                                    <button class="card__favorite">
-                                        <svg width="20" height="18" viewBox="0 0 20 18" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M9.60386 2.47964L10 2.99403L10.3961 2.47964C11.3449 1.24768 12.8142 0.5 14.4167 0.5C17.2171 0.5 19.5 2.78728 19.5 5.60289C19.5 7.00692 18.9407 8.313 17.9444 9.27499L17.9443 9.2749L17.9365 9.28271L10.2127 17.0756L10.2126 17.0758L10 17.2901L9.78738 17.0757L9.78725 17.0756L1.9156 9.13505C1.00139 8.17772 0.5 6.92425 0.5 5.60289C0.5 2.78728 2.78292 0.5 5.58333 0.5C7.18577 0.5 8.6551 1.24768 9.60386 2.47964Z"
-                                                stroke="#2D2825" />
-                                        </svg>
-                                    </button>
-                                    <a href="#" class="card__pic">
-                                        <img src="./images/card-pic.jpg" alt="Фото" class="card__pic-img">
-                                    </a>
-                                    <a href="#" class="card__to-cart">
-                                        В корзину
-                                    </a>
-                                </div>
-                                <a href="#" class="card__name">
-                                    Лубрикант «Классический»
-                                </a>
-                                <p class="card__cost">
-                                    <span>862</span> ₽
-                                </p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="card">
-                                <div class="card__top">
-                                    <button class="card__favorite">
-                                        <svg width="20" height="18" viewBox="0 0 20 18" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M9.60386 2.47964L10 2.99403L10.3961 2.47964C11.3449 1.24768 12.8142 0.5 14.4167 0.5C17.2171 0.5 19.5 2.78728 19.5 5.60289C19.5 7.00692 18.9407 8.313 17.9444 9.27499L17.9443 9.2749L17.9365 9.28271L10.2127 17.0756L10.2126 17.0758L10 17.2901L9.78738 17.0757L9.78725 17.0756L1.9156 9.13505C1.00139 8.17772 0.5 6.92425 0.5 5.60289C0.5 2.78728 2.78292 0.5 5.58333 0.5C7.18577 0.5 8.6551 1.24768 9.60386 2.47964Z"
-                                                stroke="#2D2825" />
-                                        </svg>
-                                    </button>
-                                    <a href="#" class="card__pic">
-                                        <img src="./images/card-pic.jpg" alt="Фото" class="card__pic-img">
-                                    </a>
-                                    <a href="#cart" class="card__to-cart">
-                                        В корзину
-                                    </a>
-                                </div>
-                                <a href="#" class="card__name">
-                                    Лубрикант «Классический»
-                                </a>
-                                <p class="card__cost">
-                                    <span>862</span> ₽
-                                </p>
-                            </div>
-
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="card">
-                                <div class="card__top">
-                                    <button class="card__favorite">
-                                        <svg width="20" height="18" viewBox="0 0 20 18" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M9.60386 2.47964L10 2.99403L10.3961 2.47964C11.3449 1.24768 12.8142 0.5 14.4167 0.5C17.2171 0.5 19.5 2.78728 19.5 5.60289C19.5 7.00692 18.9407 8.313 17.9444 9.27499L17.9443 9.2749L17.9365 9.28271L10.2127 17.0756L10.2126 17.0758L10 17.2901L9.78738 17.0757L9.78725 17.0756L1.9156 9.13505C1.00139 8.17772 0.5 6.92425 0.5 5.60289C0.5 2.78728 2.78292 0.5 5.58333 0.5C7.18577 0.5 8.6551 1.24768 9.60386 2.47964Z"
-                                                stroke="#2D2825" />
-                                        </svg>
-                                    </button>
-                                    <a href="#" class="card__pic">
-                                        <img src="./images/card-pic.jpg" alt="Фото" class="card__pic-img">
-                                    </a>
-                                    <a href="#" class="card__to-cart">
-                                        В корзину
-                                    </a>
-                                </div>
-                                <a href="#" class="card__name">
-                                    Лубрикант «Классический»
-                                </a>
-                                <p class="card__cost">
-                                    <span>862</span> ₽
-                                </p>
-                            </div>
-
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="card">
-                                <div class="card__top">
-                                    <button class="card__favorite">
-                                        <svg width="20" height="18" viewBox="0 0 20 18" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M9.60386 2.47964L10 2.99403L10.3961 2.47964C11.3449 1.24768 12.8142 0.5 14.4167 0.5C17.2171 0.5 19.5 2.78728 19.5 5.60289C19.5 7.00692 18.9407 8.313 17.9444 9.27499L17.9443 9.2749L17.9365 9.28271L10.2127 17.0756L10.2126 17.0758L10 17.2901L9.78738 17.0757L9.78725 17.0756L1.9156 9.13505C1.00139 8.17772 0.5 6.92425 0.5 5.60289C0.5 2.78728 2.78292 0.5 5.58333 0.5C7.18577 0.5 8.6551 1.24768 9.60386 2.47964Z"
-                                                stroke="#2D2825" />
-                                        </svg>
-                                    </button>
-                                    <a href="#" class="card__pic">
-                                        <img src="./images/card-pic.jpg" alt="Фото" class="card__pic-img">
-                                    </a>
-                                    <a href="#" class="card__to-cart">
-                                        В корзину
-                                    </a>
-                                </div>
-                                <a href="#" class="card__name">
-                                    Лубрикант «Классический»
-                                </a>
-                                <p class="card__cost">
-                                    <span>862</span> ₽
-                                </p>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="swiper-button-prev"><svg width="30" height="37" viewBox="0 0 30 37" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <rect width="30" height="37" transform="matrix(-1 0 0 1 30 0)" fill="#2D2825" />
-                            <path d="M17 10L12 19L17 28" stroke="white" stroke-width="2" />
-                        </svg>
-                    </div>
-                    <div class="swiper-button-next"><svg width="14" height="18" viewBox="0 0 14 18" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <rect width="14" height="17.2667" fill="#2D2825" />
-                            <path d="M6.06657 4.6665L8.3999 8.8665L6.06657 13.0665" stroke="white"
-                                stroke-width="0.933333" />
-                        </svg>
-                    </div>
-                </div>
-                <a href="#" class="products__link">
-                    Посмотреть все <svg width="31" height="9" viewBox="0 0 31 9" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M30.3536 4.85355C30.5488 4.65829 30.5488 4.34171 30.3536 4.14645L27.1716 0.964466C26.9763 0.769204 26.6597 0.769204 26.4645 0.964466C26.2692 1.15973 26.2692 1.47631 26.4645 1.67157L29.2929 4.5L26.4645 7.32843C26.2692 7.52369 26.2692 7.84027 26.4645 8.03553C26.6597 8.2308 26.9763 8.2308 27.1716 8.03553L30.3536 4.85355ZM0 5H30V4H0V5Z"
-                            fill="#2D2825" />
-                    </svg>
-                </a>
-            </section>
-        </main>
+        </div>
         <footer class="footer">
             <div class="footer__top">
                 <div class="footer__top-inner">
