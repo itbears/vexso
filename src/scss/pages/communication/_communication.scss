@@ -1,0 +1,55 @@
+.communication {
+    &__title {
+        margin-top: 20px;
+        font-weight: 400;
+        font-size: 30px;
+    }
+    &__subtitle{
+        font-weight: 400;
+        font-size: 30px;
+    }
+
+    &__delivery {
+        margin-top: 50px;
+    }
+
+    &__payment {
+        margin-top: 132px;
+        display: flex;
+        justify-content: space-between;
+        &-content {
+            max-width: 860px;
+            &-container-cards{
+                display: flex;
+                justify-content: space-between;
+                max-width: 230px;
+                margin-top: 34px;
+            }
+
+            &-text {
+                margin-top: 30px;
+                font-weight: 200;
+                font-size: 18px;
+            }
+
+            &-heading {
+                margin-bottom: 50px;
+                font-weight: 300;
+                font-size: 18px;
+            }
+
+            &-list {
+                margin-top: 15px;
+                font-weight: 200;
+                font-size: 18px;
+                margin-left: 20px;
+
+                ::marker {
+                    font-size: 9px;
+                }
+            }
+
+            &-item {}
+        }
+    }
+}
