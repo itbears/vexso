@@ -47,6 +47,10 @@ section {
     }
 }
 
+.scroll-off {
+    overflow: hidden;
+}
+
 .vissuality-hidden {
     position: absolute;
     width: 1px;
@@ -60,3 +64,14 @@ section {
     overflow: hidden;
 }
 
+.dgwt-wcas-suggestions-wrapp {
+    top: 70px !important;
+    border: none !important;
+    box-shadow: 0 0 9px 1px rgba(0, 0, 0, 0.06);
+    height: calc(100% - 100px) !important;
+    position: fixed !important;
+}
+
+.dgwt-wcas-st {
+    font-size: 12px !important;
+}
