@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <div class="page">
+    <div class="page woocommerce-cart">
         <header class="header js-header absolute">
             <div class="header__top">
                 <button class="header__burger js-menu-burger">
@@ -175,1118 +175,332 @@
                 </ul>
             </div>
         </header>
-        <main class="main">
-            <section class="intro">
-                <h1 class="intro__title">
-                    Vexso 18+
+        <div class="woocommerce">
+            <section class="cart-wrapper">
+                <div class="breads">
+                    <ul class="breads__list">
+                        <li class="breads__list-item"><a class="breads__list-item-link"
+                                href="https://vexso.ru">Главная</a></li>
+                        <li class="breads__list-item"><span class="breads__list-item-link">Корзина</span></li>
+                    </ul>
+                </div>
+                <h1 class="cart__title">
+                    Корзина
                 </h1>
-                <div class="intro__slider js-intro-slider">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="intro__slider-pic">
-                                <img src="./images/back.jpg" alt="Фото">
-                            </div>
-                            <div class="intro__slider-box">
-                                <h2>
-                                    испытайте Незабываемое <br> удовольствие
-                                </h2>
-                                <p>
-                                    С лубрикантами Vexso
-                                </p>
-                                <a href="#">
-                                    К покупкам
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="intro__slider-pic">
-                                <img src="./images/back2.jpg" alt="Фото">
-                            </div>
-                            <div class="intro__slider-box">
-                                <h2>
-                                    испытайте Незабываемое <br> удовольствие 2
-                                </h2>
-                                <p>
-                                    С лубрикантами Vexso
-                                </p>
-                                <a href="#">
-                                    К покупкам
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-pagination"></div>
-                    <div class="swiper-buttons">
-                        <div class="swiper-buttons-inner">
-                            <div class="swiper-button-prev">
-                                <svg width="8" height="22" viewBox="0 0 8 22" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M7 1L1 11L7 21" stroke="white" />
-                                </svg>
-                            </div>
-                            <div class="swiper-button-next">
-                                <svg width="8" height="22" viewBox="0 0 8 22" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1 1L7 11L0.999999 21" stroke="white" />
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="products">
-                <h2 class="products__title">
-                    Новинки
-                </h2>
-                <div class="products__slider js-products-slider">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="card">
-                                <div class="card__top">
-                                    <button class="card__favorite">
-                                        <svg width="20" height="18" viewBox="0 0 20 18" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M9.60386 2.47964L10 2.99403L10.3961 2.47964C11.3449 1.24768 12.8142 0.5 14.4167 0.5C17.2171 0.5 19.5 2.78728 19.5 5.60289C19.5 7.00692 18.9407 8.313 17.9444 9.27499L17.9443 9.2749L17.9365 9.28271L10.2127 17.0756L10.2126 17.0758L10 17.2901L9.78738 17.0757L9.78725 17.0756L1.9156 9.13505C1.00139 8.17772 0.5 6.92425 0.5 5.60289C0.5 2.78728 2.78292 0.5 5.58333 0.5C7.18577 0.5 8.6551 1.24768 9.60386 2.47964Z"
-                                                stroke="#2D2825" />
-                                        </svg>
-                                    </button>
-                                    <a href="#" class="card__pic">
-                                        <img src="./images/card-pic.jpg" alt="Фото" class="card__pic-img">
-                                    </a>
-                                    <a href="#cart" class="card__to-cart">
-                                        В корзину
-                                    </a>
-                                </div>
-                                <a href="#" class="card__name">
-                                    Лубрикант «Классический»
-                                </a>
-                                <p class="card__cost">
-                                    <span>862</span> ₽
-                                </p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="card">
-                                <div class="card__top">
-                                    <button class="card__favorite">
-                                        <svg width="20" height="18" viewBox="0 0 20 18" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M9.60386 2.47964L10 2.99403L10.3961 2.47964C11.3449 1.24768 12.8142 0.5 14.4167 0.5C17.2171 0.5 19.5 2.78728 19.5 5.60289C19.5 7.00692 18.9407 8.313 17.9444 9.27499L17.9443 9.2749L17.9365 9.28271L10.2127 17.0756L10.2126 17.0758L10 17.2901L9.78738 17.0757L9.78725 17.0756L1.9156 9.13505C1.00139 8.17772 0.5 6.92425 0.5 5.60289C0.5 2.78728 2.78292 0.5 5.58333 0.5C7.18577 0.5 8.6551 1.24768 9.60386 2.47964Z"
-                                                stroke="#2D2825" />
-                                        </svg>
-                                    </button>
-                                    <a href="#" class="card__pic">
-                                        <img src="./images/card-pic.jpg" alt="Фото" class="card__pic-img">
-                                    </a>
-                                    <a href="#" class="card__to-cart">
-                                        В корзину
-                                    </a>
-                                </div>
-                                <a href="#" class="card__name">
-                                    Лубрикант «Классический»
-                                </a>
-                                <p class="card__cost">
-                                    <span>862</span> ₽
-                                </p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="card">
-                                <div class="card__top">
-                                    <button class="card__favorite">
-                                        <svg width="20" height="18" viewBox="0 0 20 18" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M9.60386 2.47964L10 2.99403L10.3961 2.47964C11.3449 1.24768 12.8142 0.5 14.4167 0.5C17.2171 0.5 19.5 2.78728 19.5 5.60289C19.5 7.00692 18.9407 8.313 17.9444 9.27499L17.9443 9.2749L17.9365 9.28271L10.2127 17.0756L10.2126 17.0758L10 17.2901L9.78738 17.0757L9.78725 17.0756L1.9156 9.13505C1.00139 8.17772 0.5 6.92425 0.5 5.60289C0.5 2.78728 2.78292 0.5 5.58333 0.5C7.18577 0.5 8.6551 1.24768 9.60386 2.47964Z"
-                                                stroke="#2D2825" />
-                                        </svg>
-                                    </button>
-                                    <a href="#" class="card__pic">
-                                        <img src="./images/card-pic.jpg" alt="Фото" class="card__pic-img">
-                                    </a>
-                                    <a href="#cart" class="card__to-cart">
-                                        В корзину
-                                    </a>
-                                </div>
-                                <a href="#" class="card__name">
-                                    Лубрикант «Классический»
-                                </a>
-                                <p class="card__cost">
-                                    <span>862</span> ₽
-                                </p>
-                            </div>
+                <form class="woocommerce-cart-form cart__form" action="https://vexso.ru/cart/" method="post">
 
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="card">
-                                <div class="card__top">
-                                    <button class="card__favorite">
-                                        <svg width="20" height="18" viewBox="0 0 20 18" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M9.60386 2.47964L10 2.99403L10.3961 2.47964C11.3449 1.24768 12.8142 0.5 14.4167 0.5C17.2171 0.5 19.5 2.78728 19.5 5.60289C19.5 7.00692 18.9407 8.313 17.9444 9.27499L17.9443 9.2749L17.9365 9.28271L10.2127 17.0756L10.2126 17.0758L10 17.2901L9.78738 17.0757L9.78725 17.0756L1.9156 9.13505C1.00139 8.17772 0.5 6.92425 0.5 5.60289C0.5 2.78728 2.78292 0.5 5.58333 0.5C7.18577 0.5 8.6551 1.24768 9.60386 2.47964Z"
-                                                stroke="#2D2825" />
-                                        </svg>
-                                    </button>
-                                    <a href="#" class="card__pic">
-                                        <img src="./images/card-pic.jpg" alt="Фото" class="card__pic-img">
-                                    </a>
-                                    <a href="#" class="card__to-cart">
-                                        В корзину
-                                    </a>
-                                </div>
-                                <a href="#" class="card__name">
-                                    Лубрикант «Классический»
-                                </a>
-                                <p class="card__cost">
-                                    <span>862</span> ₽
-                                </p>
-                            </div>
+                    <div class="shop_table shop_table_responsive cart woocommerce-cart-form__contents" cellspacing="0">
+                        <div class="cart__body">
 
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="card">
-                                <div class="card__top">
-                                    <button class="card__favorite">
-                                        <svg width="20" height="18" viewBox="0 0 20 18" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M9.60386 2.47964L10 2.99403L10.3961 2.47964C11.3449 1.24768 12.8142 0.5 14.4167 0.5C17.2171 0.5 19.5 2.78728 19.5 5.60289C19.5 7.00692 18.9407 8.313 17.9444 9.27499L17.9443 9.2749L17.9365 9.28271L10.2127 17.0756L10.2126 17.0758L10 17.2901L9.78738 17.0757L9.78725 17.0756L1.9156 9.13505C1.00139 8.17772 0.5 6.92425 0.5 5.60289C0.5 2.78728 2.78292 0.5 5.58333 0.5C7.18577 0.5 8.6551 1.24768 9.60386 2.47964Z"
-                                                stroke="#2D2825" />
-                                        </svg>
-                                    </button>
-                                    <a href="#" class="card__pic">
-                                        <img src="./images/card-pic.jpg" alt="Фото" class="card__pic-img">
-                                    </a>
-                                    <a href="#" class="card__to-cart">
-                                        В корзину
-                                    </a>
-                                </div>
-                                <a href="#" class="card__name">
-                                    Лубрикант «Классический»
-                                </a>
-                                <p class="card__cost">
-                                    <span>862</span> ₽
-                                </p>
-                            </div>
+                            <div class="woocommerce-cart-form__cart-item cart_item">
 
-                        </div>
-                    </div>
-                    <div class="swiper-button-prev"><svg width="30" height="37" viewBox="0 0 30 37" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <rect width="30" height="37" transform="matrix(-1 0 0 1 30 0)" fill="#2D2825" />
-                            <path d="M17 10L12 19L17 28" stroke="white" stroke-width="2" />
-                        </svg>
-                    </div>
-                    <div class="swiper-button-next"><svg width="14" height="18" viewBox="0 0 14 18" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <rect width="14" height="17.2667" fill="#2D2825" />
-                            <path d="M6.06657 4.6665L8.3999 8.8665L6.06657 13.0665" stroke="white"
-                                stroke-width="0.933333" />
-                        </svg>
-                    </div>
-                </div>
-                <a href="#" class="products__link">
-                    Посмотреть все <svg width="31" height="9" viewBox="0 0 31 9" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M30.3536 4.85355C30.5488 4.65829 30.5488 4.34171 30.3536 4.14645L27.1716 0.964466C26.9763 0.769204 26.6597 0.769204 26.4645 0.964466C26.2692 1.15973 26.2692 1.47631 26.4645 1.67157L29.2929 4.5L26.4645 7.32843C26.2692 7.52369 26.2692 7.84027 26.4645 8.03553C26.6597 8.2308 26.9763 8.2308 27.1716 8.03553L30.3536 4.85355ZM0 5H30V4H0V5Z"
-                            fill="#2D2825" />
-                    </svg>
-                </a>
-            </section>
-            <section class="about">
-                <div class="about__pic">
-                    <img src="./images/about-pic.jpg" alt="Фото" class="about__pic-img">
-                </div>
-                <div class="about__box">
-                    <h2 class="about__title">
-                        O нас
-                    </h2>
-                    <p class="about__text">
-                        Натуральная интимная косметика, игрушки для удовольствия и нижнеее белье созданные для того,
-                        чтобы обычные вещи почувствовать необычно
-                    </p>
-                    <p class="about__quot">
-                        Моя миссия – укреплять гармонию в парах и помогать женщинам и мужчинам искренне проявлять свои
-                        чувства. Поэтому я создала Vexso – проект о крепких и ярких отношениях<span>
-                            Основательница проекта Виктория
-                        </span>
-                    </p>
-                    <a href="#" class="about__link">Узнать больше о проекте ...</a>
-                </div>
-            </section>
-            <section class="partners">
-                <h2 class="partners__title">
-                    Любят и доверяют
-                </h2>
-                <div class="partners__slider">
-                    <div class="partners__slider-item">
-                        <img src="./images/p-glamour.png" alt="Фото" class="partners__slider-item-img">
-                    </div>
-                    <div class="partners__slider-item">
-                        <img src="./images/p-2.png" alt="Фото" class="partners__slider-item-img">
-                    </div>
-                    <div class="partners__slider-item">
-                        <img src="./images/p-3.png" alt="Фото" class="partners__slider-item-img">
-                    </div>
-                    <div class="partners__slider-item">
-                        <img src="./images/p-4.png" alt="Фото" class="partners__slider-item-img">
-                    </div>
-                    <div class="partners__slider-item">
-                        <img src="./images/p-5.png" alt="Фото" class="partners__slider-item-img">
-                    </div>
-                    <div class="partners__slider-item">
-                        <img src="./images/p-6.png" alt="Фото" class="partners__slider-item-img">
-                    </div>
-                    <div class="partners__slider-item">
-                        <img src="./images/p-7.png" alt="Фото" class="partners__slider-item-img">
-                    </div>
-                    <div class="partners__slider-item">
-                        <img src="./images/p-8.png" alt="Фото" class="partners__slider-item-img">
-                    </div>
-                    <div class="partners__slider-item">
-                        <img src="./images/p-9.png" alt="Фото" class="partners__slider-item-img">
-                    </div>
-                    <div class="partners__slider-item">
-                        <img src="./images/p-glamour.png" alt="Фото" class="partners__slider-item-img">
-                    </div>
-                    <div class="partners__slider-item">
-                        <img src="./images/p-2.png" alt="Фото" class="partners__slider-item-img">
-                    </div>
-                    <div class="partners__slider-item">
-                        <img src="./images/p-3.png" alt="Фото" class="partners__slider-item-img">
-                    </div>
-                    <div class="partners__slider-item">
-                        <img src="./images/p-4.png" alt="Фото" class="partners__slider-item-img">
-                    </div>
-                    <div class="partners__slider-item">
-                        <img src="./images/p-5.png" alt="Фото" class="partners__slider-item-img">
-                    </div>
-                    <div class="partners__slider-item">
-                        <img src="./images/p-6.png" alt="Фото" class="partners__slider-item-img">
-                    </div>
-                    <div class="partners__slider-item">
-                        <img src="./images/p-7.png" alt="Фото" class="partners__slider-item-img">
-                    </div>
-                    <div class="partners__slider-item">
-                        <img src="./images/p-8.png" alt="Фото" class="partners__slider-item-img">
-                    </div>
-                    <div class="partners__slider-item">
-                        <img src="./images/p-9.png" alt="Фото" class="partners__slider-item-img">
-                    </div>
-                </div>
-                <div class="partners__slider partners__slider_reverse">
-                    <div class="partners__slider-item">
-                        <img src="./images/p-glamour.png" alt="Фото" class="partners__slider-item-img">
-                    </div>
-                    <div class="partners__slider-item">
-                        <img src="./images/p-2.png" alt="Фото" class="partners__slider-item-img">
-                    </div>
-                    <div class="partners__slider-item">
-                        <img src="./images/p-3.png" alt="Фото" class="partners__slider-item-img">
-                    </div>
-                    <div class="partners__slider-item">
-                        <img src="./images/p-4.png" alt="Фото" class="partners__slider-item-img">
-                    </div>
-                    <div class="partners__slider-item">
-                        <img src="./images/p-5.png" alt="Фото" class="partners__slider-item-img">
-                    </div>
-                    <div class="partners__slider-item">
-                        <img src="./images/p-6.png" alt="Фото" class="partners__slider-item-img">
-                    </div>
-                    <div class="partners__slider-item">
-                        <img src="./images/p-7.png" alt="Фото" class="partners__slider-item-img">
-                    </div>
-                    <div class="partners__slider-item">
-                        <img src="./images/p-8.png" alt="Фото" class="partners__slider-item-img">
-                    </div>
-                    <div class="partners__slider-item">
-                        <img src="./images/p-9.png" alt="Фото" class="partners__slider-item-img">
-                    </div>
-                    <div class="partners__slider-item">
-                        <img src="./images/p-glamour.png" alt="Фото" class="partners__slider-item-img">
-                    </div>
-                    <div class="partners__slider-item">
-                        <img src="./images/p-2.png" alt="Фото" class="partners__slider-item-img">
-                    </div>
-                    <div class="partners__slider-item">
-                        <img src="./images/p-3.png" alt="Фото" class="partners__slider-item-img">
-                    </div>
-                    <div class="partners__slider-item">
-                        <img src="./images/p-4.png" alt="Фото" class="partners__slider-item-img">
-                    </div>
-                    <div class="partners__slider-item">
-                        <img src="./images/p-5.png" alt="Фото" class="partners__slider-item-img">
-                    </div>
-                    <div class="partners__slider-item">
-                        <img src="./images/p-6.png" alt="Фото" class="partners__slider-item-img">
-                    </div>
-                    <div class="partners__slider-item">
-                        <img src="./images/p-7.png" alt="Фото" class="partners__slider-item-img">
-                    </div>
-                    <div class="partners__slider-item">
-                        <img src="./images/p-8.png" alt="Фото" class="partners__slider-item-img">
-                    </div>
-                    <div class="partners__slider-item">
-                        <img src="./images/p-9.png" alt="Фото" class="partners__slider-item-img">
-                    </div>
-                </div>
-            </section>
-            <section class="products">
-                <h2 class="products__title">
-                    Откройте для себя новые ощущения
-                </h2>
-                <div class="products__slider js-products-slider">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="card">
-                                <div class="card__top">
-                                    <button class="card__favorite">
-                                        <svg width="20" height="18" viewBox="0 0 20 18" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M9.60386 2.47964L10 2.99403L10.3961 2.47964C11.3449 1.24768 12.8142 0.5 14.4167 0.5C17.2171 0.5 19.5 2.78728 19.5 5.60289C19.5 7.00692 18.9407 8.313 17.9444 9.27499L17.9443 9.2749L17.9365 9.28271L10.2127 17.0756L10.2126 17.0758L10 17.2901L9.78738 17.0757L9.78725 17.0756L1.9156 9.13505C1.00139 8.17772 0.5 6.92425 0.5 5.60289C0.5 2.78728 2.78292 0.5 5.58333 0.5C7.18577 0.5 8.6551 1.24768 9.60386 2.47964Z"
-                                                stroke="#2D2825" />
+                                <div class="product-remove">
+                                    <a href="https://vexso.ru/cart/?remove_item=c3395dd46c34fa7fd8d729d8cf88b7a8&amp;_wpnonce=61f07bb96b"
+                                        class="remove" aria-label="Удалить эту позицию" data-product_id="1943"
+                                        data-product_sku="
+                                   740072 (46-48)                        "><svg width="20" height="20"
+                                            viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M4.94914 14.8487L14.8486 4.94922" stroke="#2D2825"
+                                                stroke-width="1.08333" stroke-miterlimit="10"></path>
+                                            <path d="M14.8497 14.8487L4.9502 4.94922" stroke="#2D2825"
+                                                stroke-width="1.08333" stroke-miterlimit="10"></path>
                                         </svg>
-                                    </button>
-                                    <a href="#" class="card__pic">
-                                        <img src="./images/card-pic.jpg" alt="Фото" class="card__pic-img">
-                                    </a>
-                                    <a href="#cart" class="card__to-cart">
-                                        В корзину
                                     </a>
                                 </div>
-                                <a href="#" class="card__name">
-                                    Лубрикант «Классический»
-                                </a>
-                                <p class="card__cost">
-                                    <span>862</span> ₽
-                                </p>
-                            </div>
 
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="card">
-                                <div class="card__top">
-                                    <button class="card__favorite">
-                                        <svg width="20" height="18" viewBox="0 0 20 18" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M9.60386 2.47964L10 2.99403L10.3961 2.47964C11.3449 1.24768 12.8142 0.5 14.4167 0.5C17.2171 0.5 19.5 2.78728 19.5 5.60289C19.5 7.00692 18.9407 8.313 17.9444 9.27499L17.9443 9.2749L17.9365 9.28271L10.2127 17.0756L10.2126 17.0758L10 17.2901L9.78738 17.0757L9.78725 17.0756L1.9156 9.13505C1.00139 8.17772 0.5 6.92425 0.5 5.60289C0.5 2.78728 2.78292 0.5 5.58333 0.5C7.18577 0.5 8.6551 1.24768 9.60386 2.47964Z"
-                                                stroke="#2D2825" />
-                                        </svg>
-                                    </button>
-                                    <a href="#" class="card__pic">
-                                        <img src="./images/card-pic.jpg" alt="Фото" class="card__pic-img">
-                                    </a>
-                                    <a href="#" class="card__to-cart">
-                                        В корзину
+                                <div class="product-thumbnail">
+                                    <a href="https://vexso.ru/cart/">
+                                        <img src="https://vexso.ru/wp-content/uploads/2022/05/800x1200-bc8e8ebd1ffaa2bc770990fe2148119b.jpg"
+                                            alt="Фото">
                                     </a>
                                 </div>
-                                <a href="#" class="card__name">
-                                    Лубрикант «Классический»
-                                </a>
-                                <p class="card__cost">
-                                    <span>862</span> ₽
-                                </p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="card">
-                                <div class="card__top">
-                                    <button class="card__favorite">
-                                        <svg width="20" height="18" viewBox="0 0 20 18" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M9.60386 2.47964L10 2.99403L10.3961 2.47964C11.3449 1.24768 12.8142 0.5 14.4167 0.5C17.2171 0.5 19.5 2.78728 19.5 5.60289C19.5 7.00692 18.9407 8.313 17.9444 9.27499L17.9443 9.2749L17.9365 9.28271L10.2127 17.0756L10.2126 17.0758L10 17.2901L9.78738 17.0757L9.78725 17.0756L1.9156 9.13505C1.00139 8.17772 0.5 6.92425 0.5 5.60289C0.5 2.78728 2.78292 0.5 5.58333 0.5C7.18577 0.5 8.6551 1.24768 9.60386 2.47964Z"
-                                                stroke="#2D2825" />
-                                        </svg>
-                                    </button>
-                                    <a href="#" class="card__pic">
-                                        <img src="./images/card-pic.jpg" alt="Фото" class="card__pic-img">
-                                    </a>
-                                    <a href="#cart" class="card__to-cart">
-                                        В корзину
-                                    </a>
-                                </div>
-                                <a href="#" class="card__name">
-                                    Лубрикант «Классический»
-                                </a>
-                                <p class="card__cost">
-                                    <span>862</span> ₽
-                                </p>
-                            </div>
 
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="card">
-                                <div class="card__top">
-                                    <button class="card__favorite">
-                                        <svg width="20" height="18" viewBox="0 0 20 18" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M9.60386 2.47964L10 2.99403L10.3961 2.47964C11.3449 1.24768 12.8142 0.5 14.4167 0.5C17.2171 0.5 19.5 2.78728 19.5 5.60289C19.5 7.00692 18.9407 8.313 17.9444 9.27499L17.9443 9.2749L17.9365 9.28271L10.2127 17.0756L10.2126 17.0758L10 17.2901L9.78738 17.0757L9.78725 17.0756L1.9156 9.13505C1.00139 8.17772 0.5 6.92425 0.5 5.60289C0.5 2.78728 2.78292 0.5 5.58333 0.5C7.18577 0.5 8.6551 1.24768 9.60386 2.47964Z"
-                                                stroke="#2D2825" />
-                                        </svg>
-                                    </button>
-                                    <a href="#" class="card__pic">
-                                        <img src="./images/card-pic.jpg" alt="Фото" class="card__pic-img">
-                                    </a>
-                                    <a href="#" class="card__to-cart">
-                                        В корзину
-                                    </a>
+                                <div class="product-name" data-title="Товар">
+                                    <a
+                                        href="https://vexso.ru/product/kombinacija-erolanta-lizaveta-s-breteljami-krest-nakrest-belyj-46-48/">Комбинация
+                                        Erolanta Lizaveta с бретелями крест-накрест, белый (46-48)</a>
                                 </div>
-                                <a href="#" class="card__name">
-                                    Лубрикант «Классический»
-                                </a>
-                                <p class="card__cost">
-                                    <span>862</span> ₽
-                                </p>
-                            </div>
 
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="card">
-                                <div class="card__top">
-                                    <button class="card__favorite">
-                                        <svg width="20" height="18" viewBox="0 0 20 18" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M9.60386 2.47964L10 2.99403L10.3961 2.47964C11.3449 1.24768 12.8142 0.5 14.4167 0.5C17.2171 0.5 19.5 2.78728 19.5 5.60289C19.5 7.00692 18.9407 8.313 17.9444 9.27499L17.9443 9.2749L17.9365 9.28271L10.2127 17.0756L10.2126 17.0758L10 17.2901L9.78738 17.0757L9.78725 17.0756L1.9156 9.13505C1.00139 8.17772 0.5 6.92425 0.5 5.60289C0.5 2.78728 2.78292 0.5 5.58333 0.5C7.18577 0.5 8.6551 1.24768 9.60386 2.47964Z"
-                                                stroke="#2D2825" />
-                                        </svg>
-                                    </button>
-                                    <a href="#" class="card__pic">
-                                        <img src="./images/card-pic.jpg" alt="Фото" class="card__pic-img">
-                                    </a>
-                                    <a href="#" class="card__to-cart">
-                                        В корзину
-                                    </a>
+                                <div class="product-price" data-title="Цена">
+                                    <span class="woocommerce-Price-amount amount"><bdi>949,50&nbsp;<span
+                                                class="woocommerce-Price-currencySymbol">₽</span></bdi></span>
                                 </div>
-                                <a href="#" class="card__name">
-                                    Лубрикант «Классический»
-                                </a>
-                                <p class="card__cost">
-                                    <span>862</span> ₽
-                                </p>
-                            </div>
 
-                        </div>
-                    </div>
-                    <div class="swiper-button-prev"><svg width="30" height="37" viewBox="0 0 30 37" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <rect width="30" height="37" transform="matrix(-1 0 0 1 30 0)" fill="#2D2825" />
-                            <path d="M17 10L12 19L17 28" stroke="white" stroke-width="2" />
-                        </svg>
-                    </div>
-                    <div class="swiper-button-next"><svg width="14" height="18" viewBox="0 0 14 18" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <rect width="14" height="17.2667" fill="#2D2825" />
-                            <path d="M6.06657 4.6665L8.3999 8.8665L6.06657 13.0665" stroke="white"
-                                stroke-width="0.933333" />
-                        </svg>
-                    </div>
-                </div>
-                <a href="#" class="products__link">
-                    Посмотреть все <svg width="31" height="9" viewBox="0 0 31 9" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M30.3536 4.85355C30.5488 4.65829 30.5488 4.34171 30.3536 4.14645L27.1716 0.964466C26.9763 0.769204 26.6597 0.769204 26.4645 0.964466C26.2692 1.15973 26.2692 1.47631 26.4645 1.67157L29.2929 4.5L26.4645 7.32843C26.2692 7.52369 26.2692 7.84027 26.4645 8.03553C26.6597 8.2308 26.9763 8.2308 27.1716 8.03553L30.3536 4.85355ZM0 5H30V4H0V5Z"
-                            fill="#2D2825" />
-                    </svg>
-                </a>
-            </section>
-            <section class="plus">
-                <div class="plus__row">
-                    <div class="plus__pic">
-                        <img src="./images/plus-1.jpg" alt="" class="plus__pic-img">
-                    </div>
-                    <div class="plus__inner">
-                        <h3 class="plus__title">
-                            Органические материалы
-                        </h3>
-                        <p class="plus__text">
-                            Чтобы вы чувствовали только комфорт и наслаждение
-                        </p>
-                    </div>
-                </div>
-                <div class="plus__row">
-                    <div class="plus__inner">
-                        <h3 class="plus__title">
-                            Бесплатная доставка
-                        </h3>
-                        <p class="plus__text">
-                            Удобная и быстрая доставка заказа прямо к вашей двери
-                        </p>
-                    </div>
-                    <div class="plus__pic">
-                        <img src="./images/plus-2.jpg" alt="" class="plus__pic-img">
-                    </div>
-                </div>
-                <div class="plus__row">
-                    <div class="plus__pic">
-                        <img src="./images/plus-3.jpg" alt="" class="plus__pic-img">
-                    </div>
-                    <div class="plus__inner">
-                        <h3 class="plus__title">
-                            Подарок внутри каждого заказа
-                        </h3>
-                        <p class="plus__text">
-                            Заботимся о ваших впечатлениях и радуем каждым заказом
-                        </p>
-                    </div>
-                </div>
-            </section>
-            <section class="one">
-                <h2 class="one__title">
-                    Если приходится выбирать только один...
-                </h2>
-                <div class="one__product">
-                    <div class="one__product-pic">
-                        <img src="./images/one-product.jpg" alt="Фото" class="one__product-img">
-                    </div>
-                    <div class="one__product-info">
-                        <h3 class="one__product-title">
-                            Лубрикант «Классический»
-                        </h3>
-                        <p class="one__product-cost">
-                            862₽
-                        </p>
-                        <p class="one__product-text">
-                            Смазка одинаково подходит для вдумчивого соло-секса с игрушками, мануальных ласк и
-                            партнёрских нежных игр. Она идеальна для тех, кто любит экспериментировать во время секса.
-                            Обеспечивая скольжение, смазка гарантирует удовольствие с первых минут прелюдии и до
-                            кульминации.
-                        </p>
-                        <div class="one__product-inner">
-                            <a href="#" class="one__product-to-cart">
-                                В корзину
-                            </a>
-                            <a href="#" class="one__product-more">
-                                Узнать больше
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="reviews">
-                <div class="reviews__inner">
-                    <h2 class="reviews__title">
-                        Отзывы
-                    </h2>
-                    <div class="reviews__slider js-reviews-slider">
-                        <div class='swiper-wrapper'>
-                            <div class='swiper-slide'>
-                                <div class="reviews__item">
-                                    <div class="reviews__item-pic">
-                                        <img src="./images/rev-1.jpg" alt="Фото" class="reviews__item-img">
+                                <div class="product-quantity" data-title="Количество">
+                                    <div class="product__controls-inner">
+                                        <button type="button" class="product__num-btn js-product-num-minus"
+                                            data-operation="decrement">
+                                            <svg width="10" height="1" viewBox="0 0 10 1" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <rect width="10" height="1" fill="#2D2825"></rect>
+                                            </svg>
+                                        </button>
+                                        <div class="quantity">
+                                            <label class="screen-reader-text" for="quantity_628252707155f">Количество
+                                                товара Комбинация Erolanta Lizaveta с бретелями крест-накрест, белый
+                                                (46-48)</label>
+                                            <input type="number" id="quantity_628252707155f" class="input-text qty text"
+                                                step="1" min="0" max=""
+                                                name="cart[c3395dd46c34fa7fd8d729d8cf88b7a8][qty]" value="3"
+                                                title="Кол-во" size="4" placeholder="" inputmode="numeric"
+                                                autocomplete="off">
+                                        </div>
+                                        <button type="button" class="product__num-btn js-product-num-plus"
+                                            data-operation="increment">
+                                            <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M5.5 4.5V0H4.5V4.5H0V5.5H4.5V10H5.5V5.5H10V4.5H5.5Z"
+                                                    fill="#2D2825"></path>
+                                            </svg>
+                                        </button>
                                     </div>
-                                    <div class="reviews__item-stars">
-                                        <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M8.7907 0L10.7643 6.21885H17.1511L11.9841 10.0623L13.9577 16.2812L8.7907 12.4377L3.62366 16.2812L5.59729 10.0623L0.430247 6.21885H6.81706L8.7907 0Z"
-                                                fill="#B17C50" />
-                                        </svg>
-                                        <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M8.7907 0L10.7643 6.21885H17.1511L11.9841 10.0623L13.9577 16.2812L8.7907 12.4377L3.62366 16.2812L5.59729 10.0623L0.430247 6.21885H6.81706L8.7907 0Z"
-                                                fill="#B17C50" />
-                                        </svg>
-                                        <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M8.7907 0L10.7643 6.21885H17.1511L11.9841 10.0623L13.9577 16.2812L8.7907 12.4377L3.62366 16.2812L5.59729 10.0623L0.430247 6.21885H6.81706L8.7907 0Z"
-                                                fill="#B17C50" />
-                                        </svg>
-                                        <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M8.7907 0L10.7643 6.21885H17.1511L11.9841 10.0623L13.9577 16.2812L8.7907 12.4377L3.62366 16.2812L5.59729 10.0623L0.430247 6.21885H6.81706L8.7907 0Z"
-                                                fill="#B17C50" />
-                                        </svg>
-                                        <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M8.7907 0L10.7643 6.21885H17.1511L11.9841 10.0623L13.9577 16.2812L8.7907 12.4377L3.62366 16.2812L5.59729 10.0623L0.430247 6.21885H6.81706L8.7907 0Z"
-                                                fill="#B17C50" />
-                                        </svg>
-                                    </div>
-                                    <p class="reviews__item-text">
-                                        Я протестировала эту смазку и она великолепна! Кожа мягкая, ощущения приятные
-                                    </p>
-                                    <p class="reviews__item-auth">
-                                        <svg width="31" height="2" viewBox="0 0 31 2" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <line x1="31" y1="0.625" x2="-5.46392e-08" y2="0.624997" stroke="white"
-                                                stroke-width="1.25" />
-                                        </svg>
-                                        Анна С.
-                                    </p>
+                                </div>
+                                <div class="product-subtotal" data-title="Подытог">
+                                    <span class="woocommerce-Price-amount amount"><bdi>2848,50&nbsp;<span
+                                                class="woocommerce-Price-currencySymbol">₽</span></bdi></span>
                                 </div>
                             </div>
-                            <div class='swiper-slide'>
-                                <div class="reviews__item">
-                                    <div class="reviews__item-pic">
-                                        <img src="./images/rev-2.jpg" alt="Фото" class="reviews__item-img">
+                            <div class="woocommerce-cart-form__cart-item cart_item">
+
+                                <div class="product-remove">
+                                    <a href="https://vexso.ru/cart/?remove_item=854d9fca60b4bd07f9bb215d59ef5561&amp;_wpnonce=61f07bb96b"
+                                        class="remove" aria-label="Удалить эту позицию" data-product_id="489"
+                                        data-product_sku="
+                                   783037                        "><svg width="20" height="20" viewBox="0 0 20 20"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M4.94914 14.8487L14.8486 4.94922" stroke="#2D2825"
+                                                stroke-width="1.08333" stroke-miterlimit="10"></path>
+                                            <path d="M14.8497 14.8487L4.9502 4.94922" stroke="#2D2825"
+                                                stroke-width="1.08333" stroke-miterlimit="10"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+
+                                <div class="product-thumbnail">
+                                    <a href="https://vexso.ru/cart/">
+                                        <img src="https://vexso.ru/wp-content/uploads/2022/05/800x1200-7e570650d48b7a0e179456f3d5676ec7.jpg"
+                                            alt="Фото">
+                                    </a>
+                                </div>
+
+                                <div class="product-name" data-title="Товар">
+                                    <a
+                                        href="https://vexso.ru/product/vibrator-jos-lixy-s-funkciej-up-down-silikon-rozovyj-23-sm/">Вибратор
+                                        JOS Lixy, с функцией Up&amp;Down, силикон, розовый, 23 см</a>
+                                </div>
+
+                                <div class="product-price" data-title="Цена">
+                                    <span class="woocommerce-Price-amount amount"><bdi>2970,75&nbsp;<span
+                                                class="woocommerce-Price-currencySymbol">₽</span></bdi></span>
+                                </div>
+
+                                <div class="product-quantity" data-title="Количество">
+                                    <div class="product__controls-inner">
+                                        <button type="button" class="product__num-btn js-product-num-minus"
+                                            data-operation="decrement">
+                                            <svg width="10" height="1" viewBox="0 0 10 1" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <rect width="10" height="1" fill="#2D2825"></rect>
+                                            </svg>
+                                        </button>
+                                        <div class="quantity">
+                                            <label class="screen-reader-text" for="quantity_6282527071d86">Количество
+                                                товара Вибратор JOS Lixy, с функцией Up&amp;Down, силикон, розовый, 23
+                                                см</label>
+                                            <input type="number" id="quantity_6282527071d86" class="input-text qty text"
+                                                step="1" min="0" max=""
+                                                name="cart[854d9fca60b4bd07f9bb215d59ef5561][qty]" value="1"
+                                                title="Кол-во" size="4" placeholder="" inputmode="numeric"
+                                                autocomplete="off">
+                                        </div>
+                                        <button type="button" class="product__num-btn js-product-num-plus"
+                                            data-operation="increment">
+                                            <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M5.5 4.5V0H4.5V4.5H0V5.5H4.5V10H5.5V5.5H10V4.5H5.5Z"
+                                                    fill="#2D2825"></path>
+                                            </svg>
+                                        </button>
                                     </div>
-                                    <div class="reviews__item-stars">
-                                        <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M8.7907 0L10.7643 6.21885H17.1511L11.9841 10.0623L13.9577 16.2812L8.7907 12.4377L3.62366 16.2812L5.59729 10.0623L0.430247 6.21885H6.81706L8.7907 0Z"
-                                                fill="#B17C50" />
-                                        </svg>
-                                        <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M8.7907 0L10.7643 6.21885H17.1511L11.9841 10.0623L13.9577 16.2812L8.7907 12.4377L3.62366 16.2812L5.59729 10.0623L0.430247 6.21885H6.81706L8.7907 0Z"
-                                                fill="#B17C50" />
-                                        </svg>
-                                        <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M8.7907 0L10.7643 6.21885H17.1511L11.9841 10.0623L13.9577 16.2812L8.7907 12.4377L3.62366 16.2812L5.59729 10.0623L0.430247 6.21885H6.81706L8.7907 0Z"
-                                                fill="#B17C50" />
-                                        </svg>
-                                        <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M8.7907 0L10.7643 6.21885H17.1511L11.9841 10.0623L13.9577 16.2812L8.7907 12.4377L3.62366 16.2812L5.59729 10.0623L0.430247 6.21885H6.81706L8.7907 0Z"
-                                                fill="#B17C50" />
-                                        </svg>
-                                        <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M8.7907 0L10.7643 6.21885H17.1511L11.9841 10.0623L13.9577 16.2812L8.7907 12.4377L3.62366 16.2812L5.59729 10.0623L0.430247 6.21885H6.81706L8.7907 0Z"
-                                                fill="#B17C50" />
-                                        </svg>
-                                    </div>
-                                    <p class="reviews__item-text">
-                                        Превосходное чувство и огромное удовольствие
-                                    </p>
-                                    <p class="reviews__item-auth">
-                                        <svg width="31" height="2" viewBox="0 0 31 2" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <line x1="31" y1="0.625" x2="-5.46392e-08" y2="0.624997" stroke="white"
-                                                stroke-width="1.25" />
-                                        </svg>
-                                        Анна С.
-                                    </p>
+                                </div>
+                                <div class="product-subtotal" data-title="Подытог">
+                                    <span class="woocommerce-Price-amount amount"><bdi>2970,75&nbsp;<span
+                                                class="woocommerce-Price-currencySymbol">₽</span></bdi></span>
                                 </div>
                             </div>
-                            <div class='swiper-slide'>
-                                <div class="reviews__item">
-                                    <div class="reviews__item-pic">
-                                        <img src="./images/rev-3.jpg" alt="Фото" class="reviews__item-img">
+                            <div class="woocommerce-cart-form__cart-item cart_item">
+
+                                <div class="product-remove">
+                                    <a href="https://vexso.ru/cart/?remove_item=299fb2142d7de959380f91c01c3a293c&amp;_wpnonce=61f07bb96b"
+                                        class="remove" aria-label="Удалить эту позицию" data-product_id="1426"
+                                        data-product_sku="
+                                   46822                        "><svg width="20" height="20" viewBox="0 0 20 20"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M4.94914 14.8487L14.8486 4.94922" stroke="#2D2825"
+                                                stroke-width="1.08333" stroke-miterlimit="10"></path>
+                                            <path d="M14.8497 14.8487L4.9502 4.94922" stroke="#2D2825"
+                                                stroke-width="1.08333" stroke-miterlimit="10"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+
+                                <div class="product-thumbnail">
+                                    <a href="https://vexso.ru/cart/">
+                                        <img src="https://vexso.ru/wp-content/uploads/2022/05/800x1200-5df275f1d80077650747bdc15615b4e7.jpg"
+                                            alt="Фото">
+                                    </a>
+                                </div>
+
+                                <div class="product-name" data-title="Товар">
+                                    <a
+                                        href="https://vexso.ru/product/vibrator-mystim-al-punto-silikonovyj-sinij-25-sm/">Вибратор
+                                        Mystim Al Punto силиконовый, синий, 25 см</a>
+                                </div>
+
+                                <div class="product-price" data-title="Цена">
+                                    <span class="woocommerce-Price-amount amount"><bdi>5108,00&nbsp;<span
+                                                class="woocommerce-Price-currencySymbol">₽</span></bdi></span>
+                                </div>
+
+                                <div class="product-quantity" data-title="Количество">
+                                    <div class="product__controls-inner">
+                                        <button type="button" class="product__num-btn js-product-num-minus"
+                                            data-operation="decrement">
+                                            <svg width="10" height="1" viewBox="0 0 10 1" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <rect width="10" height="1" fill="#2D2825"></rect>
+                                            </svg>
+                                        </button>
+                                        <div class="quantity">
+                                            <label class="screen-reader-text" for="quantity_6282527072557">Количество
+                                                товара Вибратор Mystim Al Punto силиконовый, синий, 25 см</label>
+                                            <input type="number" id="quantity_6282527072557" class="input-text qty text"
+                                                step="1" min="0" max=""
+                                                name="cart[299fb2142d7de959380f91c01c3a293c][qty]" value="1"
+                                                title="Кол-во" size="4" placeholder="" inputmode="numeric"
+                                                autocomplete="off">
+                                        </div>
+                                        <button type="button" class="product__num-btn js-product-num-plus"
+                                            data-operation="increment">
+                                            <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M5.5 4.5V0H4.5V4.5H0V5.5H4.5V10H5.5V5.5H10V4.5H5.5Z"
+                                                    fill="#2D2825"></path>
+                                            </svg>
+                                        </button>
                                     </div>
-                                    <div class="reviews__item-stars">
-                                        <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M8.7907 0L10.7643 6.21885H17.1511L11.9841 10.0623L13.9577 16.2812L8.7907 12.4377L3.62366 16.2812L5.59729 10.0623L0.430247 6.21885H6.81706L8.7907 0Z"
-                                                fill="#B17C50" />
-                                        </svg>
-                                        <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M8.7907 0L10.7643 6.21885H17.1511L11.9841 10.0623L13.9577 16.2812L8.7907 12.4377L3.62366 16.2812L5.59729 10.0623L0.430247 6.21885H6.81706L8.7907 0Z"
-                                                fill="#B17C50" />
-                                        </svg>
-                                        <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M8.7907 0L10.7643 6.21885H17.1511L11.9841 10.0623L13.9577 16.2812L8.7907 12.4377L3.62366 16.2812L5.59729 10.0623L0.430247 6.21885H6.81706L8.7907 0Z"
-                                                fill="#B17C50" />
-                                        </svg>
-                                        <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M8.7907 0L10.7643 6.21885H17.1511L11.9841 10.0623L13.9577 16.2812L8.7907 12.4377L3.62366 16.2812L5.59729 10.0623L0.430247 6.21885H6.81706L8.7907 0Z"
-                                                fill="#B17C50" />
-                                        </svg>
-                                        <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M8.7907 0L10.7643 6.21885H17.1511L11.9841 10.0623L13.9577 16.2812L8.7907 12.4377L3.62366 16.2812L5.59729 10.0623L0.430247 6.21885H6.81706L8.7907 0Z"
-                                                fill="#B17C50" />
-                                        </svg>
-                                    </div>
-                                    <p class="reviews__item-text">
-                                        Я протестировала эту смазку и она великолепна! Кожа мягкая, ощущения приятные
-                                    </p>
-                                    <p class="reviews__item-auth">
-                                        <svg width="31" height="2" viewBox="0 0 31 2" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <line x1="31" y1="0.625" x2="-5.46392e-08" y2="0.624997" stroke="white"
-                                                stroke-width="1.25" />
-                                        </svg>
-                                        Анна С.
-                                    </p>
+                                </div>
+                                <div class="product-subtotal" data-title="Подытог">
+                                    <span class="woocommerce-Price-amount amount"><bdi>5108,00&nbsp;<span
+                                                class="woocommerce-Price-currencySymbol">₽</span></bdi></span>
                                 </div>
                             </div>
-                            <div class='swiper-slide'>
-                                <div class="reviews__item">
-                                    <div class="reviews__item-pic">
-                                        <img src="./images/rev-4.jpg" alt="Фото" class="reviews__item-img">
+                            <div class="woocommerce-cart-form__cart-item cart_item">
+
+                                <div class="product-remove">
+                                    <a href="https://vexso.ru/cart/?remove_item=1579779b98ce9edb98dd85606f2c119d&amp;_wpnonce=61f07bb96b"
+                                        class="remove" aria-label="Удалить эту позицию" data-product_id="1046"
+                                        data-product_sku="
+                                   S-53-CORAL                        "><svg width="20" height="20" viewBox="0 0 20 20"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M4.94914 14.8487L14.8486 4.94922" stroke="#2D2825"
+                                                stroke-width="1.08333" stroke-miterlimit="10"></path>
+                                            <path d="M14.8497 14.8487L4.9502 4.94922" stroke="#2D2825"
+                                                stroke-width="1.08333" stroke-miterlimit="10"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+
+                                <div class="product-thumbnail">
+                                    <a href="https://vexso.ru/cart/">
+                                        <img src="https://vexso.ru/wp-content/uploads/2022/05/800x1200-0b14057295368470dcabeeeb570777ff.jpg"
+                                            alt="Фото">
+                                    </a>
+                                </div>
+
+                                <div class="product-name" data-title="Товар">
+                                    <a href="https://vexso.ru/product/vibrator-svakom-siren-silikon-krasnyj-18-9-sm/">Вибратор
+                                        Svakom Siren, силикон, красный, 18,9 см</a>
+                                </div>
+
+                                <div class="product-price" data-title="Цена">
+                                    <span class="woocommerce-Price-amount amount"><bdi>7031,00&nbsp;<span
+                                                class="woocommerce-Price-currencySymbol">₽</span></bdi></span>
+                                </div>
+
+                                <div class="product-quantity" data-title="Количество">
+                                    <div class="product__controls-inner">
+                                        <button type="button" class="product__num-btn js-product-num-minus"
+                                            data-operation="decrement">
+                                            <svg width="10" height="1" viewBox="0 0 10 1" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <rect width="10" height="1" fill="#2D2825"></rect>
+                                            </svg>
+                                        </button>
+                                        <div class="quantity">
+                                            <label class="screen-reader-text" for="quantity_6282527072d03">Количество
+                                                товара Вибратор Svakom Siren, силикон, красный, 18,9 см</label>
+                                            <input type="number" id="quantity_6282527072d03" class="input-text qty text"
+                                                step="1" min="0" max=""
+                                                name="cart[1579779b98ce9edb98dd85606f2c119d][qty]" value="1"
+                                                title="Кол-во" size="4" placeholder="" inputmode="numeric"
+                                                autocomplete="off">
+                                        </div>
+                                        <button type="button" class="product__num-btn js-product-num-plus"
+                                            data-operation="increment">
+                                            <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M5.5 4.5V0H4.5V4.5H0V5.5H4.5V10H5.5V5.5H10V4.5H5.5Z"
+                                                    fill="#2D2825"></path>
+                                            </svg>
+                                        </button>
                                     </div>
-                                    <div class="reviews__item-stars">
-                                        <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M8.7907 0L10.7643 6.21885H17.1511L11.9841 10.0623L13.9577 16.2812L8.7907 12.4377L3.62366 16.2812L5.59729 10.0623L0.430247 6.21885H6.81706L8.7907 0Z"
-                                                fill="#B17C50" />
-                                        </svg>
-                                        <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M8.7907 0L10.7643 6.21885H17.1511L11.9841 10.0623L13.9577 16.2812L8.7907 12.4377L3.62366 16.2812L5.59729 10.0623L0.430247 6.21885H6.81706L8.7907 0Z"
-                                                fill="#B17C50" />
-                                        </svg>
-                                        <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M8.7907 0L10.7643 6.21885H17.1511L11.9841 10.0623L13.9577 16.2812L8.7907 12.4377L3.62366 16.2812L5.59729 10.0623L0.430247 6.21885H6.81706L8.7907 0Z"
-                                                fill="#B17C50" />
-                                        </svg>
-                                        <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M8.7907 0L10.7643 6.21885H17.1511L11.9841 10.0623L13.9577 16.2812L8.7907 12.4377L3.62366 16.2812L5.59729 10.0623L0.430247 6.21885H6.81706L8.7907 0Z"
-                                                fill="#B17C50" />
-                                        </svg>
-                                        <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M8.7907 0L10.7643 6.21885H17.1511L11.9841 10.0623L13.9577 16.2812L8.7907 12.4377L3.62366 16.2812L5.59729 10.0623L0.430247 6.21885H6.81706L8.7907 0Z"
-                                                fill="#B17C50" />
-                                        </svg>
-                                    </div>
-                                    <p class="reviews__item-text">
-                                        Я влюблена в этот лубрикант. Нет липкости, нет запаха и нет плохих реакций.
-                                        Очень рекомендую
-                                    </p>
-                                    <p class="reviews__item-auth">
-                                        <svg width="31" height="2" viewBox="0 0 31 2" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <line x1="31" y1="0.625" x2="-5.46392e-08" y2="0.624997" stroke="white"
-                                                stroke-width="1.25" />
-                                        </svg>
-                                        Анна С.
-                                    </p>
+                                </div>
+                                <div class="product-subtotal" data-title="Подытог">
+                                    <span class="woocommerce-Price-amount amount"><bdi>7031,00&nbsp;<span
+                                                class="woocommerce-Price-currencySymbol">₽</span></bdi></span>
                                 </div>
                             </div>
-                            <div class='swiper-slide'>
-                                <div class="reviews__item">
-                                    <div class="reviews__item-pic">
-                                        <img src="./images/rev-4.jpg" alt="Фото" class="reviews__item-img">
+
+
+                            <div class="cart__bottom">
+                                <div class="actions">
+                                    <div class="coupon">
+                                        <label for="coupon_code">Купон:</label> <input type="text" name="coupon_code"
+                                            class="input-text" id="coupon_code" value="" placeholder="Код купона">
+                                        <button type="submit" class="button" name="apply_coupon"
+                                            value="Применить купон">Применить купон</button>
                                     </div>
-                                    <div class="reviews__item-stars">
-                                        <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M8.7907 0L10.7643 6.21885H17.1511L11.9841 10.0623L13.9577 16.2812L8.7907 12.4377L3.62366 16.2812L5.59729 10.0623L0.430247 6.21885H6.81706L8.7907 0Z"
-                                                fill="#B17C50" />
-                                        </svg>
-                                        <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M8.7907 0L10.7643 6.21885H17.1511L11.9841 10.0623L13.9577 16.2812L8.7907 12.4377L3.62366 16.2812L5.59729 10.0623L0.430247 6.21885H6.81706L8.7907 0Z"
-                                                fill="#B17C50" />
-                                        </svg>
-                                        <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M8.7907 0L10.7643 6.21885H17.1511L11.9841 10.0623L13.9577 16.2812L8.7907 12.4377L3.62366 16.2812L5.59729 10.0623L0.430247 6.21885H6.81706L8.7907 0Z"
-                                                fill="#B17C50" />
-                                        </svg>
-                                        <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M8.7907 0L10.7643 6.21885H17.1511L11.9841 10.0623L13.9577 16.2812L8.7907 12.4377L3.62366 16.2812L5.59729 10.0623L0.430247 6.21885H6.81706L8.7907 0Z"
-                                                fill="#B17C50" />
-                                        </svg>
-                                        <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M8.7907 0L10.7643 6.21885H17.1511L11.9841 10.0623L13.9577 16.2812L8.7907 12.4377L3.62366 16.2812L5.59729 10.0623L0.430247 6.21885H6.81706L8.7907 0Z"
-                                                fill="#B17C50" />
-                                        </svg>
-                                    </div>
-                                    <p class="reviews__item-text">
-                                        Я влюблена в этот лубрикант. Нет липкости, нет запаха и нет плохих реакций.
-                                        Очень рекомендую
+
+                                    <button type="submit" class="button" name="update_cart" value="Обновить корзину"
+                                        disabled="" aria-disabled="true">Обновить корзину</button>
+
+
+                                    <input type="hidden" id="woocommerce-cart-nonce" name="woocommerce-cart-nonce"
+                                        value="61f07bb96b"><input type="hidden" name="_wp_http_referer" value="/cart/">
+                                </div>
+                                <div class="cart__sum">
+                                    <p class="cart__sum-text">
+                                        Итог: <span>17958.25</span>
                                     </p>
-                                    <p class="reviews__item-auth">
-                                        <svg width="31" height="2" viewBox="0 0 31 2" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <line x1="31" y1="0.625" x2="-5.46392e-08" y2="0.624997" stroke="white"
-                                                stroke-width="1.25" />
-                                        </svg>
-                                        Анна С.
-                                    </p>
+                                    <a href="#" class="cart__sum-order">
+                                        Оформить заказ
+                                    </a>
+                                    <a href="#" class="cart__sum-shop">
+                                        Продолжить покупки
+                                    </a>
                                 </div>
                             </div>
-                        </div>
-                        <div class="swiper-buttons">
-                            <div class="swiper-buttons-inner">
-                                <div class="swiper-button-prev">
-                                    <svg width="8" height="22" viewBox="0 0 8 22" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M7 1L1 11L7 21" stroke="white" />
-                                    </svg>
-                                </div>
-                                <div class="swiper-button-next">
-                                    <svg width="8" height="22" viewBox="0 0 8 22" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M1 1L7 11L0.999999 21" stroke="white" />
-                                    </svg>
-                                </div>
-                            </div>
+
                         </div>
                     </div>
-                </div>
+                </form>
             </section>
-            <section class="blog">
-                <div class="blog__box">
-                    <div class="blog__main">
-                        <div class="blog__main-inner">
-                            <h2 class="blog__title">
-                                Интимный блог
-                            </h2>
-                            <p class="blog__subtitle">
-                                Все, что вы хотели знать и даже больше...
-                            </p>
-                            <a href="article.html" class="blog__main-item">
-                                <span class="blog__main-item-pic">
-                                    <img src="./images/bl-4.jpg" alt="Фото" class="blog__main-item-img">
-                                </span>
-                                <span class="blog__main-item-date">
-                                    7 Апреля
-                                </span>
-                                <span class="blog__main-item-name">
-                                    А вы уже пробовали? Рассказываем о нашем лубрикане VEXSO CLASSIC
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="blog__all">
-                        <a href="article.html" class="blog__all-item">
-                            <span class="blog__all-item-pic">
-                                <img src="./images/bl-1.jpg" alt="Фото" class="blog__all-item-img">
-                            </span>
-                            <span class="blog__all-item-date">
-                                7 Апреля
-                            </span>
-                            <span class="blog__all-item-name">
-                                А вы уже пробовали? Рассказываем о нашем лубрикане VEXSO CLASSIC
-                            </span>
-                        </a>
-                        <a href="article.html" class="blog__all-item">
-                            <span class="blog__all-item-pic">
-                                <img src="./images/bl-2.jpg" alt="Фото" class="blog__all-item-img">
-                            </span>
-                            <span class="blog__all-item-date">
-                                7 Апреля
-                            </span>
-                            <span class="blog__all-item-name">
-                                А вы уже пробовали? Рассказываем о нашем лубрикане VEXSO CLASSIC
-                            </span>
-                        </a>
-                        <a href="article.html" class="blog__all-item">
-                            <span class="blog__all-item-pic">
-                                <img src="./images/bl-1.jpg" alt="Фото" class="blog__all-item-img">
-                            </span>
-                            <span class="blog__all-item-date">
-                                7 Апреля
-                            </span>
-                            <span class="blog__all-item-name">
-                                А вы уже пробовали? Рассказываем о нашем лубрикане VEXSO CLASSIC
-                            </span>
-                        </a>
-                        <a href="article.html" class="blog__all-item">
-                            <span class="blog__all-item-pic">
-                                <img src="./images/bl-2.jpg" alt="Фото" class="blog__all-item-img">
-                            </span>
-                            <span class="blog__all-item-date">
-                                7 Апреля
-                            </span>
-                            <span class="blog__all-item-name">
-                                А вы уже пробовали? Рассказываем о нашем лубрикане VEXSO CLASSIC
-                            </span>
-                        </a>
-                    </div>
-                </div>
-            </section>
-            <section class="products">
-                <h2 class="products__title">
-                    Вам может понравиться
-                </h2>
-                <div class="products__slider js-products-slider">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="card">
-                                <div class="card__top">
-                                    <button class="card__favorite">
-                                        <svg width="20" height="18" viewBox="0 0 20 18" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M9.60386 2.47964L10 2.99403L10.3961 2.47964C11.3449 1.24768 12.8142 0.5 14.4167 0.5C17.2171 0.5 19.5 2.78728 19.5 5.60289C19.5 7.00692 18.9407 8.313 17.9444 9.27499L17.9443 9.2749L17.9365 9.28271L10.2127 17.0756L10.2126 17.0758L10 17.2901L9.78738 17.0757L9.78725 17.0756L1.9156 9.13505C1.00139 8.17772 0.5 6.92425 0.5 5.60289C0.5 2.78728 2.78292 0.5 5.58333 0.5C7.18577 0.5 8.6551 1.24768 9.60386 2.47964Z"
-                                                stroke="#2D2825" />
-                                        </svg>
-                                    </button>
-                                    <a href="#" class="card__pic">
-                                        <img src="./images/card-pic.jpg" alt="Фото" class="card__pic-img">
-                                    </a>
-                                    <a href="#cart" class="card__to-cart">
-                                        В корзину
-                                    </a>
-                                </div>
-                                <a href="#" class="card__name">
-                                    Лубрикант «Классический»
-                                </a>
-                                <p class="card__cost">
-                                    <span>862</span> ₽
-                                </p>
-                            </div>
-
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="card">
-                                <div class="card__top">
-                                    <button class="card__favorite">
-                                        <svg width="20" height="18" viewBox="0 0 20 18" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M9.60386 2.47964L10 2.99403L10.3961 2.47964C11.3449 1.24768 12.8142 0.5 14.4167 0.5C17.2171 0.5 19.5 2.78728 19.5 5.60289C19.5 7.00692 18.9407 8.313 17.9444 9.27499L17.9443 9.2749L17.9365 9.28271L10.2127 17.0756L10.2126 17.0758L10 17.2901L9.78738 17.0757L9.78725 17.0756L1.9156 9.13505C1.00139 8.17772 0.5 6.92425 0.5 5.60289C0.5 2.78728 2.78292 0.5 5.58333 0.5C7.18577 0.5 8.6551 1.24768 9.60386 2.47964Z"
-                                                stroke="#2D2825" />
-                                        </svg>
-                                    </button>
-                                    <a href="#" class="card__pic">
-                                        <img src="./images/card-pic.jpg" alt="Фото" class="card__pic-img">
-                                    </a>
-                                    <a href="#" class="card__to-cart">
-                                        В корзину
-                                    </a>
-                                </div>
-                                <a href="#" class="card__name">
-                                    Лубрикант «Классический»
-                                </a>
-                                <p class="card__cost">
-                                    <span>862</span> ₽
-                                </p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="card">
-                                <div class="card__top">
-                                    <button class="card__favorite">
-                                        <svg width="20" height="18" viewBox="0 0 20 18" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M9.60386 2.47964L10 2.99403L10.3961 2.47964C11.3449 1.24768 12.8142 0.5 14.4167 0.5C17.2171 0.5 19.5 2.78728 19.5 5.60289C19.5 7.00692 18.9407 8.313 17.9444 9.27499L17.9443 9.2749L17.9365 9.28271L10.2127 17.0756L10.2126 17.0758L10 17.2901L9.78738 17.0757L9.78725 17.0756L1.9156 9.13505C1.00139 8.17772 0.5 6.92425 0.5 5.60289C0.5 2.78728 2.78292 0.5 5.58333 0.5C7.18577 0.5 8.6551 1.24768 9.60386 2.47964Z"
-                                                stroke="#2D2825" />
-                                        </svg>
-                                    </button>
-                                    <a href="#" class="card__pic">
-                                        <img src="./images/card-pic.jpg" alt="Фото" class="card__pic-img">
-                                    </a>
-                                    <a href="#cart" class="card__to-cart">
-                                        В корзину
-                                    </a>
-                                </div>
-                                <a href="#" class="card__name">
-                                    Лубрикант «Классический»
-                                </a>
-                                <p class="card__cost">
-                                    <span>862</span> ₽
-                                </p>
-                            </div>
-
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="card">
-                                <div class="card__top">
-                                    <button class="card__favorite">
-                                        <svg width="20" height="18" viewBox="0 0 20 18" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M9.60386 2.47964L10 2.99403L10.3961 2.47964C11.3449 1.24768 12.8142 0.5 14.4167 0.5C17.2171 0.5 19.5 2.78728 19.5 5.60289C19.5 7.00692 18.9407 8.313 17.9444 9.27499L17.9443 9.2749L17.9365 9.28271L10.2127 17.0756L10.2126 17.0758L10 17.2901L9.78738 17.0757L9.78725 17.0756L1.9156 9.13505C1.00139 8.17772 0.5 6.92425 0.5 5.60289C0.5 2.78728 2.78292 0.5 5.58333 0.5C7.18577 0.5 8.6551 1.24768 9.60386 2.47964Z"
-                                                stroke="#2D2825" />
-                                        </svg>
-                                    </button>
-                                    <a href="#" class="card__pic">
-                                        <img src="./images/card-pic.jpg" alt="Фото" class="card__pic-img">
-                                    </a>
-                                    <a href="#" class="card__to-cart">
-                                        В корзину
-                                    </a>
-                                </div>
-                                <a href="#" class="card__name">
-                                    Лубрикант «Классический»
-                                </a>
-                                <p class="card__cost">
-                                    <span>862</span> ₽
-                                </p>
-                            </div>
-
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="card">
-                                <div class="card__top">
-                                    <button class="card__favorite">
-                                        <svg width="20" height="18" viewBox="0 0 20 18" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M9.60386 2.47964L10 2.99403L10.3961 2.47964C11.3449 1.24768 12.8142 0.5 14.4167 0.5C17.2171 0.5 19.5 2.78728 19.5 5.60289C19.5 7.00692 18.9407 8.313 17.9444 9.27499L17.9443 9.2749L17.9365 9.28271L10.2127 17.0756L10.2126 17.0758L10 17.2901L9.78738 17.0757L9.78725 17.0756L1.9156 9.13505C1.00139 8.17772 0.5 6.92425 0.5 5.60289C0.5 2.78728 2.78292 0.5 5.58333 0.5C7.18577 0.5 8.6551 1.24768 9.60386 2.47964Z"
-                                                stroke="#2D2825" />
-                                        </svg>
-                                    </button>
-                                    <a href="#" class="card__pic">
-                                        <img src="./images/card-pic.jpg" alt="Фото" class="card__pic-img">
-                                    </a>
-                                    <a href="#" class="card__to-cart">
-                                        В корзину
-                                    </a>
-                                </div>
-                                <a href="#" class="card__name">
-                                    Лубрикант «Классический»
-                                </a>
-                                <p class="card__cost">
-                                    <span>862</span> ₽
-                                </p>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="swiper-button-prev"><svg width="30" height="37" viewBox="0 0 30 37" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <rect width="30" height="37" transform="matrix(-1 0 0 1 30 0)" fill="#2D2825" />
-                            <path d="M17 10L12 19L17 28" stroke="white" stroke-width="2" />
-                        </svg>
-                    </div>
-                    <div class="swiper-button-next"><svg width="14" height="18" viewBox="0 0 14 18" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <rect width="14" height="17.2667" fill="#2D2825" />
-                            <path d="M6.06657 4.6665L8.3999 8.8665L6.06657 13.0665" stroke="white"
-                                stroke-width="0.933333" />
-                        </svg>
-                    </div>
-                </div>
-                <a href="#" class="products__link">
-                    Посмотреть все <svg width="31" height="9" viewBox="0 0 31 9" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M30.3536 4.85355C30.5488 4.65829 30.5488 4.34171 30.3536 4.14645L27.1716 0.964466C26.9763 0.769204 26.6597 0.769204 26.4645 0.964466C26.2692 1.15973 26.2692 1.47631 26.4645 1.67157L29.2929 4.5L26.4645 7.32843C26.2692 7.52369 26.2692 7.84027 26.4645 8.03553C26.6597 8.2308 26.9763 8.2308 27.1716 8.03553L30.3536 4.85355ZM0 5H30V4H0V5Z"
-                            fill="#2D2825" />
-                    </svg>
-                </a>
-            </section>
-        </main>
+        </div>
         <footer class="footer">
             <div class="footer__top">
                 <div class="footer__top-inner">

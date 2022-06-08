@@ -47,6 +47,10 @@ section {
     }
 }
 
+.scroll-off {
+    overflow: hidden;
+}
+
 .vissuality-hidden {
     position: absolute;
     width: 1px;

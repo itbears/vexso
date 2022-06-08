@@ -3,6 +3,7 @@
     top: 0;
     z-index: 100;
     width: 100%;
+
     &__menu {
         position: absolute;
         left: 0;
@@ -18,14 +19,17 @@
         opacity: 0;
         pointer-events: none;
         transition: opacity 0.5s ease;
+
         &.active {
             opacity: 1;
             pointer-events: initial;
             animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
         }
+
         &.exit {
             animation: slide-out-left 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
         }
+
         &-back {
             background-color: rgba(0, 0, 0, 0.7);
             position: absolute;
@@ -37,11 +41,16 @@
             opacity: 0;
             pointer-events: none;
             transition: opacity 0.5s ease;
+
             &.active {
                 opacity: 1;
                 pointer-events: initial;
             }
         }
+    }
+
+    &__menu-nav {
+        max-width: 201px;
     }
 
     &__menu-search {
@@ -107,31 +116,49 @@
             }
         }
     }
+
     &__menu-list {
         list-style-type: none;
     }
 
     &__menu-list-item {
         margin-bottom: 20px;
+
         &_border {
-            padding-bottom: 30px;
-            border-bottom: 1px solid #e5e5e5;
-            margin-bottom: 30px;
+            padding-top: 30px;
+            border-top: 1px solid #e5e5e5;
+            margin-top: 30px;
         }
+
         ul {
             list-style-type: none;
-            margin-top: 10px;
+            max-height: 0;
+            overflow: hidden;
+            height: 100%;
+            transition: all 4s ease;
+
+            &.active {
+                max-height: 3000px;
+            }
+
+            &.animate {
+                transition: all 1s ease;
+            }
+
             li {
                 margin-bottom: 5px;
+
                 &:last-child {
                     margin-bottom: 20px;
                 }
+
                 a {
                     font-weight: 400;
                     font-size: 14px;
                     line-height: 17px;
                     color: #2d2825;
                     display: inline-block;
+
                     &::after {
                         transition: all 0.3s ease;
                         content: "";
@@ -140,12 +167,17 @@
                         background-color: #2d2825;
                         display: block;
                     }
+
                     &:hover::after {
                         width: 100%;
                     }
                 }
             }
         }
+    }
+
+    &__menu-list-item_list {
+        margin-bottom: 10px;
     }
 
     &__menu-list-item-link {
@@ -155,6 +187,15 @@
         line-height: 24px;
         color: #2d2825;
         display: inline-block;
+        border: none;
+        background: none;
+        cursor: pointer;
+        text-align: left;
+
+        &_btn {
+            margin-bottom: 10px;
+        }
+
         &::after {
             transition: all 0.3s ease;
             content: "";
@@ -163,6 +204,7 @@
             background-color: #2d2825;
             display: block;
         }
+
         &:hover::after {
             width: 100%;
         }
@@ -178,9 +220,11 @@
         &:first-child {
             margin-right: 8px;
         }
+
         a svg path {
             transition: all 0.3s ease;
         }
+
         a:hover {
             svg path {
                 stroke: #b17c50;
@@ -204,6 +248,7 @@
         padding-bottom: 10px;
         width: 58px;
         margin-bottom: 10px;
+
         span {
             width: 20px;
             height: 1px;
@@ -211,11 +256,13 @@
             display: block;
             margin-bottom: 3px;
             transition: width 0.3s ease;
+
             & + span {
                 width: 30px;
                 margin-bottom: 0;
             }
         }
+
         &:hover {
             span {
                 &:first-child {
@@ -234,15 +281,51 @@
 
     &__favorites {
         margin-right: 20px;
+
         svg {
             path {
                 transition: all 0.3s ease;
             }
         }
+
         &:hover svg path {
             stroke: #b17c50;
         }
     }
+
+    &__cart {
+        position: relative;
+
+        span {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            color: #ffffff;
+            font-size: 12px;
+            transition: all 0.3s ease;
+        }
+
+        svg {
+            path {
+                transition: all 0.3s ease;
+            }
+        }
+
+        &:hover {
+            svg path {
+                fill: #b17c50;
+            }
+
+            span {
+                color: #b17c50;
+            }
+        }
+    }
+
     &.sticky {
         position: fixed;
         top: 0;
@@ -250,12 +333,14 @@
         box-shadow: 0px 2px 4px rgba(94, 94, 94, 0.25);
         backdrop-filter: blur(13px);
         animation: fade-in-top 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+
         .header {
             &__burger {
                 span {
                     background-color: #2d2825;
                 }
             }
+
             &__logo,
             &__cart {
                 svg {
@@ -264,6 +349,23 @@
                     }
                 }
             }
+
+            &__cart {
+                span {
+                    color: #2d2825;
+                }
+
+                &:hover {
+                    svg path {
+                        fill: #b17c50;
+                    }
+
+                    span {
+                        color: #b17c50;
+                    }
+                }
+            }
+
             &__favorites {
                 svg {
                     path {
@@ -322,34 +424,9 @@
                 }
 
                 span {
-                    background-color: #2d2825;
+                    color: #b17c50;
                 }
             }
-            &__logo,
-            &__cart {
-                svg {
-                    path {
-                        fill: #2d2825;
-                    }
-                }
-            }
-            &__favorites {
-                svg {
-                    path {
-                        stroke: #2d2825;
-                    }
-                }
-            }
-        }
-    }
-    &__cart {
-        svg {
-            path {
-                transition: all 0.3s ease;
-            }
-        }
-        &:hover svg path {
-            fill: #b17c50;
         }
     }
 }
