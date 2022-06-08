@@ -10,10 +10,9 @@
         font-size: 30px;
         line-height: 36px;
         text-transform: uppercase;
-        color: #2D2825;
+        color: #2d2825;
         margin-top: 30px;
     }
-
 
     &__body {
         margin-top: 55px;
@@ -23,7 +22,7 @@
                 display: flex;
                 // display: grid;
                 // grid-template-columns: .1fr 1fr 3fr 1fr 1.5fr 1fr;
-                border-bottom: 1px solid #2D2825;
+                border-bottom: 1px solid #2d2825;
                 padding-bottom: 30px;
                 margin-bottom: 30px;
             }
@@ -34,12 +33,12 @@
 
             a {
                 path {
-                    transition: all .3s ease;
+                    transition: all 0.3s ease;
                 }
 
                 &:hover {
                     path {
-                        stroke: #BB1A1A;
+                        stroke: #bb1a1a;
                     }
                 }
             }
@@ -73,7 +72,7 @@
                 font-weight: 400;
                 font-size: 20px;
                 line-height: 24px;
-                color: #2D2825;
+                color: #2d2825;
             }
         }
 
@@ -85,10 +84,9 @@
                 font-weight: 400;
                 font-size: 25px;
                 line-height: 30px;
-                color: #2D2825;
+                color: #2d2825;
             }
         }
-
 
         .product-subtotal {
             margin-left: 0;
@@ -116,7 +114,7 @@
                 display: flex;
                 align-items: center;
                 height: 50px;
-                border: 1px solid #2D2825;
+                border: 1px solid #2d2825;
 
                 .product__num-btn {
                     border: none;
@@ -132,15 +130,14 @@
                         pointer-events: none;
 
                         path {
-                            transition: all .3s ease;
+                            transition: all 0.3s ease;
                         }
                     }
 
                     &:hover {
-
                         svg path,
                         svg rect {
-                            fill: #B17C50;
+                            fill: #b17c50;
                         }
                     }
                 }
@@ -149,7 +146,7 @@
                     font-weight: 300;
                     font-size: 20px;
                     line-height: 24px;
-                    color: #2D2825;
+                    color: #2d2825;
                     text-align: center;
                     appearance: none;
                     max-width: 40px;
@@ -179,7 +176,7 @@
                 font-weight: 400;
                 font-size: 25px;
                 line-height: 30px;
-                color: #2D2825;
+                color: #2d2825;
                 margin-bottom: 40px;
             }
 
@@ -188,8 +185,8 @@
                 font-weight: 300;
                 font-size: 18px;
                 line-height: 22px;
-                color: #2D2825;
-                border: 1px solid #2D2825;
+                color: #2d2825;
+                border: 1px solid #2d2825;
                 margin-right: 15px;
             }
 
@@ -197,15 +194,15 @@
                 font-weight: 400;
                 font-size: 18px;
                 line-height: 22px;
-                color: #FFFFFF;
-                background-color: #2D2825;
+                color: #ffffff;
+                background-color: #2d2825;
                 border: none;
                 padding: 14px 60px;
                 cursor: pointer;
-                transition: all .3s ease;
+                transition: all 0.3s ease;
 
                 &:hover {
-                    background-color: #B17C50;
+                    background-color: #b17c50;
                 }
             }
         }
@@ -221,7 +218,7 @@
             font-weight: 400;
             font-size: 25px;
             line-height: 30px;
-            color: #2D2825;
+            color: #2d2825;
             margin-bottom: 40px;
         }
 
@@ -229,16 +226,16 @@
             font-weight: 400;
             font-size: 18px;
             line-height: 22px;
-            color: #FFFFFF;
-            background-color: #B17C50;
+            color: #ffffff;
+            background-color: #b17c50;
             display: block;
             padding: 14px;
             text-align: center;
             margin-bottom: 20px;
-            transition: all .3s ease;
+            transition: all 0.3s ease;
 
             &:hover {
-                background-color: #E0CFBF;
+                background-color: #e0cfbf;
             }
         }
 
@@ -247,13 +244,13 @@
             font-weight: 400;
             font-size: 18px;
             line-height: 22px;
-            color: #2D2825;
+            color: #2d2825;
             background-color: transparent;
             display: block;
             padding: 14px;
             text-align: center;
             margin-bottom: 20px;
-            transition: all .3s ease;
+            transition: all 0.3s ease;
 
             &:hover {
                 color: #fff;
@@ -323,7 +320,7 @@
     }
 }
 
-@media screen and (max-width:610px) {
+@media screen and (max-width: 610px) {
     .cart__sum {
         max-width: 100%;
     }
