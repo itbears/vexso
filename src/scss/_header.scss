@@ -46,6 +46,66 @@
 
     &__menu-search {
         margin-bottom: 30px;
+        max-width: 201px;
+
+        .dgwt-wcas-search-wrapp {
+            min-width: 190px;
+        }
+
+        .dgwt-wcas-sf-wrapp::after {
+            content: "";
+            width: 100%;
+            display: block;
+            height: 1px;
+            background: #000;
+            margin-left: 30px;
+            max-width: 163px;
+        }
+
+        .dgwt-wcas-no-submit .dgwt-wcas-ico-magnifier {
+            opacity: 1;
+
+            path {
+                fill: #2d2825;
+            }
+        }
+
+        .dgwt-wcas-no-submit .dgwt-wcas-ico-magnifier {
+            height: 19px;
+            left: 0;
+        }
+
+        .dgwt-wcas-sf-wrapp input[type="search"].dgwt-wcas-search-input {
+            border: none;
+            font-weight: 275;
+            font-size: 12px;
+            line-height: 15px;
+            color: #9d9d9c;
+            height: 15px;
+            padding-top: 0 !important;
+            padding-bottom: 4px !important;
+            padding-left: 30px !important;
+
+            &::placeholder {
+                font-style: normal;
+                font-weight: 275;
+            }
+        }
+
+        .dgwt-wcas-sf-wrapp input[type="search"].dgwt-wcas-search-input:focus {
+            box-shadow: none;
+        }
+
+        .dgwt-wcas-preloader {
+            svg {
+                height: 17px;
+                margin-left: auto;
+
+                path {
+                    fill: #2d2825;
+                }
+            }
+        }
     }
     &__menu-list {
         list-style-type: none;
@@ -64,7 +124,7 @@
             li {
                 margin-bottom: 5px;
                 &:last-child {
-                    margin-bottom: 0;
+                    margin-bottom: 20px;
                 }
                 a {
                     font-weight: 400;
@@ -213,9 +273,53 @@
             }
         }
     }
-    &.dark {
-        .header {
-            &__burger {
+}
+
+.single-product,
+.woocommerce-cart,
+.woocommerce-checkout,
+.page-id-22852,
+.page-template-delivery {
+    .header {
+        &__burger {
+            span {
+                background-color: #2d2825;
+            }
+        }
+
+        &__logo,
+        &__cart {
+            svg {
+                path {
+                    fill: #2d2825;
+                }
+            }
+        }
+
+        &__favorites {
+            svg {
+                path {
+                    stroke: #2d2825;
+                }
+            }
+
+            &:hover {
+                svg path {
+                    stroke: #b17c50;
+                }
+            }
+        }
+
+        &__cart {
+            span {
+                color: #2d2825;
+            }
+
+            &:hover {
+                svg path {
+                    fill: #b17c50;
+                }
+
                 span {
                     background-color: #2d2825;
                 }

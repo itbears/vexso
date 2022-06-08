@@ -4,7 +4,7 @@
         font-weight: 400;
         font-size: 30px;
     }
-    &__subtitle{
+    &__subtitle {
         font-weight: 400;
         font-size: 30px;
     }
@@ -19,9 +19,10 @@
         justify-content: space-between;
         &-content {
             max-width: 860px;
-            &-container-cards{
+            &-container-cards {
                 display: flex;
                 justify-content: space-between;
+                align-items: center;
                 max-width: 230px;
                 margin-top: 34px;
             }
@@ -48,8 +49,18 @@
                     font-size: 9px;
                 }
             }
+        }
+    }
+}
 
-            &-item {}
+@media screen and (max-width: 1045px) {
+    .communication {
+        &__payment {
+            display: flex;
+            flex-direction: column;
+        }
+        &__subtitle {
+            margin-bottom: 20px;
         }
     }
 }

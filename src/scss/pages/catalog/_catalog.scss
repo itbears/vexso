@@ -34,6 +34,17 @@
         font-size: 14px;
         line-height: 17px;
         color: #2d2825;
+        text-align: right;
+        margin-right: 5px;
+    }
+
+    .woocommerce-ordering {
+        display: flex;
+        align-items: center;
+    }
+
+    .added_to_cart.wc-forward {
+        display: none;
     }
 
     &__nav {
