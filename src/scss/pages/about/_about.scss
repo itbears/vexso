@@ -47,8 +47,11 @@
             font-size: 18px;
             margin-bottom: 30px;
 
+<<<<<<< Updated upstream
             
 
+=======
+>>>>>>> Stashed changes
             &:last-child {
                 margin-bottom: 0;
             }
@@ -56,6 +59,7 @@
             &_quote {
                 position: relative;
                 display: flex;
+
                 @media screen and (max-width: 870px) {
                     color: white;
                 }
@@ -71,7 +75,7 @@
 
                 span {
                     position: absolute;
-                    bottom: -15px;
+                    bottom: -20px;
                     right: 0;
                     font-weight: 300;
                     font-size: 14px;
@@ -79,6 +83,7 @@
                     color: #b17c50;
                     display: flex;
                     align-items: center;
+                    
 
                     &::before {
                         content: "";
@@ -91,10 +96,12 @@
                 }
             }
         }
-        &-pic{
+
+        &-pic {
             height: 100%;
             width: 100%;
         }
+
         &-img {
             width: 100%;
             height: 100%;
@@ -110,6 +117,7 @@
             max-width: 545px;
             margin-left: auto;
         }
+
         &-inner:first-child {
             .story__box-text {
                 margin-left: auto;
@@ -121,6 +129,13 @@
 @media screen and (max-width: 870px) {
     .display-block {
         display: none;
+    }
+    .story__box-pic{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        top: 0;
     }
     .pad-block {
         padding-right: 20px;
@@ -135,20 +150,31 @@
     }
 
     .blur-block {
-        padding-top: 30px;
-        padding-bottom: 30px;
+        // padding-top: 30px;
+        // padding-bottom: 30px;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        position: absolute;
     }
 
-    .story__box-inner {
+    .story__box-inner  {
+        padding: 75px 40px;
         &:first-child {
+            .story__box-text{
+                margin: auto;
+              
+            }
             margin-top: 0;
+
         }
+        
     }
 
     .blur-block {
-        position: absolute;
-        z-index: 1;
-        // padding: 100px 70px;
+        position: relative;
+        z-index: 2;
     }
 
     .story-block-quot {
@@ -176,20 +202,12 @@
             transition: 2s;
         }
 
-        &-pic {
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-
             &-img {
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
                 object-position: center;
             }
-        }
 
         .story {
             &__box {
