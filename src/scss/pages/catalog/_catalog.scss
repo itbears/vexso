@@ -43,15 +43,6 @@
     .woocommerce-ordering {
         display: flex;
         align-items: center;
-
-        &::after {
-            content: "";
-            background-image: url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9 1L5 5L1 1' stroke='%232D2825' stroke-width='0.813202'/%3E%3C/svg%3E");
-            display: inline-block;
-            width: 12px;
-            height: 8px;
-            background-size: 100% 100%;
-        }
     }
 
     .added_to_cart.wc-forward {

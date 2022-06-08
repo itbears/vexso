@@ -94,19 +94,16 @@
         background: none;
         cursor: pointer;
         margin-top: 6px;
-
-        svg {
-            margin-left: 15px;
-        }
-
-        path {
-            transition: all 0.3s ease;
-        }
-
-        &:hover {
-            path {
-                stroke: #b17c50;
-            }
+        position: relative;
+        min-width: 30px;
+        display: flex;
+        justify-content: flex-end;
+        .card__favorite {
+            opacity: 1;
+            position: relative;
+            right: 0;
+            top: 0;
+            pointer-events: all;
         }
     }
 
@@ -116,7 +113,7 @@
         line-height: 17px;
         margin-top: 3px;
         margin-bottom: 20px;
-
+        color: #9d9d9c;
         a {
             color: #9d9d9c;
         }
@@ -155,7 +152,7 @@
             display: flex;
             align-items: center;
             height: 50px;
-            border: 1px solid #2D2825;
+            border: 1px solid #2d2825;
         }
 
         .product__num-btn {
@@ -177,7 +174,7 @@
             font-weight: 300;
             font-size: 20px;
             line-height: 24px;
-            color: #2D2825;
+            color: #2d2825;
             text-align: center;
             appearance: none;
             max-width: 40px;
@@ -203,7 +200,7 @@
         margin-left: 15px;
         cursor: pointer;
         transition: all 0.3s ease;
-
+        font-family: "Museo Sans Cyrl 500", sans-serif;
         &:hover {
             background-color: #e0cfbf;
         }
@@ -250,7 +247,7 @@
     &__desc {
         font-weight: 300;
         font-size: 14px;
-        line-height: 125%;
+        line-height: 130%;
         color: #2d2825;
         margin-bottom: 20px;
 
@@ -263,11 +260,11 @@
         }
     }
 
-    &__checkbox:checked~&__desc-wrapper {
+    &__checkbox:checked ~ &__desc-wrapper {
         max-height: 2000px;
     }
 
-    &__checkbox:checked~&__btn svg {
+    &__checkbox:checked ~ &__btn svg {
         transform: rotate(45deg);
     }
 }

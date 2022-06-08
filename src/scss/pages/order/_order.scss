@@ -298,6 +298,9 @@
 .form-row.woocommerce-validated input.input-text {
     box-shadow: none !important;
 }
+#order_comments_field .optional {
+    display: none;
+}
 @media screen and (max-width: 930px) {
     .woocommerce {
         .order {
