@@ -1,17 +1,12 @@
 .card {
     width: 100%;
     max-width: 260px;
-
     &__top {
         height: 293px;
         position: relative;
         display: flex;
         align-items: flex-end;
         overflow: hidden;
-    }
-
-    .added_to_cart.wc-forward {
-        display: none;
     }
 
     &__favorite {
@@ -25,24 +20,19 @@
         opacity: 0;
         pointer-events: none;
         transition: all 0.3s ease;
-
         svg {
             transition: all 0.3s ease;
-
             path {
                 transition: all 0.3s ease;
             }
         }
-
         &:hover svg {
             path {
                 stroke: #b17c50;
             }
         }
-
         &.active svg {
             fill: #b17c50;
-
             path {
                 stroke: #b17c50;
             }
@@ -79,7 +69,6 @@
         color: #ffffff;
         transform: translateY(50px);
         transition: all 0.3s ease;
-
         &:hover {
             background-color: #e0cfbf;
         }
@@ -119,18 +108,15 @@
         &__top {
             height: 190px;
         }
-
         &__name {
             height: 20px;
             margin-bottom: 2px;
         }
-
         &__name,
         &__cost {
             font-size: 15px;
             line-height: 18px;
         }
-
         &__to-cart {
             font-size: 12px;
             line-height: 14px;
