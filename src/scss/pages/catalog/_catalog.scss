@@ -1,9 +1,11 @@
 .catalog {
     margin-top: 0;
+
     &__inner {
         max-width: 1160px;
         margin: auto;
     }
+
     &__pic {
         margin-bottom: 5px;
     }
@@ -34,6 +36,26 @@
         font-size: 14px;
         line-height: 17px;
         color: #2d2825;
+        text-align: right;
+        margin-right: 5px;
+    }
+
+    .woocommerce-ordering {
+        display: flex;
+        align-items: center;
+
+        &::after {
+            content: "";
+            background-image: url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9 1L5 5L1 1' stroke='%232D2825' stroke-width='0.813202'/%3E%3C/svg%3E");
+            display: inline-block;
+            width: 12px;
+            height: 8px;
+            background-size: 100% 100%;
+        }
+    }
+
+    .added_to_cart.wc-forward {
+        display: none;
     }
 
     &__nav {
@@ -45,6 +67,13 @@
         display: flex;
         border-bottom: 1px solid #e5e5e5;
         overflow-x: scroll;
+
+        &::-webkit-scrollbar,
+        &::-webkit-scrollbar-button,
+        &::-webkit-scrollbar-corner,
+        &::-webkit-scrollbar-track {
+            display: none;
+        }
     }
 
     &__nav-list-item-link {
@@ -56,6 +85,7 @@
         transition: all 0.3s ease;
         padding-bottom: 3px;
         white-space: nowrap;
+
         &:hover {
             color: #b17c50;
         }
@@ -63,6 +93,7 @@
 
     &__nav-list-item {
         margin-right: 30px;
+
         &.active &-link {
             color: #2d2825;
             border-bottom: 2px solid #3d3632;
@@ -95,6 +126,7 @@
         color: #2d2825;
         display: inline-block;
         transition: all 0.3s ease;
+
         &:hover {
             color: #b17c50;
         }
@@ -102,10 +134,12 @@
 
     &__pages-item {
         margin-right: 20px;
+
         &:last-child {
             margin-right: 0;
         }
-        &.active &-link {
+
+        &-link.active {
             font-weight: 400;
             border-bottom: 2px solid #2d2825;
             padding-bottom: 3px;
@@ -117,6 +151,7 @@
     .catalog {
         padding-left: 0;
         padding-right: 0;
+
         &__inner {
             padding-left: 20px;
             padding-right: 20px;
@@ -156,12 +191,15 @@
             flex-direction: column;
             align-items: flex-start;
         }
-        &__sort {
+
+        .woocommerce-ordering {
             margin-top: 30px;
         }
+
         &__nav {
             margin-top: 20px;
         }
+
         &__body {
             grid-gap: 20px;
         }
