@@ -1,23 +1,5 @@
 import Swiper from 'swiper/bundle';
 
-const product = document.querySelector(".product")
-
-if (product) {
-    const controlBtns = document.querySelectorAll(".product__num-btn")
-    const input = document.querySelector(".product__controls .input-text.qty");
-
-    controlBtns.forEach(btn => {
-        btn.addEventListener("click", (event) => {
-            const button = event.target;
-            if (button.dataset.operation === "decrement") {
-                input.value = parseInt(input.value) - 1;
-            } else if (button.dataset.operation === "increment") {
-                input.value = parseInt(input.value) + 1;
-            }
-        })
-    })
-}
-
 const productThumbs = new Swiper(".js-product-thumbs", {
     spaceBetween: 20,
     slidesPerView: 4,

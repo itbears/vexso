@@ -50,6 +50,8 @@
     }
 
     &__top-form {
+        // Убрать
+        height: 50px;
     }
 
     &__body {
@@ -265,19 +267,6 @@
                 margin-right: 0;
                 margin-bottom: 30px;
             }
-        }
-    }
-}
-
-#mailpoet_form_1 .mailpoet_validate_success {
-    text-align: left;
-    width: 100%;
-    color: #b17c50 !important;
-}
-@media screen and (max-width: 499px) {
-    .footer {
-        .mailpoet_submit {
-            margin-top: 20px !important;
         }
     }
 }
