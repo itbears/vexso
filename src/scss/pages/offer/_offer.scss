@@ -1,0 +1,40 @@
+.offer {
+    &__title {
+        font-family: 'Museo Sans Cyrl', sans-serif;
+        font-weight: 400;
+        font-size: 30px;
+        color: #2D2825;
+        max-width: 564px;
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+
+    &__subtitle {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 300;
+        font-size: 12px;
+        margin-bottom: 30px;
+    }
+
+    &__description {
+        font-weight: 300;
+        font-size: 12px;
+    }
+
+    &__heading {
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    &__list {
+        font-family: 'Montserrat', sans-serif;
+        list-style: none;
+        margin-left: 20px;
+        font-weight: 300;
+        font-size: 12px;
+    }
+}
