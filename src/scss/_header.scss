@@ -1,8 +1,10 @@
 .header {
-    position: absolute;
+    position: fixed;
     top: 0;
     z-index: 100;
     width: 100%;
+    animation: fade-in-top 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+    transition: all 0.3s ease;
 
     &__menu {
         position: absolute;
@@ -50,7 +52,7 @@
     }
 
     &__menu-nav {
-        max-width: 201px;
+        max-width: 215px;
     }
 
     &__menu-search {
@@ -146,7 +148,7 @@
             }
 
             li {
-                margin-bottom: 5px;
+                margin-bottom: 10px;
 
                 &:last-child {
                     margin-bottom: 20px;
@@ -154,8 +156,8 @@
 
                 a {
                     font-weight: 400;
-                    font-size: 14px;
-                    line-height: 17px;
+                    font-size: 13px;
+                    line-height: 16px;
                     color: #2d2825;
                     display: inline-block;
 
@@ -327,12 +329,9 @@
     }
 
     &.sticky {
-        position: fixed;
-        top: 0;
         background: rgba(255, 255, 255, 0.5);
         box-shadow: 0px 2px 4px rgba(94, 94, 94, 0.25);
         backdrop-filter: blur(13px);
-        animation: fade-in-top 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 
         .header {
             &__burger {

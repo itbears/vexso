@@ -322,3 +322,9 @@
         }
     }
 }
+
+@media screen and (max-width: 700px) {
+    .woocommerce .order {
+        margin-top: 90px;
+    }
+}

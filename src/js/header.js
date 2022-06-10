@@ -45,6 +45,7 @@ menuBtns.forEach((btn, i) => {
 const header = document.querySelector(".js-header")
 const page = document.querySelector(".page")
 const pagePadding = header.offsetHeight
+
 const scrollHeader = () => {
     if (window.pageYOffset >= header.offsetHeight) {
         // page.style.paddingTop = `${pagePadding}px`;

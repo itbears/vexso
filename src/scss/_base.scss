@@ -79,3 +79,41 @@ section {
 #mailpoet_woocommerce_checkout_optin_field {
     display: none;
 }
+
+.coupon-show {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 5px;
+    &__text {
+        margin-right: auto;
+    }
+    .woocommerce-remove-coupon {
+        width: 100%;
+        text-align: right;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 130%;
+        color: #2d2825;
+    }
+}
+
+.woocommerce-checkout-review-order {
+    .coupon-show {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        color: #c4c4c4;
+        margin-top: 10px;
+        &__text {
+            color: #e0cfbf;
+            font-weight: 400;
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .tinv-wishlist.woocommerce {
+        margin-top: 90px;
+    }
+}
